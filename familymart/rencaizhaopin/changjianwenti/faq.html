@@ -1,0 +1,559 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  <meta name="language" content="en"> 
+  <title>全家Family Mart—开心尝鲜在全家 - Faq</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=0.68, maximum-scale=1, minimum-scale=0.68, user-scalable=yes"> 
+  <meta name="apple-mobile-web-app-capable" content="yes"> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+  <meta property="wb:webmaster" content="286b33bafd8a81b5"> 
+  <!-- 让360双核浏览器用webkit内核渲染页面
+    ================================================== --> 
+  <meta name="renderer" content="webkit"> 
+  <meta name="description" content="全家便利店，让您的生活更加便利，同时让每位来到全家的顾客，都能够与温暖的笑容相遇，给您贴心般的家人般的感受！"> 
+  <meta name="keywords" content="全家便利店  Family Mart  新品特快  呀米将  营养蒸包馒头  营养便当  经典风味面  和风寿司手卷  美味饭团 鲜爽沙拉 烤致工房  关东煮本铺 营养粥汤 风味小食 自提服务 鲜食促销  公共事业缴费 刷卡消费 ATM 娱乐通讯 国家快递 阿拉订 付临门  Fami淘宝  Fami天猫  全家简介 全家愿景 全家大事记 全球布局  新闻中心 合作经营优势 说明会  店长 新手解答  申请流程 门店租赁 合作经营条件测试  全家工作优势 全家在职训练 求职小技巧 招聘流程 我要应聘 最新职缺  常见问题  喜士多  7-11 罗森"> 
+  <link rel="stylesheet" href="css/swiper.min.css"> 
+  <link rel="stylesheet" href="css/animate.css"> 
+  <link rel="stylesheet" href="css/global.css"> 
+  <link rel="stylesheet" href="css/fane.css"> 
+  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script> 
+  <script type="text/javascript">
+        function changecitybypup(){
+            $.ajax({
+                type:"POST",
+                global:false,
+                url:"/store/setCity",
+                data:{"cid": $('#citySeltetPup').val()},
+                dataType:"JSON",
+                success:function(data){
+                },
+                complete:function(data){
+                    showCommonPop('正在切换城市...');
+                    webMCookie.set('cid',$('#citySeltetPup').val(), 7);
+                    webMCookie.set('city',$('#citySeltetPup option:selected').text(), 7);
+                    location.reload();
+                },
+            });
+        }
+    </script> 
+  <link rel="icon" type="image/x-icon" href="css/favicon.ico"> 
+  <script type="text/javascript">BASEUSER=''</script> 
+  <script type="text/javascript">HOSTURL='http://www.familymart.com.cn'</script> 
+  <script type="text/javascript">
+    if(window.navigator.userAgent.indexOf("Mobile")>=0){
+        if(window.navigator.userAgent.indexOf("iPad")>=0){
+
+
+        }else{
+            window.location.href="http://www.familymart.com.cn/mobile/";
+            //$('meta[name="viewport"]').attr({'content':'width=device-width, initial-scale=0.28, maximum-scale=1.0, minimum-scale=0.28, user-scalable=yes'})
+        }
+    }
+    </script> 
+  <script type="text/javascript">
+    function wmx_set_account(account) {
+        return false;
+    }
+    function wmx_flash_counter(title,url) {
+        return false;
+    }
+    function wmx_trackBtn(buttonname, driveritem) {
+        return false;
+    }
+    function familymart_tracker(a,b){
+        return false;
+    }
+
+    function familymart_flash_tracker(a,b){
+        return false;
+    }
+    </script> 
+  <script>
+
+	var webMCookie = {
+        set:function(cname, cvalue, exdays) {//设置cookie
+            this.clear(cname);
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            var expires = "expires="+d.toUTCString();
+            document.cookie = cname + "=" + cvalue + "; " + expires +"; path=/; domain="+document.domain;
+        },
+        get:function(cname) {//获取cookie
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0; i<ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0)==' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) != -1) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        },
+        clear:function(cname) {//清除cookie
+            var exp = new Date();
+            exp.setTime(exp.getTime() - 1);
+            var cval=this.get(cname);
+            if(cval!==null){
+                document.cookie= cname + "="+cval+";expires="+exp.toGMTString();
+            }
+        }
+    };
+	function ChangeCity(){
+		showCommonPop('正在切换城市...');
+		webMCookie.set('cid',$('#citySeltet').val(), 7);
+		webMCookie.set('city',$('#citySeltet option:selected').text(), 7);
+		location.reload();
+	}
+
+
+</script> 
+  <script>
+// 客服系统
+(function(a,h,c,b,f,g){a["UdeskApiObject"]=f;a[f]=a[f]||function(){(a[f].d=a[f].d||[]).push(arguments)};g=h.createElement(c);g.async=1;g.charset="utf-8";g.src=b;c=h.getElementsByTagName(c)[0];c.parentNode.insertBefore(g,c)})(window,document,"script","https://assets-cli.s4.udesk.cn/im_client/js/udeskApi.js","ud");
+ud({
+    "code": "1i0h723c",
+    "link": "https://familymart.s4.udesk.cn/im_client/?web_plugin_id=46808"
+});
+
+function contactUs() {
+    $('.udesk-client-btn').click()
+}
+</script> 
+  <style type="text/css">
+#udesk_btn {
+    display: none;
+}
+</style> 
+ </head> 
+ <body> 
+  <div class="wrap"> 
+   <!-- menu --> 
+   <div class="side"> 
+    <div class="topside"> 
+     <a href="/" class="logo"></a> 
+     <!--=================会员卡=================--> 
+     <!--=================美味鲜食=================--> 
+     <!--=================鲜食系列=================--> 
+     <!--=================促销优惠=================--> 
+     <!--=================加盟合作=================--> 
+     <!--=================优势介绍=================--> 
+     <!--=================加盟方案=================--> 
+     <!--=================我要加盟=================--> 
+     <!--=================人才招聘=================--> 
+     <!--=================职业发展=================--> 
+     <!--=================招聘贴士=================--> 
+     <!--=================岗位应聘=================--> 
+     <ul class="nav"> 
+      <li class="nav-item guqj" data-name="zhajizhuanjia"> 
+       <div class="toptitle">
+        <a href="#">关于全家</a>
+       </div> 
+       <div class="drop"> 
+        <ul> 
+         <li><a href="/brand" class="">品牌介绍</a></li> 
+         <li><a href="/brand/parcafe" class="">湃客咖啡</a></li> 
+         <!--  <li><a href="/brand/newscenter" class="">TVC欣赏</a></li> --> 
+         <li><a href="/members/ZunXiangKa" class="">会员卡</a></li> 
+         <li><a href="/members/giftCard" class="">礼品卡</a></li> 
+         <!-- <li><a href="/brand/statement" class="">声明</a></li>
+                    <li><a href="/brand/notice" class="">公告</a></li> --> 
+        </ul> 
+       </div> </li> 
+      <li class="nav-item jmhz" data-name="zunxiangtiyan"> 
+       <div class="toptitle">
+        <a href="#">加盟合作</a>
+       </div> 
+       <div class="drop"> 
+        <ul> 
+         <li><a href="/franchise/hqAdvantage" class="">优势介绍</a></li> 
+         <li><a href="/franchise/planA" class="">加盟方案</a></li> 
+         <li><a href="/franchise/applyOnline" class="">我要加盟</a></li> 
+         <li><a href="/franchise/experienceShare" class="">经验分享</a></li> 
+        </ul> 
+       </div> </li> 
+      <li class="nav-item rczp active" data-name="zunxiangtiyan"> 
+       <div class="toptitle">
+        <a href="#">人才招聘</a>
+       </div> 
+       <div class="drop"> 
+        <ul> 
+         <li><a href="/career/workerGoodness" class="">职业发展</a></li> 
+         <li><a href="/career/invitePost" class="">招聘贴士</a></li> 
+         <li><a href="/career/list" class="">岗位应聘</a></li> 
+         <li><a href="/faq" class="active">常见问题</a></li> 
+        </ul> 
+       </div> </li> 
+     </ul> 
+    </div> 
+    <div class="box01-side" style="position: static"> 
+     <div class="box01-content"> 
+      <!--   <div class="city-selector">
+                   <div class="searchbox-lp">
+                            <select class="searchbox-sc" id="citySeltet" onChange="ChangeCity()">
+                                <option value="1" selected>上海</option><option value="2">苏州</option><option value="3">深圳</option><option value="4">广州</option><option value="5">杭州</option><option value="6">成都</option><option value="10">无锡</option><option value="11">北京</option><option value="12">东莞</option><option value="13">嘉兴</option>                            </select>
+                       </div>
+                </div> --> 
+      <div class="searchbox-fl"> 
+       <div class="searchbox"> 
+        <div class="searchbtn pa searchbtnleft" onclick="searchSubmit('');"></div> 
+        <input type="text" placeholder="请输入搜索内容" name="keyword" id="searchInput" class="tet"> 
+       </div> 
+      </div> 
+      <div class="sharelink pr"> 
+       <!--     <div class="item item-3" data-index="3">
+                        <span class="icon icon-type-1"></span>
+                        <p>公众号</p>
+                    </div>
+                    <div class="item item-6" data-index="6">
+                        <span class="icon icon-type-1"></span>
+                        <p>抖音蓝V</p>
+                    </div>
+                    <div class="item item-7" data-index="7">
+                        <span class="icon icon-type-1"></span>
+                        <p>微博</p>
+                    </div> --> 
+       <div class="item item-1"> 
+        <a href="javascript:;" onclick="contactUs()"> <span class="icon icon-type-1"></span> <p>联系我们</p> </a> 
+       </div> 
+       <!--   <div class="item item-2">
+                        <a href="/store">
+                            <span class="icon icon-type-1"></span>
+                            <p>门店查找</p>
+                        </a>
+                    </div> --> 
+       <!--  <div class="item item-5" data-index="2">
+                        <span class="icon icon-type-2"></span>
+                    </div>
+                    <div class="item item-4" data-index="1">
+                        <span class="icon icon-type-2"></span>
+                    </div> --> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="content"> 
+    <link rel="stylesheet" href="css/leaveMsg.css"> 
+    <script type="text/javascript" src="js/faq.js"></script> 
+    <script type="text/javascript" src="js/WdatePicker.js"></script> 
+    <div class="main mainpro"> 
+     <div class="banpro"> 
+      <img width="100%" src="images/common-banner.jpg"> 
+      <div class="banpro-box-md"> 
+       <p>常见问题</p> 
+      </div> 
+     </div> 
+     <div class="prowrap"> 
+      <div class="nav-tab"> 
+       <ul> 
+        <li class="active">消费者</li> 
+        <li>加盟者</li> 
+        <li>合作商家</li> 
+        <li>学生</li> 
+        <li>人力招募</li> 
+       </ul> 
+      </div> 
+      <div class="colB1-detail"> 
+       <div class="The-content-area Common-content"> 
+        <ul> 
+         <li> 
+          <div class="partTop pd-left">
+            服务咨询类 
+          </div> 
+          <div class="partConter-list"> 
+           <ul class="textCont"> 
+            <li class="leftCol fontStyle1">Q1</li> 
+            <li class="rightCol">我对全家便利店FamilyMart的门店所贩卖商品或对某店铺服务态度不满或有建议,该从何种管道反映?</li> 
+            <li class="leftCol fontStyle2">A1</li> 
+            <li class="rightCol"> <p>您可点击<a href="javascript:;" onclick="contactUs()" style="color:#008dd3; text-decoration: underline">联系我们</a>与在线客服进行反馈，或可拨打全家顾客服务热线4008-200-996，将有专人为您服务。</p> </li> 
+           </ul> 
+           <ul class="textCont"> 
+            <li class="leftCol fontStyle1 fontB">Q2</li> 
+            <li class="rightCol">我对代收缴费有疑问可从何处查询？</li> 
+            <li class="leftCol fontStyle2 fontB">A1</li> 
+            <li class="rightCol"> <p>您可至付费通网站<a href="http://www.shfft.com" target="_blank">http://www.shfft.com</a>(企业邮箱<a href="mailto:shfft@shafft.com" target="_blank">shfft@shafft.com</a>)查询或与付费通客服热线：021-962233进行查询。<br> 查询时:需出示在全家便利店缴费时店员给与的账单存根联（加盖全家店铺店章），和在全家便利店缴费时店员给与的收银小票凭证。<br> 或可拨打全家（上海）客服热线电话：4008-200-996，将有专人为您服务。</p> </li> 
+           </ul> 
+           <ul class="textCont"> 
+            <li class="leftCol fontStyle1 fontB">Q3</li> 
+            <li class="rightCol">我想查询电商网购店取自提服务，应该打哪支电话查询?</li> 
+            <li class="leftCol fontStyle2 fontB">A1</li> 
+            <li class="rightCol"> <p>您可至电商官网查件或至其客服电话查询。菜鸟客服：菜鸟客服热线为4009005656，或拨打全家顾客服务热线021-522-88022（上海） 020-376-24992（广州） 0512-691-71090转101（苏州） 0571-870-21756（杭州），将有专人为您服务。</p> </li> 
+           </ul> 
+           <ul class="textCont"> 
+            <li class="leftCol fontStyle1 fontB">Q4</li> 
+            <li class="rightCol">我想查询预购商品、票券等问题，要如何查询?</li> 
+            <li class="leftCol fontStyle2 fontB">A1</li> 
+            <li class="rightCol"> <p>欢迎您拨打全家预购客服中心电话、全家网购客服热线：021-31763747（杨小姐），将有专人为您服务。</p> </li> 
+           </ul> 
+          </div> </li> 
+         <li> 
+          <div class="partTop pd-left">
+            全家储值卡 
+          </div> 
+          <div class="partConter-list"> 
+           <ul class="textCont"> 
+            <li class="leftCol fontStyle1 fontB">Q1</li> 
+            <li class="rightCol">我如何购买全家储值卡?</li> 
+            <li class="leftCol fontStyle2 fontB">A1</li> 
+            <li class="rightCol"> <p>您可拨打总公司电话全家储值卡采购客服热线：021-31763601另作洽谈(服务时间上午九点至十二点;下午一点至五点半)，有专人为您服务。</p> </li> 
+           </ul> 
+           <ul class="textCont"> 
+            <li class="leftCol fontStyle1 fontB">Q2</li> 
+            <li class="rightCol">全家储值卡如何购买?</li> 
+            <li class="leftCol fontStyle2 fontB">A1</li> 
+            <li class="rightCol"> <p>[FAMI 储值卡]是全家便利FamilyMart发行之预付储值卡，[FAMI 储值卡] 卡体本身采商品出售方式，[FAMI 储值卡] 空卡-售价5元（卡片内无使用额度）。卡片主要成分：PVC塑料、非接触式IC卡。 [FAMI 储值卡] 可以重复充值，充值后可持[FAMI 储值卡] 在卡背面注明的所在区域的全家便利开通刷卡机服务的门店使用消费，让您免除携带零钱并迅 速完成交易，并可享有不定期的各项优惠活动；[FAMI 储值卡] 也兼具搜藏、纪念、保存、赠礼等价值。</p> </li> 
+           </ul> 
+           <ul class="textCont"> 
+            <li class="leftCol fontStyle1 fontB">Q3</li> 
+            <li class="rightCol">全家储值卡是否有使用期限? 过期了怎么办？</li> 
+            <li class="leftCol fontStyle2 fontB">A1</li> 
+            <li class="rightCol"> <p>[FAMI 储值卡] 有效期：[FAMI 储值卡] 卡体及芯片于正常使用下有效期系自购买日起3年，请消费者安心使用。超过有效期的储值卡充值后继续使用。[FAMI 储值卡] 卡片经使用，除非[FAMI 储值卡] 卡片本身自有瑕疵或故障，恕不接受免费退、换卡。 1、[FAMI 储值卡] 卡片采无记名方式发行，若消费者卡片遗失、遭窃、诈取、毁损、丢失或遭第三人占有等，储值金额视同现金遗失，恕无法提供充值金额赔偿或挂失支付，请消费者妥善保管使用。 2、欢迎各企业单位、机关团体至全家便利总部(上海市中山北路3000号40楼)进行[FAMI 储值卡]购买,如为大单购买将有优惠折扣,如需购买请洽本公司顾客服务中心(客服热线:021-522-88022)。</p> </li> 
+           </ul> 
+          </div> </li> 
+         <li> 
+          <div class="partTop pd-left">
+            其他 
+          </div> 
+          <div class="partConter-list"> 
+           <ul class="textCont"> 
+            <li class="leftCol fontStyle1 fontB">Q1</li> 
+            <li class="rightCol">我有旺铺求租信息,该和谁联系?</li> 
+            <li class="leftCol fontStyle2 fontB">A1</li> 
+            <li class="rightCol"> <p>若您有可以承租的店面，使用面积100平方米以上，面宽八米以上，特别是在：大专院校/三甲医院/厂区/科技园区…等；<br> 欢迎您以下列方式与我们联系!<br> 公司会针对该店面作商圈评估，判断出店可行性。店面所在的城市限定为上海、苏州、无锡、杭州、广州、深圳、东莞、成都、北京。</p> <p>顾客服务热线：<strong style="font-size:18px;">4008-200-996</strong>，或者点击<a href="javascript:;" onclick="contactUs()" style="color:#008dd3; text-decoration: underline">联系我们</a></p> <p>提供内容：</p> <p>1、公司名称</p> <p>2、联络人</p> <p>3、电话</p> <p>4、e-mail</p> <p>5、旺铺区域与地点</p> <p>6、过去承租金额</p> </li> 
+           </ul> 
+          </div> </li> 
+        </ul> 
+       </div> 
+       <div class="The-content-area Common-content"> 
+        <div class="partConter-list"> 
+         <ul class="textCont"> 
+          <li class="leftCol fontStyle1 fontB">Q1</li> 
+          <li class="rightCol">我想要加盟，该和谁联系？</li> 
+          <li class="leftCol fontStyle2 fontB">A1</li> 
+          <li class="rightCol"> <p>若你对于加入便利事业有极大热忱与兴趣，请洽询全家便利合作经营工作人员.合作经营招募专线：400-820-5897，或者点击<a href="javascript:;" onclick="contactUs()" style="color:#008dd3; text-decoration: underline">联系我们</a>，欢迎您合作经营全家，让您成为事业赢家！</p> </li> 
+         </ul> 
+         <ul class="textCont"> 
+          <li class="leftCol fontStyle1 fontB">Q2</li> 
+          <li class="rightCol">加盟全家前一定要参加说明会吗？说明会在做些什么呢？</li> 
+          <li class="leftCol fontStyle2 fontB">A1</li> 
+          <li class="rightCol"> <p>为了让加盟者在最短时间内有效率的学习如何创业，全家每周六上午会定期举办加盟说明会，说明企业组织背景与加盟产品等，现场并有专员协助解说加盟者各项疑问。合作经营说明会报名网址 : <a href="http://www.familymart.com.cn/franchise/advantage"><span style="color:#008dd3; text-decoration: underline">http://www.familymart.com.cn/franchise/advantage</span></a><br>上海加盟说明会暂未召开，召开时间另行通知。</p> </li> 
+         </ul> 
+         <ul class="textCont"> 
+          <li class="leftCol fontStyle1 fontB">Q3</li> 
+          <li class="rightCol">没有便利店经验也可以加盟吗？</li> 
+          <li class="leftCol fontStyle2 fontB">A1</li> 
+          <li class="rightCol"> <p>没有相关经验的加盟者不必担心，因总部除了让加盟者了解便利商店相关信息，并提供完善的教育训练课程外，开店后营业担当亲自到店指导，让加盟伙伴能快速学会经营Know-How。</p> </li> 
+         </ul> 
+         <ul class="textCont"> 
+          <li class="leftCol fontStyle1 fontB">Q4</li> 
+          <li class="rightCol">自已需要准备开店加盟的店面吗？</li> 
+          <li class="leftCol fontStyle2 fontB">A1</li> 
+          <li class="rightCol"> <p>如果您无法自行寻找合适的店面，全家加盟总部也会依加盟者适性及住家距离安排合适之店址供加盟者选择。<br>(仅限外区，上海外部加盟需自行提供门面)</p> </li> 
+         </ul> 
+         <ul class="textCont"> 
+          <li class="leftCol fontStyle1 fontB">Q5</li> 
+          <li class="rightCol">如果我已经有店面了，在坪数与规格上有限制吗？</li> 
+          <li class="leftCol fontStyle2 fontB">A1</li> 
+          <li class="rightCol"> <p>加盟者如果有自己的店面，店面最佳的使用坪数大约100平方米以上使用面积，且店宽八米以上。公司也会针对开店地点周围商圈作评估，决定是否适合开店。</p> </li> 
+         </ul> 
+         <ul class="textCont"> 
+          <li class="leftCol fontStyle1 fontB">Q6</li> 
+          <li class="rightCol">从加盟申请到正式开店大约需多久时间？而我原来的工作要先辞掉吗？</li> 
+          <li class="leftCol fontStyle2 fontB">A1</li> 
+          <li class="rightCol"> <p>整体从加盟申请到开店营运约需2个月的时间，其中包含面谈、家访、契约签订与教育研修等；此外，亦需视加盟者所在区域是否有合适店铺可供经营。在尚未确定有合适店铺经营前，建议不需先辞掉既有之工作。</p> </li> 
+         </ul> 
+         <ul class="textCont"> 
+          <li class="leftCol fontStyle1 fontB">Q7</li> 
+          <li class="rightCol">什么是专职经营？对加盟者而言有什么好处？</li> 
+          <li class="leftCol fontStyle2 fontB">A1</li> 
+          <li class="rightCol"> <p>即加盟者必须专职在店铺工作，不得兼差。便利商店经营24小时全年无休，且信息与服务更新相当快速，此外店内现金流量大且商品众多，唯有加盟者全心投入经营才能确实掌握店铺运营状况与市场需求。</p> </li> 
+         </ul> 
+         <ul class="textCont"> 
+          <li class="leftCol fontStyle1 fontB">Q8</li> 
+          <li class="rightCol">为什么要缴保证金？</li> 
+          <li class="leftCol fontStyle2 fontB">A1</li> 
+          <li class="rightCol"> <p>因店铺内商品、生财器具等经营所需设施均由全家总部提供，且店铺内每日现金流量相当大，基于维护双方权益与诚信，我们希望加盟者能提供基本保证，且保证金于加盟营业期间，会依银行活期存款利率计算利息给您。</p> </li> 
+         </ul> 
+         <ul class="textCont"> 
+          <li class="leftCol fontStyle1 fontB">Q9</li> 
+          <li class="rightCol">店铺人力由谁聘雇？一家店需雇用多少员工？</li> 
+          <li class="leftCol fontStyle2 fontB">A1</li> 
+          <li class="rightCol"> <p>员工由加盟者自行招募与聘用，并依照劳动法规定，加盟者要替员工投保。店铺人力需视经营状况安排，除专职经营之店长、副店长外，建议每班至少另外安排1~2位兼职人员协助收银、理货与清洁等店务执行。</p> </li> 
+         </ul> 
+         <ul class="textCont"> 
+          <li class="leftCol fontStyle1 fontB">Q10</li> 
+          <li class="rightCol">加盟后全家会协助训练我的员工吗?</li> 
+          <li class="leftCol fontStyle2 fontB">A1</li> 
+          <li class="rightCol"> <p>公司有一套SST(Store Staff Training)店铺人员认证制度，针对店铺人员设计一系列初、中、高阶课程，循序渐进教导员工熟悉各项店铺事务，以确保人员素质并分担加盟者劳务。</p> </li> 
+         </ul> 
+         <ul class="textCont"> 
+          <li class="leftCol fontStyle1 fontB">Q11</li> 
+          <li class="rightCol">加盟全家每月有基本收入保障吗？</li> 
+          <li class="leftCol fontStyle2 fontB">A1</li> 
+          <li class="rightCol"> <p>便利商店是获利稳定的产业，不是高暴利的行业。每个月总公司也会提供基本的毛利保障。</p> </li> 
+         </ul> 
+         <ul class="textCont"> 
+          <li class="leftCol fontStyle1 fontB">Q12</li> 
+          <li class="rightCol">开幕后总部是否有提供经营辅导？</li> 
+          <li class="leftCol fontStyle2 fontB">A1</li> 
+          <li class="rightCol"> <p>开店后每间店铺皆配有一名营业担当，亲自到店针对经营问题进行协助与辅导。</p> </li> 
+         </ul> 
+         <p style="text-align:center; font-size:18px;">加盟热线：<strong>400-820-5897</strong></p> 
+        </div> 
+       </div> 
+       <div class="The-content-area Common-content"> 
+        <div class="partConter-list"> 
+         <ul class="textCont"> 
+          <li class="leftCol fontStyle1 fontB">Q1</li> 
+          <li class="rightCol">我有商品或营销活动想要向全家便利商店提案，我该怎么做呢?</li> 
+          <li class="leftCol fontStyle2 fontB">A1</li> 
+          <li class="rightCol"> <p>由于全家便利商店每个月都会收到相当多的商品提案，请希望与全家便利店FamilyMart合作的伙伴详细阅读下列资料， 并请尽量提供完整和正确的信息，以协助我们加速评估双方合作的方式。 我们需要的数据有下列几项，麻烦贵公司备妥后， 点击<a href="javascript:;" onclick="contactUs()" style="color:#008dd3; text-decoration: underline">联系我们</a>，将电子文件发送给在线客服，请贵公司提供： <br> 1、商品报价基本资料，如建议零售价、成本价、商品尺寸及规格。 <br> 2、商品上市推广计划书，含广告计划及与全家便利商店的配合计划。 <br> 3、商品照片。 全家便利店FamilyMart将慎重处理贵公司所提供之提案资料，但恕不负保密责任。 <br> 若贵公司需维持资料之机密性，则请勿将资料送出(请贵公司审慎考虑送出之资料)。</p> </li> 
+         </ul> 
+         <ul class="textCont"> 
+          <li class="leftCol fontStyle1 fontB">Q2</li> 
+          <li class="rightCol">若我想与全家便利店FamilyMart进行异业合作或策略结盟，我该怎么作呢?</li> 
+          <li class="leftCol fontStyle2 fontB">A1</li> 
+          <li class="rightCol"> <p>为使全家便利店FamilyMart能够了解贵公司提案内容、加速评估合作模式，请希望与全家便利商店合作伙伴详细阅读下列数据并请尽量提供完整和正确的信息。 我们需要的数据有下列几项，麻烦贵公司备妥后，点击<a href="javascript:;" onclick="contactUs()" style="color:#008dd3; text-decoration: underline">联系我们</a>，将电子文件发送给在线客服。 请贵公司提供： <br> 1、公司基础信息：公司简介、主要营业项目、营运概况。 <br> 2、合作提案简述：商业合作计划书，包含：合作模式及相关推动计划。 <br> 3、其他相关文件：其他可以协助我们更加了解贵公司提案之相关信息。 全家便利店FamilyMart将慎重处理贵公司所提供之提案资料，但恕不负保密责任。 <br> 若贵公司需维持资料之机密性，则请勿将资料送出(请贵公司审慎考虑送出之资料)。</p> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="The-content-area Common-content"> 
+        <div class="partConter-list"> 
+         <ul class="textCont"> 
+          <li class="leftCol fontStyle1 fontB">Q1</li> 
+          <li class="rightCol">基于研究上的需要，希望能安排参观贵公司、访谈相关人员、并了解营运状况，不晓得能与谁联系、取得相关信息呢？</li> 
+          <li class="leftCol fontStyle2 fontB">A1</li> 
+          <li class="rightCol"> <p>请见谅我们无法一一安排参观和访谈，但欢迎上全家的企业网浏览，内含品牌精神、公司概况、财务信息、加盟招募、人力资源、新闻稿等项目可供参考。</p> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="The-content-area Common-content"> 
+        <div class="partConter-list"> 
+         <ul class="textCont"> 
+          <li class="leftCol fontStyle1 fontB">Q1</li> 
+          <li class="rightCol">我想应征门店储备干部/店长工作，应如何连络?</li> 
+          <li class="leftCol fontStyle2 fontB">A1</li> 
+          <li class="rightCol"> <p>应征门店储备干部/店长的工作可通过下列方式：<br> 1、应征储备干部/店长者，请至求才广告牌填写「在线履历表」；<br><a href="http://www.familymart.com.cn/career/jobapplication" target="_blank">http://www.familymart.com.cn/career/jobapplication</a> <br> 2、登陆大型综合招聘网站：<br> 前程无忧：<a href="http://search.51job.com/list/co,c,415464,0000,10,1.html" target="_blank">http://search.51job.com/list/co,c,415464,0000,10,1.html</a> <br> 智联招聘：<a href="http://dwz.cn/2Fbt8p" target="_blank">http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E4%B8%8A%E6%B5%B7&amp;kw=%E4%B8%8A%E6%B5%B7%E7%A6%8F%E6%BB%A1%E5%AE%B6</a> <br> 3、拨打总部招募热线：021-31761791、021-31763782垂询人事招募人员。</p> </li> 
+         </ul> 
+         <ul class="textCont"> 
+          <li class="leftCol fontStyle1 fontB">Q2</li> 
+          <li class="rightCol">门店储备干部/店长的工作时间及休假为何？</li> 
+          <li class="leftCol fontStyle2 fontB">A1</li> 
+          <li class="rightCol"> <p>门店工作时间为三班制，月休6天，工作时段具体分为：早班07:30~16:30、中班12:30~21:30、晚班21:00~07:30，夜班将额外核发津贴。</p> </li> 
+         </ul> 
+         <ul class="textCont"> 
+          <li class="leftCol fontStyle1 fontB">Q3</li> 
+          <li class="rightCol">若录取后，全家会提供新人职业训练或职涯规划吗？</li> 
+          <li class="leftCol fontStyle2 fontB">A1</li> 
+          <li class="rightCol"> <p>对于新加入的伙伴，全家将提供全面系统的专业培训及多重的晋升通道，定向“3+3+6”精英干部培养计划，3个月完成副店T1培训，3个月完成店长T2培训，6个月完成区域营运督导T3培训。</p> </li> 
+         </ul> 
+         <ul class="textCont"> 
+          <li class="leftCol fontStyle1 fontB">Q4</li> 
+          <li class="rightCol">应征流程为何？全家会主动告知结果吗？</li> 
+          <li class="leftCol fontStyle2 fontB">A1</li> 
+          <li class="rightCol"> <p>人事单位收到履历数据后，会主动与适合者联络，安排面试时间；若不适合者，则不另行通知及退件。一般所需的时间大约为一周左右。</p> </li> 
+         </ul> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <!-- 留言板 --> 
+    <script type="text/javascript">
+$(function(){
+    // 收缩展开效果
+    $('.partTop').click(function(){
+        $(this).parent().addClass('active').end().next().slideDown();
+        $(this).parent().siblings().removeClass('active').find('.partConter-list').slideUp();
+        onResize()
+    })
+
+    $('.Common-content .partTop').eq(0).trigger('click');
+
+    $(".colB1-detail>div").eq(0).show().siblings().hide();
+
+    $(".nav-tab>ul>li").click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
+        var index = $(this).index();
+        $(".colB1-detail>div").eq(index).show().siblings().hide();
+        onResize();
+    });
+})
+
+var str = '顾客服务';
+var contactFaqFun = {
+	option:'顾客服务',
+	select:function(type){
+		if(type==1){
+			str = '顾客服务';
+		}else if(type==2){
+			str = '加盟合作';
+		}else if(type==3){
+			str = '人事招募';
+		}else if(type==4){
+			str = '商业提案';
+		}else if(type==5){
+			str = 'IT咨询';
+		}else if(type==6){
+			str = '其他';
+		}
+		console.log(str)
+		$("#questionType1").val(str);
+		FAQfunction.chooseSelect(str);
+		alertMsg('#boardWrapper');
+	}
+}
+</script> 
+   </div>
+   <!-- content --> 
+   <!--页脚开始--> 
+   <div class="breakbox cf"> 
+    <div class="breakbox-box"> 
+     <p class="footer-text1">© 2020 Shanghai FamilyMart Co.,Ltd All Rights Reserved.<a href="//beian.miit.gov.cn/" target="_blank" rel="nofollow">沪ICP备12043844号-1</a></p> 
+     <p><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202013095"><img src="images/gongan.png">沪公网安备 31011202013095号</a></p> 
+     <p class="footer-text2"><a href="javascript:;" onclick="contactUs()">联系我们</a>|<a href="/faq">常见问题</a></p> 
+    </div> 
+   </div> 
+   <!--页脚结束--> 
+  </div> 
+  <!--二维码开始--> 
+  <div class="qrcode qrcode-1"> 
+   <img src="images/qrcode_app_zxk.png" alt=""> 
+  </div> 
+  <div class="qrcode qrcode-2"> 
+   <img src="images/qrcode_app_zhx.png" alt=""> 
+  </div> 
+  <div class="qrcode qrcode-3"> 
+   <img src="images/qrcode_wechat.jpg" alt="公众号"> 
+  </div> 
+  <div class="qrcode qrcode-6"> 
+   <img src="images/qrcode_douyin.jpg" alt="抖音蓝V"> 
+  </div> 
+  <div class="qrcode qrcode-7"> 
+   <img src="images/qrcode_weibo.jpg" alt="微博"> 
+  </div> 
+  <!--二维码结束--> 
+  <div id="onload_cover"></div> 
+  <div id="commom_popup"> 
+   <a href="javascript:void(0)" onclick="hideCommonPop();" id="commom_popup_close">close</a> 
+   <div id="commom_popup_inner">
+    提示语
+   </div> 
+  </div> 
+  <div id="commom_popup2"> 
+   <a href="javascript:void(0)" onclick="hideCommonPop3();" id="commom_popup_close2">close</a> 
+   <div id="commom_popup_inner2">
+    提示语
+   </div> 
+  </div> 
+  <script type="text/javascript" src="js/swiper.min.js"></script> 
+  <script type="text/javascript" src="js/global.js"></script> 
+  <script type="text/javascript" src="js/common.js"></script> 
+  <script type="text/javascript" src="js/baidu.js"></script> 
+  <script type="text/javascript" src="js/product.pop.js"></script> 
+  <script type="text/javascript" src="js/lazyload.js"></script>   
+ </body>
+</html>

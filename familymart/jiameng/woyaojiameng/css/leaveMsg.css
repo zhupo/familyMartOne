@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+/* CSS Document */
+#boardWrapper {
+    width: 529px;
+    background: #fff;
+    position: absolute;
+    left: 50%!important;
+    margin-left: -315px;
+    z-index: 101;
+    padding: 30px 50px 50px;
+    font-size: 14px;
+    color: #666;
+    border-radius: 10px;
+    display: none;
+}
+
+#boardWrapper2 {
+    width: 540px;
+    background: #fff;
+    position: absolute;
+    left: 50%!important;
+    margin-left: -315px;
+    z-index: 19;
+    padding: 30px 50px 50px;
+    font-size: 14px;
+    color: #666;
+    border-radius: 10px;
+    display: none;
+}
+
+#boardcontent1 {
+    color: #959595;
+    margin-bottom: 20px;
+}
+
+#boardcontent1 a {
+    color: #129c25;
+    text-decoration: underline;
+}
+
+#boardcontent1 .boardColor {
+    color: #8bc491;
+    margin-top: 10px;
+}
+
+#boardcontent1 .close-btn,#boardcontent2 .close-btn {
+    display: block;
+    width: 33px;
+    height: 33px;
+    background: url(../images/remove.png) no-repeat;
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    cursor: pointer
+}
+
+#boardcontent1 h2, #boardcontent2 h2 {
+    color: #008dd3;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.submit-btn {
+    display: block;
+    color: #fff;
+    background: #1bb630;
+    border-radius: 100px;
+    box-sizing: border-box;
+    height:36px;
+    line-height: 36px;
+    width: 130px;
+    border:1px solid #fff;
+    transition: all .2s ease;
+    text-align: center;
+    margin: 30px auto 0;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    background: #fff;
+    border-color:#1bb630;
+    color: #1bb630;
+}
+
+#boardWrapper td {
+    height: 26px;
+    vertical-align: middle;
+}
+
+#boardWrapper ul {
+    margin-bottom: 8px;
+}
+#boardWrapper textarea{
+	width: 432px;
+	padding:10px;
+    border: 1px solid #d9d9d9;
+    color: #666;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.inputStyle,
+.Wdate {
+    border: solid 1px #d9d9d9;
+    color: #666;
+    height: 18px;
+    line-height: 18px;
+    padding: 4px 8px;
+}
+
+.selectStyle {
+    width: 120px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 8px;
+    border: 1px solid #d9d9d9;
+    color: #666;
+}
+
+.selectStyle2 {
+    width: 105px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 8px;
+    border: 1px solid #d9d9d9;
+    color: #666;
+}
+
+.textareaStyle {
+    height: 102px;
+}
+
+.textareaStyle2 {
+    height: 186px;
+}
+
+.textareaStyle3 {
+    height: 130px;
+}
+
+.selectRow {}

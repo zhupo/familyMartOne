@@ -1,0 +1,835 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  <meta name="language" content="en"> 
+  <link rel="stylesheet" type="text/css" href="css/leaveMsg.css"> 
+  <title>全家Family Mart—开心尝鲜在全家 - ApplyOnline Franchise</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=0.68, maximum-scale=1, minimum-scale=0.68, user-scalable=yes"> 
+  <meta name="apple-mobile-web-app-capable" content="yes"> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+  <meta property="wb:webmaster" content="286b33bafd8a81b5"> 
+  <!-- 让360双核浏览器用webkit内核渲染页面
+    ================================================== --> 
+  <meta name="renderer" content="webkit"> 
+  <meta name="description" content="全家便利店，让您的生活更加便利，同时让每位来到全家的顾客，都能够与温暖的笑容相遇，给您贴心般的家人般的感受！"> 
+  <meta name="keywords" content="全家便利店  Family Mart  新品特快  呀米将  营养蒸包馒头  营养便当  经典风味面  和风寿司手卷  美味饭团 鲜爽沙拉 烤致工房  关东煮本铺 营养粥汤 风味小食 自提服务 鲜食促销  公共事业缴费 刷卡消费 ATM 娱乐通讯 国家快递 阿拉订 付临门  Fami淘宝  Fami天猫  全家简介 全家愿景 全家大事记 全球布局  新闻中心 合作经营优势 说明会  店长 新手解答  申请流程 门店租赁 合作经营条件测试  全家工作优势 全家在职训练 求职小技巧 招聘流程 我要应聘 最新职缺  常见问题  喜士多  7-11 罗森"> 
+  <link rel="stylesheet" href="css/swiper.min.css"> 
+  <link rel="stylesheet" href="css/animate.css"> 
+  <link rel="stylesheet" href="css/global.css"> 
+  <link rel="stylesheet" href="css/fane.css"> 
+  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script> 
+  <script type="text/javascript">
+        function changecitybypup(){
+            $.ajax({
+                type:"POST",
+                global:false,
+                url:"/store/setCity",
+                data:{"cid": $('#citySeltetPup').val()},
+                dataType:"JSON",
+                success:function(data){
+                },
+                complete:function(data){
+                    showCommonPop('正在切换城市...');
+                    webMCookie.set('cid',$('#citySeltetPup').val(), 7);
+                    webMCookie.set('city',$('#citySeltetPup option:selected').text(), 7);
+                    location.reload();
+                },
+            });
+        }
+    </script> 
+  <link rel="icon" type="image/x-icon" href="css/favicon.ico"> 
+  <script type="text/javascript">BASEUSER=''</script> 
+  <script type="text/javascript">HOSTURL='http://www.familymart.com.cn'</script> 
+  <script type="text/javascript">
+    if(window.navigator.userAgent.indexOf("Mobile")>=0){
+        if(window.navigator.userAgent.indexOf("iPad")>=0){
+
+
+        }else{
+            window.location.href="http://www.familymart.com.cn/mobile/";
+            //$('meta[name="viewport"]').attr({'content':'width=device-width, initial-scale=0.28, maximum-scale=1.0, minimum-scale=0.28, user-scalable=yes'})
+        }
+    }
+    </script> 
+  <script type="text/javascript">
+    function wmx_set_account(account) {
+        return false;
+    }
+    function wmx_flash_counter(title,url) {
+        return false;
+    }
+    function wmx_trackBtn(buttonname, driveritem) {
+        return false;
+    }
+    function familymart_tracker(a,b){
+        return false;
+    }
+
+    function familymart_flash_tracker(a,b){
+        return false;
+    }
+    </script> 
+  <script>
+
+	var webMCookie = {
+        set:function(cname, cvalue, exdays) {//设置cookie
+            this.clear(cname);
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            var expires = "expires="+d.toUTCString();
+            document.cookie = cname + "=" + cvalue + "; " + expires +"; path=/; domain="+document.domain;
+        },
+        get:function(cname) {//获取cookie
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0; i<ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0)==' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) != -1) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        },
+        clear:function(cname) {//清除cookie
+            var exp = new Date();
+            exp.setTime(exp.getTime() - 1);
+            var cval=this.get(cname);
+            if(cval!==null){
+                document.cookie= cname + "="+cval+";expires="+exp.toGMTString();
+            }
+        }
+    };
+	function ChangeCity(){
+		showCommonPop('正在切换城市...');
+		webMCookie.set('cid',$('#citySeltet').val(), 7);
+		webMCookie.set('city',$('#citySeltet option:selected').text(), 7);
+		location.reload();
+	}
+
+
+</script> 
+  <script>
+// 客服系统
+(function(a,h,c,b,f,g){a["UdeskApiObject"]=f;a[f]=a[f]||function(){(a[f].d=a[f].d||[]).push(arguments)};g=h.createElement(c);g.async=1;g.charset="utf-8";g.src=b;c=h.getElementsByTagName(c)[0];c.parentNode.insertBefore(g,c)})(window,document,"script","https://assets-cli.s4.udesk.cn/im_client/js/udeskApi.js","ud");
+ud({
+    "code": "1i0h723c",
+    "link": "https://familymart.s4.udesk.cn/im_client/?web_plugin_id=46808"
+});
+
+function contactUs() {
+    $('.udesk-client-btn').click()
+}
+</script> 
+  <style type="text/css">
+#udesk_btn {
+    display: none;
+}
+</style> 
+ </head> 
+ <body> 
+  <div class="wrap"> 
+   <!-- menu --> 
+   <div class="side"> 
+    <div class="topside"> 
+     <a href="/" class="logo"></a> 
+     <!--=================会员卡=================--> 
+     <!--=================美味鲜食=================--> 
+     <!--=================鲜食系列=================--> 
+     <!--=================促销优惠=================--> 
+     <!--=================加盟合作=================--> 
+     <!--=================优势介绍=================--> 
+     <!--=================加盟方案=================--> 
+     <!--=================我要加盟=================--> 
+     <div class="subnav"> 
+      <div class="back">
+       返回
+      </div> 
+      <div class="topsubtitle">
+       我要加盟
+      </div> 
+      <ul> 
+       <li class="on"> <a href="/franchise/applyOnline">在线报名</a> </li> 
+       <li class=""> <a href="/franchise/process">申请流程</a> </li> 
+      </ul> 
+     </div> 
+     <!--=================人才招聘=================--> 
+     <!--=================职业发展=================--> 
+     <!--=================招聘贴士=================--> 
+     <!--=================岗位应聘=================--> 
+     <ul class="nav none"> 
+      <li class="nav-item guqj" data-name="zhajizhuanjia"> 
+       <div class="toptitle">
+        <a href="#">关于全家</a>
+       </div> 
+       <div class="drop"> 
+        <ul> 
+         <li><a href="/brand" class="">品牌介绍</a></li> 
+         <li><a href="/brand/parcafe" class="">湃客咖啡</a></li> 
+         <!--  <li><a href="/brand/newscenter" class="">TVC欣赏</a></li> --> 
+         <li><a href="/members/ZunXiangKa" class="">会员卡</a></li> 
+         <li><a href="/members/giftCard" class="">礼品卡</a></li> 
+         <!-- <li><a href="/brand/statement" class="">声明</a></li>
+                    <li><a href="/brand/notice" class="">公告</a></li> --> 
+        </ul> 
+       </div> </li> 
+      <li class="nav-item jmhz active" data-name="zunxiangtiyan"> 
+       <div class="toptitle">
+        <a href="#">加盟合作</a>
+       </div> 
+       <div class="drop"> 
+        <ul> 
+         <li><a href="/franchise/hqAdvantage" class="">优势介绍</a></li> 
+         <li><a href="/franchise/planA" class="">加盟方案</a></li> 
+         <li><a href="/franchise/applyOnline" class="active">我要加盟</a></li> 
+         <li><a href="/franchise/experienceShare" class="">经验分享</a></li> 
+        </ul> 
+       </div> </li> 
+      <li class="nav-item rczp" data-name="zunxiangtiyan"> 
+       <div class="toptitle">
+        <a href="#">人才招聘</a>
+       </div> 
+       <div class="drop"> 
+        <ul> 
+         <li><a href="/career/workerGoodness" class="">职业发展</a></li> 
+         <li><a href="/career/invitePost" class="">招聘贴士</a></li> 
+         <li><a href="/career/list" class="">岗位应聘</a></li> 
+         <li><a href="/faq" class="">常见问题</a></li> 
+        </ul> 
+       </div> </li> 
+     </ul> 
+    </div> 
+    <div class="box01-side" style="position: static"> 
+     <div class="box01-content"> 
+      <!--   <div class="city-selector">
+                   <div class="searchbox-lp">
+                            <select class="searchbox-sc" id="citySeltet" onChange="ChangeCity()">
+                                <option value="1" selected>上海</option><option value="2">苏州</option><option value="3">深圳</option><option value="4">广州</option><option value="5">杭州</option><option value="6">成都</option><option value="10">无锡</option><option value="11">北京</option><option value="12">东莞</option><option value="13">嘉兴</option>                            </select>
+                       </div>
+                </div> --> 
+      <div class="searchbox-fl"> 
+       <div class="searchbox"> 
+        <div class="searchbtn pa searchbtnleft" onclick="searchSubmit('');"></div> 
+        <input type="text" placeholder="请输入搜索内容" name="keyword" id="searchInput" class="tet"> 
+       </div> 
+      </div> 
+      <div class="sharelink pr"> 
+       <!--     <div class="item item-3" data-index="3">
+                        <span class="icon icon-type-1"></span>
+                        <p>公众号</p>
+                    </div>
+                    <div class="item item-6" data-index="6">
+                        <span class="icon icon-type-1"></span>
+                        <p>抖音蓝V</p>
+                    </div>
+                    <div class="item item-7" data-index="7">
+                        <span class="icon icon-type-1"></span>
+                        <p>微博</p>
+                    </div> --> 
+       <div class="item item-1"> 
+        <a href="javascript:;" onclick="contactUs()"> <span class="icon icon-type-1"></span> <p>联系我们</p> </a> 
+       </div> 
+       <!--   <div class="item item-2">
+                        <a href="/store">
+                            <span class="icon icon-type-1"></span>
+                            <p>门店查找</p>
+                        </a>
+                    </div> --> 
+       <!--  <div class="item item-5" data-index="2">
+                        <span class="icon icon-type-2"></span>
+                    </div>
+                    <div class="item item-4" data-index="1">
+                        <span class="icon icon-type-2"></span>
+                    </div> --> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="content"> 
+    <style>
+    .HCalendar{width:100%;background:#ededed;overflow:hidden;position: relative;}
+    .HyearTit{width:100%;position:relative;height:24px;line-height:24px;text-align:center;color:#fff;padding:5px 0 4px;background:#0096e0;}
+    .HyearTit span{font-family:Arial;font-size:20px;color:#fff;padding:0 6px;}
+    .HyearTit a{position:absolute;width:17px;height:17px;top:8px;z-index:4;}
+    .Hpre{left:14px;background:url(images/Hprebg.gif) no-repeat center 0;}
+    .Hnext{right:14px;background:url(images/Hnextbg.gif) no-repeat center 0;}
+    .calendarTab{width:100%;border-collapse:collapse;}
+    .calendarTabTh{text-align: center;background:#31a9e4;padding:0 5px;}
+    .calendarTab th{text-align: center;line-height:28px;color:#add7f2;font-weight:normal;border:1px solid #31a9e4;width:35px;border-top:0;border-bottom:0;}
+    .dateTab{padding:9px 5px;}
+    .calendarTab td{width:35px;text-align: center;line-height:34px;background:#fff;color:#999;border:1px solid #ededed;}
+    .calendarTab td a{color:#999;display:block;line-height:34px;}
+    .calendarTab td a:hover,.calendarTab td a.actived{background:#00b823;color:#fff;}
+    .calendarTab td.dateGray a{background:#fff url(images/hIcon05.gif) no-repeat 100% 0;}
+    .calendarTab td.dateGray a:hover,.calendarTab td.dateGray a.actived{background:#00b823 url(images/hIcon05.gif) no-repeat 100% 0;color:#fff;}
+    .calendarTab td.dateBlue a{background:#fff url(images/hIcon06.gif) no-repeat 100% 0;}
+    .calendarTab td.dateBlue a:hover,.calendarTab td.dateBlue a.actived{background:#00b823 url(images/hIcon06.gif) no-repeat 100% 0;color:#fff;}
+    .calendarTab td.ncur{color:#999;background:#f3f3f3;}
+    .HaddTit{padding-left:34px;font-size:12px;color:#acacac;line-height:22px;background:url(images/hIcon04.jpg) no-repeat 17px center;}
+    .Haddress{line-height:20px;font-size:12px;color:#0096e0;padding-left:16px;height:40px;}
+    .Time{line-height:20px;font-size:12px;color:#0096e0;padding-left:16px;}
+    .Honlinebtn{text-align:center;padding:6px 0 10px;height:30px;}
+    .Honlinebtn a, .Honlinebtn span{display: inline-block; width:120px;height:40px;line-height:40px;color:#fff;border-radius:3px;background:#848484;/*background:url(images/honlineBg.gif) no-repeat 0 0;*/margin: 0 20px;cursor: pointer;}
+    .Honlinebtn a:hover{color: #fff;}
+    .Honlinebtn.larger{height:40px;font-size:16px;}
+    .Honlinebtn.larger a{width:140px;height:40px;line-height:40px;background:#848484;margin-left:53px;}
+    .explain .actived a{background:#00B823;/*background:url(images/honlineBg.jpg) no-repeat 0 0;*/}
+    .Htips{padding-left:17px;display:block;padding-top:20px;}
+    .Htips em{display:inline-block;padding-left:17px;line-height:24px;height:24px;padding-bottom:10px;font-style:normal;margin-right: 20px;}
+    .Homegray{background:url(images/hIcon05.gif) no-repeat 0 8px;color:#b9b9b9;}
+    .Homeblue{background:url(images/hIcon06.gif) no-repeat 0 8px;color:#33abe6;}
+    .explain__row{
+        overflow: hidden;
+     }
+     .explain__col-1{
+        /*width: 500px;*/
+        margin-right: 20px;
+     }
+     .explain__col{
+        /*width: 500px;*/
+        overflow:hidden;
+     }
+     .HaddTit{
+        float: left;
+     }
+     .HaddTit__time{
+        background-image: url(images/hIcon_new_1.png);
+     }
+</style> 
+    <div class="main mainpro"> 
+     <div class="banpro"> 
+      <img width="100%" src="images/applyOnline-banner.jpg"> 
+      <div class="banpro-box-md"> 
+       <p>在线报名</p> 
+      </div> 
+     </div> 
+     <div class="prowrap"> 
+      <div class="colB1-detail"> 
+       <div class="The-content-area applyOnline-content"> 
+        <div class="Join-the-hotline"> 
+         <ul> 
+          <li>城市</li> 
+          <li>区域范围</li> 
+          <li>联系电话</li> 
+          <li class="address">联系时间</li> 
+         </ul> 
+        </div> 
+        <div class="Join-the-hotline-content"> 
+         <div id="content12" class="Join-the-hotline-tab"> 
+          <ul> 
+           <li id="li1">上海</li> 
+           <li id="li3">上海地区</li> 
+           <li id="li4">021-31763712</li> 
+           <li id="li5" class="Join-the-hotline-address" style="width: 400px">工作日：周一至周五9:00-17:00，午休12:30-13:30</li> 
+          </ul> 
+         </div> 
+        </div> 
+       </div> 
+       <!-- <div class="contact The-content-area">
+	                <h3>加盟合作</h3>
+	                <p>合作经营招募：</p>
+	                <p>若您想和全家便利店FamilyMart合作，欢迎您用以下留言方式与我们联络！提供内容：</p>
+	                <p>1、店面基本资料，如：所处区域、地址、面积</p>
+	            </div> --> 
+       <div class="The-content-area applyOnline-content"> 
+        <div style="margin-bottom:10px;">
+         请选择您的所在城市： 
+         <select id="citySeltet1" onchange="ChangeCity1()"> <option value="1" selected>上海</option><option value="2">苏州</option><option value="3">深圳</option><option value="4">广州</option><option value="5">杭州</option><option value="6">成都</option><option value="10">无锡</option><option value="11">北京</option> </select> 
+        </div> 
+        <div class="HCalendar"> 
+         <input id="city" type="text" style="display:none;" value="1"> 
+         <div class="HyearTit"> 
+          <span class="HcalYaer">2015</span> 
+          <span class="HcalMonth">01</span> 
+          <a href="javascript:void(0)" class="Hpre"></a> 
+          <a href="javascript:void(0)" class="Hnext"></a> 
+         </div> 
+         <div class="calendarTabTh"> 
+          <table class="calendarTab" cellpadding="0" cellspacing="0" border="0"> 
+           <thead> 
+            <tr> 
+             <th>S</th> 
+             <th>M</th> 
+             <th>T</th> 
+             <th>W</th> 
+             <th>T</th> 
+             <th>F</th> 
+             <th>S</th> 
+            </tr> 
+           </thead> 
+          </table> 
+         </div> 
+         <div class="dateTab" id="myCalendar"> 
+          <table class="calendarTab" cellpadding="0" cellspacing="0" border="0"> 
+           <tbody> 
+            <tr> 
+             <td>13</td> 
+             <td>14</td> 
+             <td>15</td> 
+             <td>16</td> 
+             <td>17</td> 
+             <td>18</td> 
+             <td>19</td> 
+            </tr> 
+            <tr> 
+             <td>20</td> 
+             <td>21</td> 
+             <td>22</td> 
+             <td>23</td> 
+             <td>24</td> 
+             <td>25</td> 
+             <td>26</td> 
+            </tr> 
+            <tr> 
+             <td>27</td> 
+             <td>28</td> 
+             <td>29</td> 
+             <td>30</td> 
+             <td>31</td> 
+             <td>1</td> 
+             <td>2</td> 
+            </tr> 
+            <tr> 
+             <td>3</td> 
+             <td>4</td> 
+             <td>5</td> 
+             <td>6</td> 
+             <td>7</td> 
+             <td>8</td> 
+             <td>9</td> 
+            </tr> 
+            <tr> 
+             <td><a href="javascript:void(0)" class="actived"></a>10</td>
+             <!-- actived表示当前和移动Css样式 --> 
+             <td class="dateGray">11</td>
+             <!-- dateGray表示不能报名 --> 
+             <td class="dateBlue">12</td>
+             <!-- dateBlue表示能报名 --> 
+             <td>13</td> 
+             <td>14</td> 
+             <td>15</td> 
+             <td>16</td> 
+            </tr> 
+            <tr> 
+             <td>10</td> 
+             <td>11</td> 
+             <td>12</td> 
+             <td>13</td> 
+             <td>14</td> 
+             <td>15</td> 
+             <td>16</td> 
+            </tr> 
+           </tbody> 
+          </table> 
+         </div> 
+         <div class="explain hide"> 
+          <div class="explain__col"> 
+           <p class="HaddTit HaddTit__time">说明会时间：</p> 
+           <p class="Time"></p> 
+          </div> 
+          <div class="explain__row"> 
+           <div class="explain__col explain__col-1"> 
+            <p class="HaddTit">说明会地址：</p> 
+            <p class="Haddress"></p> 
+           </div> 
+          </div> 
+          <p class="Honlinebtn"> <a href="javascript:;">我要报名</a> <span style="background: #00B823;" onclick="alertMsg10('#boardWrapper2')">与我联系</span> </p> 
+          <!-- <p style="color:#f00;margin: 10px 0 0 15px;">※因疫情，说明会暂停举办，请留下您的联络电话，我们将尽快联系您</p> --> 
+         </div> 
+         <span class="Htips"><em class="Homegray">灰色表示已满或已过期</em><em class="Homeblue">蓝色表示可报名</em> </span> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div id="boardWrapper2" style="width: 1040px; margin-left: -520px; padding: 0px"> 
+     <div id="boardcontent2"> 
+      <a class="close-btn" href="javascript:void(0)" onclick="closeAlert10('#boardWrapper2')"></a> 
+      <img width="100%" src="images/franchise_contact_tips.jpg"> 
+      <!-- 
+		<h2>合作经营招募</h2>
+		<div class="contact The-content-area1" style="padding-left: 0;">
+            
+            <p>合作经营招募：</p>
+            <p>若您有合适店铺，想和全家便利店FamilyMart合作经营，欢迎您用以下留言方式与我们联络！</p>
+            <p>1、店面基本资料，如：所处区域、地址、面积</p>
+            <div class="con-btn"><span class="submit-btn" onclick="contactFaqFun.select(2)" style="">合作经营留言板</span></div>
+        </div> --> 
+     </div> 
+     <!-- <div id="borderBottom"></div> --> 
+    </div> 
+    <div class="commom_popup_bg"> 
+     <div id="commom_popup"> 
+      <div class="popup_in"> 
+       <div class="popup_in_box"> 
+        <h5>请选择所在的城市</h5> 
+        <select id="citySeltetPup"> <option value="1" selected>上海</option><option value="2">苏州</option><option value="3">深圳</option><option value="4">广州</option><option value="5">杭州</option><option value="6">成都</option><option value="10">无锡</option><option value="11">北京</option><option value="12">东莞</option><option value="13">嘉兴</option> </select> 
+        <a href="javascript:;" onclick="changecitybypup()">前往</a> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div id="onload_cover1"></div> 
+    <script type="text/javascript">
+
+ 	var str = '顾客服务';
+	var contactFaqFun = {
+		option:'顾客服务',
+		select:function(type){
+			if(type==1){
+				str = '顾客服务';
+			}else if(type==2){
+				str = '加盟合作';
+			}else if(type==3){
+				str = '人事招募';
+			}else if(type==4){
+				str = '商业提案';
+			}else if(type==5){
+				str = 'IT咨询';
+			}else if(type==6){
+				str = '其他';
+			}
+			console.log(str)
+			$("#questionType1").val(str);
+			FAQfunction.chooseSelect(str);
+			alertMsg('#boardWrapper');
+		}
+	}
+
+var allMsg = [{"id":"1166","cid":"5","address":"\u676d\u5dde\u5e02\u62f1\u5885\u533a\u4e2d\u5c71\u5317\u8def617\u53f7\u5730\u94c1\u5546\u52a1\u5927\u53a69\u697c901\u5ba4","sdate":"2023-09-24","stime":"14\uff1a00","status":1},{"id":"1172","cid":"11","address":"\u5317\u4eac\u5e02\u671d\u9633\u533a\u671d\u9633\u5317\u8def225\u53f71\u53f7\u697c10\u5c421001\uff08\u4eac\u9f99\u5927\u53a6\uff09","sdate":"2023-09-23","stime":"14:00","status":1},{"id":"1177","cid":"3","address":"\u798f\u7530\u533a\u6df1\u5357\u4e1c\u8def1027\u53f7\u65b0\u57ce\u5927\u53a6\u897f\u5ea715\u697c","sdate":"2023-09-22","stime":"14\uff1a00","status":1},{"id":"1178","cid":"3","address":"\u798f\u7530\u533a\u6df1\u5357\u4e1c\u8def1027\u53f7\u65b0\u57ce\u5927\u53a6\u897f\u5ea715\u697c","sdate":"2023-10-13","stime":"14\uff1a00","status":1},{"id":"1179","cid":"4","address":"\u5e7f\u5dde\u5e02\u5929\u6cb3\u533a\u6797\u548c\u897f\u8def159\u53f7\u4e2d\u6cf0\u5317\u5854\u4e09\u697c","sdate":"2023-09-22","stime":"11\uff1a00","status":1},{"id":"1181","cid":"6","address":"\u6210\u90fd\u5e02\u9526\u6c5f\u533a\u7ea2\u7167\u58c1\u885727\u53f7\u767e\u5ddd\u5927\u53a6A\u5ea710\u697c","sdate":"2023-09-22","stime":"14:00","status":1},{"id":"1183","cid":"10","address":"\u65e0\u9521\u65b0\u533a\u9707\u6cfd\u8def18\u53f7\u8f6f\u4ef6\u56ed\u6c34\u74f6\u5ea7\u4e00\u697c102\u5ba4 \u65e0\u9521\u798f\u6ee1\u5bb6\u4fbf\u5229\u5e97\u6709\u9650\u516c\u53f8","sdate":"2023-09-22","stime":"14:00","status":1},{"id":"1184","cid":"1","address":"\u4e0a\u6d77\u666e\u9640\u533a\u5927\u6e21\u6cb3\u8def1428\u53f7T1-19\u697c","sdate":"2023-09-15","stime":"14:00","status":1},{"id":"1185","cid":"2","address":"\u82cf\u5dde\u56fd\u9645\u79d1\u6280\u56ed\u56db\u671f1202","sdate":"2023-09-18","stime":"14\uff1a00","status":1},{"id":"1186","cid":"2","address":"\u82cf\u5dde\u56fd\u9645\u79d1\u6280\u56ed\u56db\u671f1202","sdate":"2023-09-25","stime":"14\uff1a00","status":1}];
+
+function SelectPullDown(box){
+    this.selectBox = document.getElementById(box);
+    // this.selectIpt = document.getElementById(box).getElementsByTagName("input")[0];//传值表单
+    // this.selectDivBtn = document.getElementById(box).getElementsByTagName("div")[0];//选中显示框
+    // this.selectDivList = document.getElementById(box).getElementsByTagName("div")[1];////下拉框
+    // this.selectSpan = document.getElementById(box).getElementsByTagName("span");//选项
+}
+SelectPullDown.prototype ={
+    selectBox : '',
+    selectIpt : '',
+    selectDivBtn : '',
+    selectDivList : '',
+    selectSpan : '',
+    iptEven : function(){
+        var self = this;
+        // this.selectBox.onmouseover = function(){
+        //     self.selectListShow();
+        // }    
+        // this.selectBox.onmouseout = function(){
+        //     self.selectListHide();
+        // }
+        return this;    
+    },
+    selectListShow: function(){
+        this.selectDivList.style.display = "block";
+    },
+    selectListHide: function(){
+        this.selectDivList.style.display = "none";
+    },
+    selectPick : function() {
+        var span = this.selectSpan,
+        self = this;
+        function trimStr(str){return str.replace(/(^\s*)|(\s*$)/g,"");}
+        for(var i=0;i<span.length;i++){
+            span[i].onclick = function(){
+                self.selectDivBtn.innerHTML = trimStr(this.innerHTML);
+                self.selectIpt.value= trimStr(this.id);
+                self.selectListHide();
+                
+                switch( this.id )
+                {
+					case '1':					
+					  $('#li1').html('上海');
+					  $('#li2').html('上海事业部');
+					  $('#li3').html('上海全区');
+					  $('#li4').html('021-62726019');
+					  $('#li5').html('工作日：周一至周五9:00-17:00，午休12:30-13:30');
+					  break;
+				    case '2':			
+					  $('#li1').html('苏州');
+					  $('#li2').html('苏州事业部');
+					  $('#li3').html('苏州全区');
+					  $('#li4').html('(0512)-69171090转124');
+					  $('#li5').html('工作日：周一至周五9:00-17:00，午休12:30-13:30');
+					  break;
+				    case '3':			    
+					  $('#li1').html('深圳');
+					  $('#li2').html('深圳独立课');
+					  $('#li3').html('深圳地区');
+					  $('#li4').html('(0755)-23607340转808');
+					  $('#li5').html('工作日：周一至周五9:00-17:00，午休12:00-13:00');
+					  break;
+					case '4':
+					  $('#li1').html('广州');
+					  $('#li2').html('广州事业部');
+					  $('#li3').html('广州全区');
+					  $('#li4').html('(020)-87609882');
+					  $('#li5').html('工作日：周一至周五9:00-17:00，午休12:00-13:00');
+					  break;
+					case '5':
+					  $('#li1').html('杭州');
+					  $('#li2').html('杭州事业部');
+					  $('#li3').html('杭州全区');
+					  $('#li4').html('(0571)-87021756转225');
+					  $('#li5').html('工作日：周一至周五9:00-17:00，午休12:30-13:30');
+					  break;
+				    case '6':
+					  $('#li1').html('成都');
+					  $('#li2').html('成都事业部');
+					  $('#li3').html('成都11区，高新区');
+					  $('#li4').html('(028)-62051687转6015');
+					  $('#li5').html('工作日：周一至周五9:00-17:00，午休12:30-13:30');
+					  break;
+					case '10':
+					  $('#li1').html('无锡');
+					  $('#li2').html('无锡独立课');
+					  $('#li3').html('无锡全区');
+					  $('#li4').html('(0510)-85383626转806');
+					  $('#li5').html('工作日：周一至周五9:00-17:00，午休12:30-13:30');
+					  break;
+					case '11':
+					  $('#li1').html('北京');
+					  $('#li2').html('北京事业部');
+					  $('#li3').html('北京全区');
+					  $('#li4').html('(010)-65389980转611');
+					  $('#li5').html('工作日：周一至周五9:00-17:00，午休12:30-13:30');
+					  break;
+					case '12':
+					  $('#li1').html('东莞');
+					  $('#li2').html('东莞独立课');
+					  $('#li3').html('东莞全区');
+					  $('#li4').html('(020)-87609882');
+					  $('#li5').html('工作日：周一至周五9:00-17:00，午休12:00-13:00');
+					  break;
+					case '13':
+					  $('#li1').html('嘉兴');
+					  $('#li2').html('东莞独立课');
+					  $('#li3').html('嘉兴地区');
+					  $('#li4').html('暂无');
+					  $('#li5').html('暂无');
+					  break;
+					default:
+					  $('#li1').html('');
+					  $('#li2').html('');
+					  $('#li3').html('');
+					  $('#li4').html('');
+					  $('#li5').html('');
+					  break;
+                }               
+                
+                var positionStr = status = ''; 
+                var baoming_num =  0;               
+                for( var i = 0; i < allMsg.length; i++ ){
+					if( allMsg[i].cid == this.id ){
+						positionStr += '<li>';
+						positionStr += '<div class="applyOnline-tab">';
+						positionStr += '<ul>';
+						positionStr += '<li class="itme-01">'+allMsg[i].sdate+' '+ allMsg[i].stime+'</li>';
+						positionStr += '<li class="itme-02">'+allMsg[i].address+'</li>';
+						if( allMsg[i].status == 0 ){
+							status = 'disabled';
+							positionStr += '<li class="applyOnline-title-select"><a class=" '+status+'">报名已满</a></li>';						
+						}else{
+							status = '';
+							positionStr += '<li class="applyOnline-title-select"><a href="/franchise/applyOnlineIn/'+allMsg[i].id+'">与我联系</a></li>';		
+						}
+						positionStr += '</ul>';	
+						positionStr += '</div>';		
+						positionStr += '</li>';	
+						baoming_num++;	
+					}				    								
+				}
+				if( baoming_num == 0 ){
+                	positionStr += '<li>';
+					positionStr += '<div class="applyOnline-errormess">';
+					positionStr += '暂无报名信息！'
+					positionStr += '</div>';		
+					positionStr += '</li>';	
+                }	
+				$("#contentUl").html(positionStr);                                                   
+            }
+        }    
+        return this;
+    },
+    init : function(){
+        this.iptEven().selectPick();    
+    }
+};
+//调用方法
+    $(function(){
+        var sessId = 1;
+        switch( sessId )
+                {
+					case 1:					
+					  $('#li1').html('上海');
+					  $('#li2').html('上海事业部');
+					  $('#li3').html('上海全区');
+					  $('#li4').html('021-62726019');
+					  $('#li5').html('工作日：周一至周五9:00-17:00，午休12:30-13:30');
+					  break;
+				    case 2:			
+					  $('#li1').html('苏州');
+					  $('#li2').html('苏州事业部');
+					  $('#li3').html('苏州全区');
+					  $('#li4').html('(0512)-69171090转124');
+					  $('#li5').html('工作日：周一至周五9:00-17:00，午休12:30-13:30');
+					  break;
+				    case 3:			    
+					  $('#li1').html('深圳');
+					  $('#li2').html('深圳独立课');
+					  $('#li3').html('深圳地区');
+					  $('#li4').html('(0755)-23607340转808');
+					  $('#li5').html('工作日：周一至周五9:00-17:00，午休12:00-13:00');
+					  break;
+					case 4:
+					  $('#li1').html('广州');
+					  $('#li2').html('广州事业部');
+					  $('#li3').html('广州全区');
+					  $('#li4').html('(020)-87609882');
+					  $('#li5').html('工作日：周一至周五9:00-17:00，午休12:00-13:00');
+					  break;
+					case 5:
+					  $('#li1').html('杭州');
+					  $('#li2').html('杭州事业部');
+					  $('#li3').html('杭州全区');
+					  $('#li4').html('(0571)-87021756转225');
+					  $('#li5').html('工作日：周一至周五9:00-17:00，午休12:30-13:30');
+					  break;
+				    case 6:
+					  $('#li1').html('成都');
+					  $('#li2').html('成都事业部');
+					  $('#li3').html('成都11区，高新区');
+					  $('#li4').html('(028)-62051687转6015');
+					  $('#li5').html('工作日：周一至周五9:00-17:00，午休12:30-13:30');
+					  break;
+					case 10:
+					  $('#li1').html('无锡');
+					  $('#li2').html('无锡独立课');
+					  $('#li3').html('无锡全区');
+					  $('#li4').html('(0510)-85383626转806');
+					  $('#li5').html('工作日：周一至周五9:00-17:00，午休12:30-13:30');
+					  break;
+					case 11:
+					  $('#li1').html('北京');
+					  $('#li2').html('北京事业部');
+					  $('#li3').html('北京全区');
+					  $('#li4').html('(010)-65389980转611');
+					  $('#li5').html('工作日：周一至周五9:00-17:00，午休12:30-13:30');
+					  break;
+					case 12:
+					  $('#li1').html('东莞');
+					  $('#li2').html('东莞独立课');
+					  $('#li3').html('东莞全区');
+					  $('#li4').html('(020)-87609882');
+					  $('#li5').html('工作日：周一至周五9:00-17:00，午休12:30-13:30');
+					  break;
+					case 13:
+					  $('#li1').html('嘉兴');
+					  $('#li2').html('东莞独立课');
+					  $('#li3').html('嘉兴地区');
+					  $('#li4').html('暂无');
+					  $('#li5').html('暂无');
+					  break;
+					default:
+					  $('#li1').html('');
+					  $('#li2').html('');
+					  $('#li3').html('');
+					  $('#li4').html('');
+					  $('#li5').html('');
+					  break;
+                }
+                FAQfunction.loadAreaData2("上海");
+    });
+
+    $(function() {
+	    $(".HCalendar").monthCalendar({lastM:".Hpre",nextM:".Hnext",explain:".explain",Htips:".Htips"});
+	    FAQfunction.loadAreaData2("上海");
+	});
+
+	function ChangeCity1(){
+		showCommonPop('正在切换城市...');
+		webMCookie.set('cid',$('#citySeltet1').val(), 7);
+		webMCookie.set('city',$('#citySeltet1 option:selected').text(), 7);
+		location.reload();
+	}
+
+	var str = '顾客服务';
+	var contactFaqFun = {
+		option:'顾客服务',
+		select:function(type){
+			if(type==1){
+				str = '顾客服务';
+			}else if(type==2){
+				str = '加盟合作';
+			}else if(type==3){
+				str = '人事招募';
+			}else if(type==4){
+				str = '商业提案';
+			}else if(type==5){
+				str = 'IT咨询';
+			}else if(type==6){
+				str = '其他';
+			}
+			$("#questionType1").val(str);
+			FAQfunction.chooseSelect(str);
+			alertMsg('#boardWrapper');
+		}
+	}
+</script>
+   </div>
+   <!-- content --> 
+   <!--页脚开始--> 
+   <div class="breakbox cf"> 
+    <div class="breakbox-box"> 
+     <p class="footer-text1">© 2020 Shanghai FamilyMart Co.,Ltd All Rights Reserved.<a href="//beian.miit.gov.cn/" target="_blank" rel="nofollow">沪ICP备12043844号-1</a></p> 
+     <p><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202013095"><img src="images/gongan.png">沪公网安备 31011202013095号</a></p> 
+     <p class="footer-text2"><a href="javascript:;" onclick="contactUs()">联系我们</a>|<a href="/faq">常见问题</a></p> 
+    </div> 
+   </div> 
+   <!--页脚结束--> 
+  </div> 
+  <!--二维码开始--> 
+  <div class="qrcode qrcode-1"> 
+   <img src="images/qrcode_app_zxk.png" alt=""> 
+  </div> 
+  <div class="qrcode qrcode-2"> 
+   <img src="images/qrcode_app_zhx.png" alt=""> 
+  </div> 
+  <div class="qrcode qrcode-3"> 
+   <img src="images/qrcode_wechat.jpg" alt="公众号"> 
+  </div> 
+  <div class="qrcode qrcode-6"> 
+   <img src="images/qrcode_douyin.jpg" alt="抖音蓝V"> 
+  </div> 
+  <div class="qrcode qrcode-7"> 
+   <img src="images/qrcode_weibo.jpg" alt="微博"> 
+  </div> 
+  <!--二维码结束--> 
+  <div id="onload_cover"></div> 
+  <div id="commom_popup"> 
+   <a href="javascript:void(0)" onclick="hideCommonPop();" id="commom_popup_close">close</a> 
+   <div id="commom_popup_inner">
+    提示语
+   </div> 
+  </div> 
+  <div id="commom_popup2"> 
+   <a href="javascript:void(0)" onclick="hideCommonPop3();" id="commom_popup_close2">close</a> 
+   <div id="commom_popup_inner2">
+    提示语
+   </div> 
+  </div> 
+  <script type="text/javascript" src="js/swiper.min.js"></script> 
+  <script type="text/javascript" src="js/global.js"></script> 
+  <script type="text/javascript" src="js/common.js"></script> 
+  <script type="text/javascript" src="js/baidu.js"></script> 
+  <script type="text/javascript" src="js/product.pop.js"></script> 
+  <script type="text/javascript" src="js/lazyload.js"></script> 
+  <script type="text/javascript" src="js/faq.js"></script> 
+  <script type="text/javascript" src="js/WdatePicker.js"></script> 
+  <script type="text/javascript" src="js/franchise_apply.js"></script>   
+ </body>
+</html>

@@ -1,0 +1,901 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  <meta name="language" content="en"> 
+  <link rel="stylesheet" type="text/css" href="css/jobapplication.css"> 
+  <title>全家Family Mart—开心尝鲜在全家- 招聘速递—招聘贴士 - 在线职位申请表</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=0.68, maximum-scale=1, minimum-scale=0.68, user-scalable=yes"> 
+  <meta name="apple-mobile-web-app-capable" content="yes"> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+  <meta property="wb:webmaster" content="286b33bafd8a81b5"> 
+  <!-- 让360双核浏览器用webkit内核渲染页面
+    ================================================== --> 
+  <meta name="renderer" content="webkit"> 
+  <meta name="description" content="全家便利店，让您的生活更加便利，同时让每位来到全家的顾客，都能够与温暖的笑容相遇，给您贴心般的家人般的感受！"> 
+  <meta name="keywords" content="全家便利店  Family Mart  新品特快  呀米将  营养蒸包馒头  营养便当  经典风味面  和风寿司手卷  美味饭团 鲜爽沙拉 烤致工房  关东煮本铺 营养粥汤 风味小食 自提服务 鲜食促销  公共事业缴费 刷卡消费 ATM 娱乐通讯 国家快递 阿拉订 付临门  Fami淘宝  Fami天猫  全家简介 全家愿景 全家大事记 全球布局  新闻中心 合作经营优势 说明会  店长 新手解答  申请流程 门店租赁 合作经营条件测试  全家工作优势 全家在职训练 求职小技巧 招聘流程 我要应聘 最新职缺  常见问题  喜士多  7-11 罗森"> 
+  <link rel="stylesheet" href="css/swiper.min.css"> 
+  <link rel="stylesheet" href="css/animate.css"> 
+  <link rel="stylesheet" href="css/global.css"> 
+  <link rel="stylesheet" href="css/fane.css"> 
+  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script> 
+  <script type="text/javascript">
+        function changecitybypup(){
+            $.ajax({
+                type:"POST",
+                global:false,
+                url:"/store/setCity",
+                data:{"cid": $('#citySeltetPup').val()},
+                dataType:"JSON",
+                success:function(data){
+                },
+                complete:function(data){
+                    showCommonPop('正在切换城市...');
+                    webMCookie.set('cid',$('#citySeltetPup').val(), 7);
+                    webMCookie.set('city',$('#citySeltetPup option:selected').text(), 7);
+                    location.reload();
+                },
+            });
+        }
+    </script> 
+  <link rel="icon" type="image/x-icon" href="css/favicon.ico"> 
+  <script type="text/javascript">BASEUSER=''</script> 
+  <script type="text/javascript">HOSTURL='http://www.familymart.com.cn'</script> 
+  <script type="text/javascript">
+    if(window.navigator.userAgent.indexOf("Mobile")>=0){
+        if(window.navigator.userAgent.indexOf("iPad")>=0){
+
+
+        }else{
+            window.location.href="http://www.familymart.com.cn/mobile/";
+            //$('meta[name="viewport"]').attr({'content':'width=device-width, initial-scale=0.28, maximum-scale=1.0, minimum-scale=0.28, user-scalable=yes'})
+        }
+    }
+    </script> 
+  <script type="text/javascript">
+    function wmx_set_account(account) {
+        return false;
+    }
+    function wmx_flash_counter(title,url) {
+        return false;
+    }
+    function wmx_trackBtn(buttonname, driveritem) {
+        return false;
+    }
+    function familymart_tracker(a,b){
+        return false;
+    }
+
+    function familymart_flash_tracker(a,b){
+        return false;
+    }
+    </script> 
+  <script>
+
+	var webMCookie = {
+        set:function(cname, cvalue, exdays) {//设置cookie
+            this.clear(cname);
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            var expires = "expires="+d.toUTCString();
+            document.cookie = cname + "=" + cvalue + "; " + expires +"; path=/; domain="+document.domain;
+        },
+        get:function(cname) {//获取cookie
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0; i<ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0)==' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) != -1) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        },
+        clear:function(cname) {//清除cookie
+            var exp = new Date();
+            exp.setTime(exp.getTime() - 1);
+            var cval=this.get(cname);
+            if(cval!==null){
+                document.cookie= cname + "="+cval+";expires="+exp.toGMTString();
+            }
+        }
+    };
+	function ChangeCity(){
+		showCommonPop('正在切换城市...');
+		webMCookie.set('cid',$('#citySeltet').val(), 7);
+		webMCookie.set('city',$('#citySeltet option:selected').text(), 7);
+		location.reload();
+	}
+
+
+</script> 
+  <script>
+// 客服系统
+(function(a,h,c,b,f,g){a["UdeskApiObject"]=f;a[f]=a[f]||function(){(a[f].d=a[f].d||[]).push(arguments)};g=h.createElement(c);g.async=1;g.charset="utf-8";g.src=b;c=h.getElementsByTagName(c)[0];c.parentNode.insertBefore(g,c)})(window,document,"script","https://assets-cli.s4.udesk.cn/im_client/js/udeskApi.js","ud");
+ud({
+    "code": "1i0h723c",
+    "link": "https://familymart.s4.udesk.cn/im_client/?web_plugin_id=46808"
+});
+
+function contactUs() {
+    $('.udesk-client-btn').click()
+}
+</script> 
+  <style type="text/css">
+#udesk_btn {
+    display: none;
+}
+</style> 
+ </head> 
+ <body> 
+  <div class="wrap"> 
+   <!-- menu --> 
+   <div class="side"> 
+    <div class="topside"> 
+     <a href="/" class="logo"></a> 
+     <!--=================会员卡=================--> 
+     <!--=================美味鲜食=================--> 
+     <!--=================鲜食系列=================--> 
+     <!--=================促销优惠=================--> 
+     <!--=================加盟合作=================--> 
+     <!--=================优势介绍=================--> 
+     <!--=================加盟方案=================--> 
+     <!--=================我要加盟=================--> 
+     <!--=================人才招聘=================--> 
+     <!--=================职业发展=================--> 
+     <!--=================招聘贴士=================--> 
+     <!--=================岗位应聘=================--> 
+     <div class="subnav"> 
+      <div class="back">
+       返回
+      </div> 
+      <div class="topsubtitle">
+       岗位应聘
+      </div> 
+      <ul> 
+       <li class=""> <a href="/career/list">招聘职位</a> </li> 
+       <li class="on"> <a href="/career/jobapplication">我要应聘</a> </li> 
+      </ul> 
+     </div> 
+     <ul class="nav none"> 
+      <li class="nav-item guqj" data-name="zhajizhuanjia"> 
+       <div class="toptitle">
+        <a href="#">关于全家</a>
+       </div> 
+       <div class="drop"> 
+        <ul> 
+         <li><a href="/brand" class="">品牌介绍</a></li> 
+         <li><a href="/brand/parcafe" class="">湃客咖啡</a></li> 
+         <!--  <li><a href="/brand/newscenter" class="">TVC欣赏</a></li> --> 
+         <li><a href="/members/ZunXiangKa" class="">会员卡</a></li> 
+         <li><a href="/members/giftCard" class="">礼品卡</a></li> 
+         <!-- <li><a href="/brand/statement" class="">声明</a></li>
+                    <li><a href="/brand/notice" class="">公告</a></li> --> 
+        </ul> 
+       </div> </li> 
+      <li class="nav-item jmhz" data-name="zunxiangtiyan"> 
+       <div class="toptitle">
+        <a href="#">加盟合作</a>
+       </div> 
+       <div class="drop"> 
+        <ul> 
+         <li><a href="/franchise/hqAdvantage" class="">优势介绍</a></li> 
+         <li><a href="/franchise/planA" class="">加盟方案</a></li> 
+         <li><a href="/franchise/applyOnline" class="">我要加盟</a></li> 
+         <li><a href="/franchise/experienceShare" class="">经验分享</a></li> 
+        </ul> 
+       </div> </li> 
+      <li class="nav-item rczp active" data-name="zunxiangtiyan"> 
+       <div class="toptitle">
+        <a href="#">人才招聘</a>
+       </div> 
+       <div class="drop"> 
+        <ul> 
+         <li><a href="/career/workerGoodness" class="">职业发展</a></li> 
+         <li><a href="/career/invitePost" class="">招聘贴士</a></li> 
+         <li><a href="/career/list" class="active">岗位应聘</a></li> 
+         <li><a href="/faq" class="">常见问题</a></li> 
+        </ul> 
+       </div> </li> 
+     </ul> 
+    </div> 
+    <div class="box01-side" style="position: static"> 
+     <div class="box01-content"> 
+      <!--   <div class="city-selector">
+                   <div class="searchbox-lp">
+                            <select class="searchbox-sc" id="citySeltet" onChange="ChangeCity()">
+                                <option value="1" selected>上海</option><option value="2">苏州</option><option value="3">深圳</option><option value="4">广州</option><option value="5">杭州</option><option value="6">成都</option><option value="10">无锡</option><option value="11">北京</option><option value="12">东莞</option><option value="13">嘉兴</option>                            </select>
+                       </div>
+                </div> --> 
+      <div class="searchbox-fl"> 
+       <div class="searchbox"> 
+        <div class="searchbtn pa searchbtnleft" onclick="searchSubmit('');"></div> 
+        <input type="text" placeholder="请输入搜索内容" name="keyword" id="searchInput" class="tet"> 
+       </div> 
+      </div> 
+      <div class="sharelink pr"> 
+       <!--     <div class="item item-3" data-index="3">
+                        <span class="icon icon-type-1"></span>
+                        <p>公众号</p>
+                    </div>
+                    <div class="item item-6" data-index="6">
+                        <span class="icon icon-type-1"></span>
+                        <p>抖音蓝V</p>
+                    </div>
+                    <div class="item item-7" data-index="7">
+                        <span class="icon icon-type-1"></span>
+                        <p>微博</p>
+                    </div> --> 
+       <div class="item item-1"> 
+        <a href="javascript:;" onclick="contactUs()"> <span class="icon icon-type-1"></span> <p>联系我们</p> </a> 
+       </div> 
+       <!--   <div class="item item-2">
+                        <a href="/store">
+                            <span class="icon icon-type-1"></span>
+                            <p>门店查找</p>
+                        </a>
+                    </div> --> 
+       <!--  <div class="item item-5" data-index="2">
+                        <span class="icon icon-type-2"></span>
+                    </div>
+                    <div class="item item-4" data-index="1">
+                        <span class="icon icon-type-2"></span>
+                    </div> --> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <div id="content"> 
+    <script type="text/javascript" src="js/jobAppSelectDate.js"></script> 
+    <div class="main mainpro"> 
+     <div class="banpro"> 
+      <img width="100%" src="images/list-banner.jpg"> 
+      <div class="banpro-box-md"> 
+       <p>我要应聘</p> 
+      </div> 
+     </div> 
+     <div class="jobForm"> 
+      <form id="jobForm" action="" method="post"> 
+       <div class="formTop"> 
+        <ul class="menu_L">
+         <a href="javascript:void(0)" class="current">在线职位申请表</a>
+        </ul> 
+        <ul class="menu_R nomargin">
+         <a href="javascript:void(0)" onclick="gotoEmploy()">直接上传简历</a>
+        </ul> 
+       </div> 
+       <div class="personal"> 
+        <div class="personalMain"> 
+         <h2>个人信息</h2> 
+         <ul>
+           求职类型 
+          <select class="selectStyle01 borderStyle" name="Jobapplication[type]" id="type" onchange="selectFun(this.value,'type','city')"> <option value="">请选择</option> <option value="t1">全职</option> <option value="t2">兼职</option> <option value="t3">实习</option> </select> 
+         </ul> 
+         <ul> 
+          <li class="floatStyle"> 应聘区域 <select class="selectStyle01 borderStyle" id="city" name="Jobapplication[city]" onchange="selectFun(this.value,'city','area')"> <option value="">请选择</option> </select> <select class="selectStyle01 borderStyle" id="area" name="Jobapplication[area]" onchange="selectFun(this.value,'area','position')"> <option value="">请选择</option> </select> </li> 
+          <li class="floatStyle" style="padding-left:110px;"> 应聘职位 <select class="selectStyle01 borderStyle" id="position" name="Jobapplication[position]"> <option value="">请选择</option> </select> </li> 
+          <br class="clearfix"> 
+         </ul> 
+         <ul> 
+          <li class="floatStyle"> 姓　　名<input type="text" class="inputStyle01 borderStyle" id="name" name="Jobapplication[name]"> </li> 
+          <li class="floatStyle" style="padding-left:8px;"> 性　　别 <select class="selectStyle01 borderStyle" id="sex" name="Jobapplication[sex]"> <option value="">请选择</option> <option value="男">男</option> <option value="女">女</option> </select> </li> 
+          <li class="floatStyle" style="padding-left:8px;"> 年　　龄<input type="text" class="inputStyle01 borderStyle" id="age" name="Jobapplication[age]"> </li> 
+          <!-- <li class="floatStyle" style="padding-left:40px;">
+					籍　　贯<input type="text" class="inputStyle01 borderStyle" id="hometown" name="Jobapplication[hometown]">
+				</li>
+				<li class="floatStyle" style="padding-left:8px;">
+					民　　族<input type="text" class="inputStyle01 borderStyle" id="ethnic" name="Jobapplication[ethnic]">
+				</li> --> 
+          <br class="clearfix"> 
+         </ul> 
+         <!-- 			<ul>
+				<li class="floatStyle">
+					身份证号<input type="text" class="inputStyle03 borderStyle" id="idno" name="Jobapplication[idno]" maxlength=18>
+				</li>
+				<li class="floatStyle" style="padding-left:29px;">
+					户口性质
+					<select class="selectStyle01 borderStyle" id="accountType" name="Jobapplication[accountType]">
+						<option value="">请选择</option>
+						<option value="城市户籍">城市户籍</option>
+						<option  value="农村户口">农村户口</option>
+					</select>
+				</li>
+				<li class="floatStyle" style="padding-left:8px;">
+					在职年限<input type="text" class="inputStyle01 borderStyle" style="width:83px;" id="workYear" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d.]/g,''))" maxlength=2 name="Jobapplication[workYear]"> 年
+				</li>
+				<br class="clearfix" />
+			</ul> --> 
+         <ul> 
+          <!-- 				<li class="floatStyle">
+					出生日期
+					<select class="selectStyle02 borderStyle" id="birthdayY" name="birthdayY">
+						<option value="">请选择</option>
+					</select>
+					年
+					<select class="selectStyle02 borderStyle" id="birthdayM" name="birthdayM">
+						<option value="">请选择</option>
+					</select>
+					月
+					<select class="selectStyle02 borderStyle" id="birthdayD" name="birthdayD">
+						<option value="">请选择</option>
+					</select>
+					日
+				</li> --> 
+          <li class="floatStyle"> 
+           <!-- 婚姻状况
+					<select class="selectStyle01 borderStyle" id="marriage" name="Jobapplication[marriage]">
+						<option value="">请选择</option>
+						<option value="未婚">未婚</option>
+						<option value="已婚">已婚</option>
+						<option value="离异">离异</option>
+						<option value="丧偶">丧偶</option>
+					</select> --> 文化程度 <select class="selectStyle01 borderStyle" id="educational" name="Jobapplication[educational]"> <option value="">请选择</option> <option value="初中">初中</option> <option value="高中">高中</option> <option value="中专">中专</option> <option value="大专">大专</option> <option value="本科">本科</option> <option value="硕士">硕士</option> <option value="博士">博士</option> <option value="博士后">博士后</option> </select> </li> 
+          <br class="clearfix"> 
+         </ul> 
+         <!-- <ul>
+				<li class="floatStyle">
+					健康状况
+					<select class="selectStyle01 borderStyle" id="health" name="Jobapplication[health]">
+						<option value="">请选择</option>
+						<option value="好">好</option>
+						<option value="良好">良好</option>
+						<option value="差">差</option>
+					</select>
+				</li>
+				<li class="floatStyle" style="padding-left:8px;">
+					身　　高<input type="text" class="inputStyle02 borderStyle" id="hight" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d.]/g,''))" maxlength=3 name="Jobapplication[hight]">CM
+				</li>
+				<li class="floatStyle" style="padding-left:35px;">
+					体　　重 <input type="text" class="inputStyle02 borderStyle" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d.]/g,''))" id="weight" maxlength=3 name="Jobapplication[weight]"> KG
+				</li>
+				<li class="floatStyle" style="padding-left:20px;">
+					血　　型
+					<select class="selectStyle01 borderStyle" id="blood" name="Jobapplication[blood]">
+						<option value="">请选择</option>
+						<option value="O">O</option>
+						<option value="A">A</option>
+						<option value="B">B</option>
+						<option value="AB">AB</option>
+					</select>
+				</li>
+				<br class="clearfix" />
+			</ul> --> 
+         <!-- <ul>
+				专　　长<input type="text" class="inputStyle03 borderStyle" id="specialty" name="Jobapplication[specialty]">
+			</ul>
+			<ul>
+				户籍地址<input type="text" class="inputStyle04 borderStyle" id="accountAddress" name="Jobapplication[accountAddress]">
+			</ul> --> 
+         <!-- 			<ul>
+				现住地址<input type="text" class="inputStyle04 borderStyle" id="address" name="Jobapplication[address]">
+			</ul> --> 
+         <!-- <ul>
+				送达地址<input type="text" class="inputStyle04 borderStyle" id="sendAddress" name="Jobapplication[sendAddress]">
+			</ul> --> 
+         <ul> 
+          <li class="floatStyle"> 手机号码 <input type="text" class="inputStyle05 borderStyle" style="width:80px;margin-left: 8px" value="086" maxlength="4" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d.]/g,''))"> <input type="text" class="inputStyle05 borderStyle" style="width:225px;" id="phone" value="手机号码" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d.]/g,''))" maxlength="11" name="Jobapplication[phone]"> </li> 
+          <!-- 				<li class="floatStyle" style="padding-left:24px;">
+					家庭电话
+					<input type="text" class="inputStyle05 borderStyle" style="width:80px;" value="086" maxlength=4 onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d.]/g,''))" name="homePhoneCountryNum">
+					<input type="text" class="inputStyle05 borderStyle" style="width:80px;" id="homePhoneAreaNum" value="区号" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d.]/g,''))" maxlength=4 name="homePhoneAreaNum">
+					<input type="text" class="inputStyle05 borderStyle" style="width:138px;" id="homePhone" value="电话号码" maxlength=8 onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d.]/g,''))" name="homePhone">
+				</li> --> 
+          <br class="clearfix"> 
+         </ul> 
+         <ul>
+           个人邮箱
+          <input type="text" class="inputStyle03 borderStyle" id="email" name="Jobapplication[email]"> 
+         </ul> 
+         <!-- <ul>
+				公司电话
+				<input type="text" class="inputStyle05 borderStyle" style="width:80px;" value="086" maxlength=4 onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d.]/g,''))"  name="firmPhoneCountryNum">
+				<input type="text" class="inputStyle05 borderStyle" style="width:80px;" id="firmPhoneAreaNum" value="区号" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d.]/g,''))" maxlength=4 name="firmPhoneAreaNum">
+				<input type="text" class="inputStyle05 borderStyle" style="width:138px;" id="firmPhone" value="总机号码" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d.]/g,''))"  maxlength=8 name="firmPhone">
+				<input type="text" class="inputStyle05 borderStyle" style="width:80px;" id="firmPhoneExtension" value="分机号" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d.]/g,''))"  maxlength=5 name="firmPhoneExtension">
+			</ul> --> 
+        </div> 
+        <div class="submitBtn">
+         <a href="javascript:void(0)" onclick="subjobapplication()">提交</a>
+        </div> 
+       </div> 
+      </form> 
+     </div> 
+    </div> 
+    <script type="text/javascript">
+
+jQuery.extend(String.prototype, {
+	isInteger:function(){
+        return (new RegExp(/^\d+$/).test(this));
+    },
+	//数字
+    isNumber: function(value, element) {
+        return (new RegExp(/^-?(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d+)?$/).test(this));
+    },
+    //验证Mail
+    isValidMail:function(){
+        //return(new RegExp(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/).test(this.trim()));
+		return (new RegExp(/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/).test(this));
+    },
+	//是否Name
+	isName:function(){
+		return (new RegExp(/^((\w{3,32})|([\u4e00-\u9fa5]{2,12}))$/).test(this));
+	},
+	//是否中文名
+	isNameCN:function(){
+		return (new RegExp(/^[\u4e00-\u9fa5]{2,12}$/).test(this));
+	},
+	//是否电话
+    isPhone:function() {
+        return (new RegExp(/(^([0-9]{3,4}[-])?\d{3,8}(-\d{1,6})?$)|(^\([0-9]{3,4}\)\d{3,8}(\(\d{1,6}\))?$)|(^\d{3,8}$)/).test(this));
+    },
+	//是否手机号
+	isMobile:function(){
+		return (new RegExp(/^0?1[34578]\d{9}$/).test(this));
+		//return (new RegExp(/^0{0,1}(13[4-9]|15[7-9]|15[0-2]|18[7-8])[0-9]{8}$/).test(this));
+	},
+	//是否电话
+	isTel:function(){
+		return (new RegExp(/^(0\d{2,3}[\s-])?\d{7,8}([\s-]\d{4,5})?$/).test(this));
+	},
+	//是否闰年
+	isLeapYear: function(){
+		//console.log(this);
+		//return false;
+		if(this.isInteger()){
+			var curYear=parseInt(this, 10);
+			if(curYear % 400 == 0 || (curYear % 100 !=0 && curYear % 4 == 0)) return true;
+			else return false;
+		}
+		else return false;
+	},
+	isIDcard:function(){
+		return (new RegExp(/^((1[1-5])|(2[1-3])|(3[1-7])|(4[1-6])|(5[0-4])|(6[1-5])|71|(8[12])|91)\d{4}((19\d{2}(0[13-9]|1[012])(0[1-9]|[12]\d|30))|(19\d{2}(0[13578]|1[02])31)|(19\d{2}02(0[1-9]|1\d|2[0-8]))|(19([13579][26]|[2468][048]|0[48])0229))\d{3}(\d|X|x)?$/).test(this));
+	},
+	isEmail:function() {
+		return(new RegExp(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/).test(this.trim()));
+	}
+});
+
+
+function getiswork(){
+	if($("input[name='iswork']:checked").val()=='有'){
+		$("#workArea").css("display","block");
+		$("#addwork").css("display","block");
+	}else{
+		$("#workArea").css("display","none");
+		$("#addwork").css("display","none");
+	}
+
+}
+
+function subjobapplication(){
+	if(!$("#type").val()){
+		showCommonPop('请选择求职类型')
+		return false
+	}
+	if(!$("#city").val()){
+		showCommonPop('请选择应聘城市')
+		return false
+	}
+	if(!$("#area").val()){
+		showCommonPop('请选择应聘区域')
+		return false
+	}
+	if(!$("#position").val()){
+		showCommonPop('请选择应聘职位')
+		return false
+	}
+	if(!$("#name").val()){
+		showCommonPop('请填写姓名')
+		return false
+	}
+	if(!$("#sex").val()){
+		showCommonPop('请选择性别')
+		return false
+	}
+	if(!$("#age").val().isInteger()){
+		showCommonPop('请填写合法年龄')
+		return false
+	}
+	// if(!$("#hometown").val()){
+	// 	showCommonPop('请填写籍贯')
+	// 	return false
+	// }
+	// if(!$("#ethnic").val()){
+	// 	showCommonPop('请填写民族')
+	// 	return false
+	// }
+	// if(!$("#idno").val()){
+	// 	showCommonPop('请填写身份证号')
+	// 	return false
+	// }
+
+	// if(!$("#idno").val().isIDcard()){
+	// 	showCommonPop('请填写合法的身份证号')
+	// 	return false
+	// }
+	// if(!$("#birthdayY").val()){
+	// 	showCommonPop('请选择出生年')
+	// 	return false
+	// }
+	// if(!$("#birthdayM").val()){
+	// 	showCommonPop('请选择出生月')
+	// 	return false
+	// }
+	// if(!$("#birthdayD").val()){
+	// 	showCommonPop('请选择出生日')
+	// 	return false
+	// }
+	// if(!$("#marriage").val()){
+	// 	showCommonPop('请选择婚姻状况')
+	// 	return false
+	// }
+	if(!$("#educational").val()){
+		showCommonPop('请选择文化程度')
+		return false
+	}
+	// if(!$("#health").val()){
+	// 	showCommonPop('请选择健康状况')
+	// 	return false
+	// }
+	// if(!$("#hight").val()){
+	// 	showCommonPop('请填写身高')
+	// 	return false
+	// }
+	// if(!$("#weight").val()){
+	// 	showCommonPop('请填写体重')
+	// 	return false
+	// }
+	// if(!$("#blood").val()){
+	// 	showCommonPop('请选择血型')
+	// 	return false
+	// }
+
+	// if(!$("#accountType").val()){
+	// 	showCommonPop('请选择户口性质')
+	// 	return false
+	// }
+	//console.log($("#workYear").val());
+	// if(!$("#workYear").val()){
+	// 	showCommonPop('请填写在职年限')
+	// 	return false
+	// }
+	// if(!$("#specialty").val()){
+	// 	showCommonPop('请填写专长')
+	// 	return false
+	// }
+	// if(!$("#accountAddress").val()){
+	// 	showCommonPop('请填写户籍地址')
+	// 	return false
+	// }
+	// if(!$("#address").val()){
+	// 	showCommonPop('请填写现住地址')
+	// 	return false
+	// }
+	// if(!$("#sendAddress").val()){
+	// 	showCommonPop('请填写送达地址')
+	// 	return false
+	// }
+	if(!$("#phone").val()||$("#phone").val()=='手机号码'){
+		showCommonPop('请填写手机号')
+		return false
+	}
+
+	if(!$("#phone").val().isMobile()){
+		showCommonPop('请填写正确的手机号')
+		return false
+	}
+	if(!$("#email").val().isEmail()){
+		showCommonPop('请填写正确的个人邮箱')
+		return false
+	}
+
+	// if(!$("#edustarty").val()){
+	// 	showCommonPop('请完善教育经历')
+	// 	return false
+	// }
+	// if(!$("#edustartm").val()){
+	// 	showCommonPop('请完善教育经历')
+	// 	return false
+	// }
+	// if(!$("#edustartd").val()){
+	// 	showCommonPop('请完善教育经历')
+	// 	return false
+	// }
+	// if(!$("#eduschool").val()){
+	// 	showCommonPop('请完善教育经历')
+	// 	return false
+	// }
+	// if(!$("#eduprofession").val()){
+	// 	showCommonPop('请完善教育经历')
+	// 	return false
+	// }
+	// if(!$("#edulanguage").val()){
+	// 	showCommonPop('请完善教育经历')
+	// 	return false
+	// }
+	// if(!$("#edulangdeep").val()){
+	// 	showCommonPop('请完善教育经历')
+	// 	return false
+	// }
+	// if($("input[name='iswork']:checked").val()=='有'){
+	// 	if(!$("#worky").val()){
+	// 		showCommonPop('请完善工作经历')
+	// 		return false
+	// 	}
+	// 	if(!$("#workm").val()){
+	// 		showCommonPop('请完善工作经历')
+	// 		return false
+	// 	}
+	// 	if(!$("#workd").val()){
+	// 		showCommonPop('请完善工作经历')
+	// 		return false
+	// 	}
+	// 	if(!$("#workcom").val()){
+	// 		showCommonPop('请完善工作经历')
+	// 		return false
+	// 	}
+	// 	if(!$("#workcontent").val()){
+	// 		showCommonPop('请完善工作经历')
+	// 		return false
+	// 	}
+	// 	if(!$("#workpro").val()){
+	// 		showCommonPop('请完善工作经历')
+	// 		return false
+	// 	}
+	// 	if(!$("#workmon").val()){
+	// 		showCommonPop('请完善工作经历')
+	// 		return false
+	// 	}
+	// 	if(!$("#workleave").val()){
+	// 		showCommonPop('请完善工作经历')
+	// 		return false
+	// 	}
+	// }
+	//$('#jobForm').submit()
+	$.ajax({
+		type:"POST",
+		url:BASEUSER+"/career/submitApplication",
+		data:$('#jobForm').serialize(),
+		dataType:'json',
+		success:function(data){
+			if(data.code==1){
+				showCommonPop('提交成功')
+				//location.href='';
+				setTimeout(function(){
+					location.href='';
+				},1000);
+			}
+		}
+	})
+}
+
+function gotoEmploy(){
+	var linkurl=window.location.href;
+	if(linkurl.indexOf('type=t1')>0){
+		window.location.href='./employ?type=t1';
+		return false
+	}
+	if(linkurl.indexOf('type=t2')>0){
+		window.location.href='./employ?type=t2';
+		return false
+	}
+	if(linkurl.indexOf('type=t3')>0){
+		window.location.href='./employ?type=t3';
+		return false
+	}
+	if(linkurl.indexOf('id=')>0){
+		window.location.href='./employ?id='+linkurl.substr(linkurl.indexOf('id=')+3);
+		return false
+	}
+	window.location.href='./employ';
+	return false
+
+}
+<!--
+	var selectFun = function (val,type,innerId){
+		var selectIndex='';
+		if(arguments[3]){
+			selectIndex=arguments[3]
+		}
+		$.ajax({
+				type:"POST",
+				global:false,
+				url:BASEUSER+"/career/select"+type,
+				data:{"t":val},
+				dataType:"JSON",
+				success:function(data){
+					var selectStr = '<option value="">请选择</option>';
+					for(var i=0;i<data.length;i++){
+						selectStr += "<option value='"+data[i].id+"'>"+data[i].name+"</option>";
+					}
+					$("#"+innerId).html(selectStr);
+
+					if(selectIndex){
+
+						$("#"+innerId).val(selectIndex)
+					}
+				}
+			});
+	}
+	// var plusEdu = function(){
+	// 	//$("#xx tr:last").remove();
+	// 	//$("#xx tr:last").remove();
+	// 	var htmlStr ='<ul><div class="inputStyle07" type="text"></div></ul><ul>';
+	// 		htmlStr +='时　　间 ';
+	// 		htmlStr +='<select class="inputStyle02 borderStyle" id="edustarty" name="edu[eduStartY][]"><option>请选择</option></select> 年 ';
+	// 		htmlStr +='<select class="inputStyle02 borderStyle" id="edustartm" name="edu[eduStartM][]"><option>请选择</option></select> 月 ';
+	// 		htmlStr +='<select class="inputStyle02 borderStyle" id="edustartd" name="edu[eduStartD][]"><option>请选择</option></select> 日 ';
+	// 		htmlStr +=' —— ';
+	// 		htmlStr +='<select class="inputStyle02 borderStyle" id="eduendy" name="edu[eduEndY][]"><option>请选择</option></select> 年 ';
+	// 		htmlStr +='<select class="inputStyle02 borderStyle" id="eduendm" name="edu[eduEndM][]"><option>请选择</option></select> 月 ';
+	// 		htmlStr +='<select class="inputStyle02 borderStyle" id="eduendd" name="edu[eduEndD][]"><option>请选择</option></select> 日 ';
+	// 		htmlStr +='</ul>';
+	// 		htmlStr +='<ul>';
+	// 		htmlStr +='<li class="floatStyle">';
+	// 		htmlStr +='学　　校';
+	// 		htmlStr +='<input type="text" class="inputStyle03 borderStyle" name="edu[eduSchool][]">';
+	// 		htmlStr +='</li>';
+	// 		htmlStr +='<li class="floatStyle">';
+	// 		htmlStr +='　专　　业';
+	// 		htmlStr +='<input type="text" class="inputStyle03 borderStyle" name="edu[eduProfession][]">';
+	// 		htmlStr +='</li>';
+	// 		htmlStr +='</ul>';
+	// 		htmlStr +='<ul>';
+	// 		htmlStr +='<li class="floatStyle">';
+	// 		htmlStr +='外语语种 ';
+	// 		htmlStr +='<select class="selectStyle01 borderStyle" name="edu[eduLanguage][]">';
+	// 		htmlStr +='<option selected="selected" value="">---请选择---</option>';
+	// 		htmlStr +='<option value="英语">英语</option>';
+	// 		htmlStr +='<option value="日语">日语</option>';
+	// 		htmlStr +='<option value="法语">法语</option>';
+	// 		htmlStr +='<option value="德语">德语</option>';
+	// 		htmlStr +='<option value="俄语">俄语</option>';
+	// 		htmlStr +='<option value="西班牙语">西班牙语</option>';
+	// 		htmlStr +='<option value="朝鲜语">朝鲜语</option>';
+	// 		htmlStr +='<option value="阿拉伯语">阿拉伯语</option>';
+	// 		htmlStr +='<option value="其它">其它</option>';
+	// 		htmlStr +='</select>';
+	// 		htmlStr +='</li>';
+	// 		htmlStr +='<li class="floatStyle">';
+	// 		htmlStr +=' 掌握程度 ';
+	// 		htmlStr +='<select class="selectStyle01 borderStyle" name="edu[eduLangDeep][]">';
+	// 		htmlStr +='<option selected="selected" value="不限">不限</option>';
+	// 		htmlStr +='<option value="一般">一般</option>';
+	// 		htmlStr +='<option value="良好">良好</option>';
+	// 		htmlStr +='<option value="熟练">熟练</option>';
+	// 		htmlStr +='<option value="精通">精通</option>';
+	// 		htmlStr +='</select>';
+	// 		htmlStr +='</li>';
+	// 		htmlStr +='</ul>';
+	// 	$("#educationArea").append(htmlStr);
+
+	// 	new DateSelector($("select[name='edu[eduStartY][]']").last()[0],$("select[name='edu[eduStartM][]']").last()[0],$("select[name='edu[eduStartD][]']").last()[0]);
+	// 	new DateSelector($("select[name='edu[eduEndY][]']").last()[0],$("select[name='edu[eduEndM][]']").last()[0],$("select[name='edu[eduEndD][]']").last()[0]);
+
+	// }
+
+	// var plusWork = function(){
+	// 		var htmlStr ='<ul><div class="inputStyle08" type="text"></div></ul><ul class="paddingT10">';
+	// 		htmlStr +='时　　间 ';
+	// 		htmlStr +='<select class="inputStyle02 borderStyle" id="worky" name="work[workY][]"><option>请选择</option></select>';
+	// 		htmlStr +=' 年 ';
+	// 		htmlStr +='<select class="inputStyle02 borderStyle" id="workm" name="work[workM][]"><option>请选择</option></select>';
+	// 		htmlStr +=' 月 ';
+	// 		htmlStr +='<select class="inputStyle02 borderStyle" id="workd" name="work[workD][]"><option>请选择</option></select>';
+	// 		htmlStr +=' 日 ';
+	// 		htmlStr +='</ul>';
+	// 		htmlStr +='<ul>';
+	// 		htmlStr +='<li class="floatStyle">';
+	// 		htmlStr +='工作单位<input type="text" class="inputStyle03 borderStyle" name="work[workCom][]">';
+	// 		htmlStr +='</li>';
+	// 		htmlStr +='<li class="floatStyle" style="padding-left:29px;">';
+	// 		htmlStr +='工作内容<input type="text" class="inputStyle03 borderStyle" name="work[workContent][]">';
+	// 		htmlStr +='</li>';
+	// 		htmlStr +='</ul>';
+	// 		htmlStr +='<ul>';
+	// 		htmlStr +='<li class="floatStyle">';
+	// 		htmlStr +='职　　务<input type="text" class="inputStyle03 borderStyle" name="work[workPro][]">';
+	// 		htmlStr +='</li>';
+	// 		htmlStr +='<li class="floatStyle" style="padding-left:29px;">';
+	// 		htmlStr +='年　　薪 <select class="selectStyle01 borderStyle" name="work[workMon][]">';
+	// 		htmlStr +='<option selected="selected" value="不限">不限</option>';
+	// 		htmlStr +='<option value="一般">一般</option>';
+	// 		htmlStr +='<option value="良好">良好</option>';
+	// 		htmlStr +='<option value="熟练">熟练</option>';
+	// 		htmlStr +='<option value="精通">精通</option>';
+	// 		htmlStr +='</select>';
+	// 		htmlStr +='</li>';
+	// 		htmlStr +='</ul>';
+	// 		htmlStr +='<ul style="height:115px;">';
+	// 		htmlStr +='<li class="floatStyle">离职原因</li>';
+	// 		htmlStr +='<li class="floatStyle" style="padding-left:8px;">';
+	// 		htmlStr +='<textarea type="text" class="textareaStyle" name="work[workLeave][]"></textarea>';
+	// 		htmlStr +='</li>';
+	// 		htmlStr +='</ul>';
+	// 	$("#workArea").append(htmlStr);
+
+	// 	new DateSelector($("select[name='work[workY][]']").last()[0],$("select[name='work[workM][]']").last()[0],$("select[name='work[workD][]']").last()[0]);
+
+	// }
+
+
+//-->
+
+$(document).ready(function(){
+	
+	var linkurl=window.location.href;
+	if(linkurl.indexOf('type=t1')>0){
+		$('#type').val('t1')
+		selectFun('t1','type','city')
+	}else if(linkurl.indexOf('type=t2')>0){
+		$('#type').val('t2')
+		selectFun('t2','type','city')
+	}else if(linkurl.indexOf('type=t3')>0){
+		$('#type').val('t3')
+		selectFun('t3','type','city')
+	}else{
+	}
+
+})
+
+//时间插件
+
+// var infoDate = new DateSelector(window.document.getElementById("birthdayY"), window.document.getElementById("birthdayM") ,window.document.getElementById("birthdayD"));
+// var eduDate = new DateSelector(window.document.getElementById("edustarty"), window.document.getElementById("edustartm") ,window.document.getElementById("edustartd"));
+// var eduendDate = new DateSelector(window.document.getElementById("eduendy"), window.document.getElementById("eduendm") ,window.document.getElementById("eduendd"));
+// var workDate = new DateSelector(window.document.getElementById("worky"), window.document.getElementById("workm") ,window.document.getElementById("workd"));
+</script> 
+   </div>
+   <!-- content --> 
+   <!--页脚开始--> 
+   <div class="breakbox cf"> 
+    <div class="breakbox-box"> 
+     <p class="footer-text1">© 2020 Shanghai FamilyMart Co.,Ltd All Rights Reserved.<a href="//beian.miit.gov.cn/" target="_blank" rel="nofollow">沪ICP备12043844号-1</a></p> 
+     <p><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202013095"><img src="images/gongan.png">沪公网安备 31011202013095号</a></p> 
+     <p class="footer-text2"><a href="javascript:;" onclick="contactUs()">联系我们</a>|<a href="/faq">常见问题</a></p> 
+    </div> 
+   </div> 
+   <!--页脚结束--> 
+  </div> 
+  <!--二维码开始--> 
+  <div class="qrcode qrcode-1"> 
+   <img src="images/qrcode_app_zxk.png" alt=""> 
+  </div> 
+  <div class="qrcode qrcode-2"> 
+   <img src="images/qrcode_app_zhx.png" alt=""> 
+  </div> 
+  <div class="qrcode qrcode-3"> 
+   <img src="images/qrcode_wechat.jpg" alt="公众号"> 
+  </div> 
+  <div class="qrcode qrcode-6"> 
+   <img src="images/qrcode_douyin.jpg" alt="抖音蓝V"> 
+  </div> 
+  <div class="qrcode qrcode-7"> 
+   <img src="images/qrcode_weibo.jpg" alt="微博"> 
+  </div> 
+  <!--二维码结束--> 
+  <div id="onload_cover"></div> 
+  <div id="commom_popup"> 
+   <a href="javascript:void(0)" onclick="hideCommonPop();" id="commom_popup_close">close</a> 
+   <div id="commom_popup_inner">
+    提示语
+   </div> 
+  </div> 
+  <div id="commom_popup2"> 
+   <a href="javascript:void(0)" onclick="hideCommonPop3();" id="commom_popup_close2">close</a> 
+   <div id="commom_popup_inner2">
+    提示语
+   </div> 
+  </div> 
+  <script type="text/javascript" src="js/swiper.min.js"></script> 
+  <script type="text/javascript" src="js/global.js"></script> 
+  <script type="text/javascript" src="js/common.js"></script> 
+  <script type="text/javascript" src="js/baidu.js"></script> 
+  <script type="text/javascript" src="js/product.pop.js"></script> 
+  <script type="text/javascript" src="js/lazyload.js"></script>   
+ </body>
+</html>
