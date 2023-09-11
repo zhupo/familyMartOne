@@ -1,0 +1,85 @@
+{include file="common/top" /} 
+   {include file="common/mbx" /} 
+   <!-- page-layout start --> 
+   <section class="web_main page_main"> 
+    <div class="layout"> 
+     <!-- aside start --> 
+     {include file="common/new_left" /} 
+     <!--// aside end --> 
+     <section class="main"> 
+      <!-- product info --> 
+      <div class="product-intro"> 
+       <div class="product-view"> 
+        <div class="product-image"> 
+          <a class="cloud-zoom" id="zoom1" data-zoom="adjustX:0, adjustY:0" href="{$__ARCHIVES__.image}" title=""> <img src="{$__ARCHIVES__.image}" itemprop="image" title="" alt="" style="width:100%"></a> 
+        </div> 
+        <div class="image-additional-wrap"> 
+         <div class="image-additional"> 
+          <div class="swiper-pagination swiper-pagination-white"></div> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="product-summary"> 
+        <h2 class="page_title">{$__ARCHIVES__.title}</h2> 
+        <div class="product-meta"> 
+         <p>{$__ARCHIVES__.description}</p> 
+         <br> 
+        </div> 
+       </div> 
+      </div> 
+      <!-- product-detail --> 
+      <div class="tab-content-wrap product-detail"> 
+       <div class="gm-sep tab-title-bar detail-tabs"> 
+        <h2 class="tab-title title current"><span>News Details</span></h2> 
+       </div> 
+       <div class="tab-panel-wrap"> 
+        <div class="tab-panel disabled"> 
+         <div class="tab-panel-content entry"> 
+          <div class="fl-rich-text"> 
+          </div> 
+          {$__ARCHIVES__.content}
+         </div> 
+        </div> 
+        <div class="tab-panel disabled entry"> 
+         <div class="tab-panel-content">
+           dd 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <!-- inquiry form --> 
+     </section> 
+     <!--main end--> 
+    </div> 
+   </section> 
+   <!-- RELATED PRODUCTS --> 
+   <div class="goods-may-like"> 
+    <div class="layout"> 
+     <div class="index_title_bar"> 
+      <h2 class="good_title">related news</h2> 
+     </div> 
+     <div class="layer-bd"> 
+      <div class="swiper-slider"> 
+       <ul class="swiper-wrapper"> 
+        {cms:channellist id="channel" type="son" typeid="66" orderby="weigh" orderway="asc"}
+        {cms:arclist id="prod" channel="channel['id']"  orderby="weigh" orderway="desc" row="20"}
+          <li class="swiper-slide wow fadeInUpA product_item" data-wow-delay=".1s"> 
+            <figure> 
+             <span class="item_img"><img style="width: 277px; height: 187px;" src="{$prod.image}" alt=""><a href="{$prod.url}" class="img_shadow"></a></span> 
+             <figcaption> 
+              <h3 class="item_title"><a href="{$prod.url}">{$prod.title}</a></h3> 
+             </figcaption> 
+            </figure> </li> 
+          {/cms:arclist}
+        {/cms:channellist}
+       </ul> 
+       <div class="product-pagination swiper-pagination-white"></div> 
+      </div> 
+      <div class="navigate_button_prev swiper-button-prev"></div> 
+      <div class="navigate_button_next swiper-button-next"></div> 
+     </div> 
+    </div> 
+   </div> 
+   <!--// page-layout end --> 
+   <!-- web_footer start --> 
+   {include file="common/foot" /} 

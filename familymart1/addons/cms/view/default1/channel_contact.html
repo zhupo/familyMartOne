@@ -1,0 +1,65 @@
+{include file="common/top" /} 
+<!--aifeedback v2 start -->
+<section class="web_main page_main">
+  <div class="contact cl layout">
+    <div class="contact-info">
+      <h3>Contact information</h3>
+      <p class="p1">{$site.name}</p>
+      <p class="p2"><a href="tel:{$site.tell}" rel="nofollow">{$site.tell}</a></p>
+      <p class="p3">{$site.fax}</p>
+      <p class="p4">{$site.address}</p>
+      <p class="p5"><a href="mailto:{$site.emaill}" rel="nofollow">{$site.emaill}</a></p>
+    </div>
+    <div class="contact-inquiry">
+      <!--aifeedback v2 start -->
+      <div class="crm-form">
+        <div class="create-form-wrap">
+          <div class="create-form-title" style="background:#0F74A5;">Contact Us</div>
+          <div class="create-form-inner">
+            <div class="create-form-ul">
+              <form class="contact-from" onsubmit="return $('.formPoint').show();" method="POST" action="/d/customer/post.html">
+                <input type="hidden" name="__diyname__" value="customer">
+                {:token()}
+                <div class="create-form-li">
+                  <div class="create-form-input">
+                    <label>Name<span style="color:#F00">*</span>:</label>
+                    <input type="text" required="required" name="row[name]">
+                  </div>
+                </div>
+                <div class="create-form-li">
+                  <div class="create-form-input">
+                    <label>Country:</label>
+                    <input type="text" name="row[country]">
+                  </div>
+                </div>
+                <div class="create-form-li">
+                  <div class="create-form-input">
+                    <label>Email<span style="color:#F00">*</span>:</label>
+                    <input type="email" required="required" name="row[email]">
+                  </div>
+                </div>
+                <div class="create-form-li">
+                  <div class="create-form-input">
+                    <label>Tel:</label>
+                    <input type="text" required="required" name="row[telephone]">
+                  </div>
+                </div>
+                <div class="create-form-block create-form-li create-form-message">
+                  <div class="create-form-textarea">
+                    <label>Message<span style="color:#F00">*</span>:</label>
+                    <textarea required="required" name="row[content]"></textarea>
+                  </div>
+                </div>
+            </div>
+            <div class="create-form-block create-form-cen create-form-action">
+              <input type="hidden" class="cid" name="cid" value="381">
+              <button type="submit" class="create-form-submit" style="background:#0F74A5;">Submit</button>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{include file="common/foot" /} 

@@ -1,0 +1,86 @@
+{include file="common/top" /} 
+<section class="web_main page_main">
+  <div class="about layout">
+    <div class="wp cl">
+      {cms:blocklist id="block" name="about" orderby="weigh" orderway="desc" } 
+       <div class="pic">
+        <img src="{$block.image}" title="{$block.title}" _src="{$block.image}" alt="">
+      </div>
+      <div class="txt">
+        <h3>{$block.title}</h3>
+        <!-- <p><em></em></p> -->
+        {$block.content}
+        <!-- <p><br></p> -->
+      </div>
+ 	    	{/cms:blocklist}
+    </div>
+  </div>
+  <div class="about2 layout">
+    <div class="wp cl">
+      <div class="tit">
+        <h3>FACTORY BRIEF INTRODUCTION</h3>
+      </div>
+
+        {cms:blocklist id="block" name="abount-info-params" orderby="weigh" orderway="desc" } 
+        {notempty name="$block.images"}
+        <ul>
+        {volist name="$block.images|explode=',',###" id="image"}
+        <li class="icon_item wow fadeInUpA" data-wow-delay=".8s" data-wow-duration="1s"> <img src="{$image}" alt="" /> 
+          <em>{$block.intro[$key]['info']}</em>
+          <p>{$block.intro[$key]['txt']}</p>
+        </li>
+        {/volist}
+        </ul>
+        {/notempty}
+        {/cms:blocklist}
+    </div>
+  </div>
+  <!-- <div class="about3">
+
+    <h3>ANNUAL PRODUCTION</h3>
+    <hr />
+    <ul>
+      <li> <img src="__CDN__/template/default/images/about-us-over-icon.png" alt="" /> <em>Export market
+          volume</em>
+        <p>
+        <p>Over <span>20,000</span> sets</p>
+        </p>
+      </li>
+      <li> <img src="__CDN__/template/default/images/about-us-over-icon.png" alt="" /> <em>Market
+          share(China)</em>
+        <p>
+        <p>Over <span>20,000</span> sets</p>
+        </p>
+      </li>
+      <li> <img src="__CDN__/template/default/images/about-us-over-icon.png" alt="" /> <em>Annual turnover in
+          USD</em>
+        <p>
+        <p>Over <span>20,000</span> sets</p>
+        </p>
+      </li>
+      <li> <img src="__CDN__/template/default/images/about-us-over-icon.png" alt="" /> <em>Numbers of DTH Hammer
+          production yearly</em>
+        <p>
+        <p>Over <span>20,000</span> sets</p>
+        </p>
+      </li>
+      <li> <img src="__CDN__/template/default/images/about-us-over-icon.png" alt="" /> <em>Numbers of DTH Hammer
+          production yearly</em>
+        <p>
+        <p>Over <span>20,000</span> sets</p>
+        </p>
+      </li>
+    </ul>
+
+  </div>
+  <div class="about4">
+
+    <h3>OUR CURRENT GLOBAL MARKET POSITION</h3>
+    <p>We are the leading supplier of Lafargeholcim (Quarry&amp;Mining construction material producer)in the
+      global market;</p>
+    <div class="pic"> <img src="/uploads/20221111/362cde04dcc0236757e89bf650077196.jpeg"
+        alt="OUR CURRENT GLOBAL MARKET POSITION" /> </div>
+  </div> -->
+</section>
+
+{include file="common/foot" /} 

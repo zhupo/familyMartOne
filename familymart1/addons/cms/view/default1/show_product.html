@@ -1,0 +1,173 @@
+{include file="common/top" /} 
+   {include file="common/mbx" /} 
+   <!-- page-layout start --> 
+   <section class="web_main page_main"> 
+    <div class="layout"> 
+     <!-- aside start --> 
+     {include file="common/left" /}
+     <!--// aside end --> 
+     <section class="main"> 
+      <!-- product info --> 
+      <div class="product-intro"> 
+       <div class="product-view"> 
+        <div class="product-image"> 
+         <a class="cloud-zoom" id="zoom1" data-zoom="adjustX:0, adjustY:0" href="{$__ARCHIVES__.image}" title=""> <img src="{$__ARCHIVES__.image}" itemprop="image" title="" alt="" style="width:100%"></a> 
+        </div> 
+        <div class="image-additional-wrap"> 
+         <div class="image-additional"> 
+          <ul class="swiper-wrapper"> 
+           {volist name="$__ARCHIVES__.images|explode=',',###" id="image"}
+          <li class="swiper-slide image-item current"> <a class="cloud-zoom-gallery item" href="{$image|cdnurl}" data-zoom="useZoom:zoom1, smallImage:{$image|cdnurl}" title=""><img src="{$image|cdnurl}" title="" alt=""></a> </li> 
+        {/volist}
+          </ul> 
+          <div class="swiper-pagination swiper-pagination-white"></div> 
+         </div> 
+         <div class="swiper-button-next swiper-button-white"></div> 
+         <div class="swiper-button-prev swiper-button-white"></div> 
+        </div> 
+       </div> 
+       <div class="product-summary"> 
+        <h2 class="page_title">{$__ARCHIVES__.title}</h2> 
+        <div class="product-meta"> 
+         {$__ARCHIVES__.content}
+         <br> 
+         <ul> 
+          <li><em>Active Ingredient: </em> <span class="item-val">{$__ARCHIVES__.activeIngredient}</span></li> 
+          <li><em>Model NO:</em> <span class="item-val">{$__ARCHIVES__.itemNo}</span></li> 
+          <li><em>Shelf Life: </em> <span class="item-val">{$__ARCHIVES__.shelfLife}</span></li> 
+          <li><em>Raw Material: </em> <span class="item-val">{$__ARCHIVES__.rawMaterial}</span></li> 
+          <li><em>Customs Code:</em> <span class="item-val">{$__ARCHIVES__.customsCode}</span></li> 
+          <li><em>Origin:</em> <span class="item-val">{$__ARCHIVES__.placeofOrigin}</span></li> 
+         </ul> 
+        </div> 
+        <div class="gm-sep product-btn-wrap"> 
+         <a href="/Contact-us.html" class="email">CONTACT NOW</a> 
+         <a href="/Products.html" class="pdf">More Products</a> 
+        </div> 
+       </div> 
+      </div> 
+      <!-- product-detail --> 
+      <div class="tab-content-wrap product-detail"> 
+       <div class="gm-sep tab-title-bar detail-tabs"> 
+        <h2 class="tab-title title current"><span>Details</span></h2> 
+        <!-- <h2 class="tab-title title"><span>Tags</span></h2>  -->
+       </div> 
+       <div class="tab-panel-wrap"> 
+        <div class="tab-panel disabled"> 
+         <div class="tab-panel-content entry"> 
+          <div class="fl-rich-text"> 
+           <table class="tt"> 
+            <tbody> 
+             <tr class="firstRow"> 
+              <th colspan="2"><strong>Specification</strong></th> 
+             </tr> 
+             <tr> 
+              <th>Model NO</th> 
+              <td>{$__ARCHIVES__.itemNo}</td> 
+             </tr> 
+             <tr> 
+              <th>Shelf Life</th> 
+              <td>{$__ARCHIVES__.shelfLife}</td> 
+             </tr> 
+             <tr> 
+              <th>Raw Material</th> 
+              <td>{$__ARCHIVES__.rawMaterial}</td> 
+             </tr> 
+             <tr> 
+              <th>Customs Code</th> 
+              <td>{$__ARCHIVES__.customsCode}</td> 
+             </tr> 
+             <tr> 
+              <th>Shipping Time</th> 
+              <td>{$__ARCHIVES__.shippingTime}</td> 
+             </tr> 
+             <tr> 
+              <th>Formula</th> 
+              <td>{$__ARCHIVES__.formula}</td> 
+             </tr> 
+             <tr> 
+              <th>SGS</th> 
+              <td>{$__ARCHIVES__.sgs}</td> 
+             </tr> 
+             <tr> 
+              <th>CAS</th> 
+              <td>{$__ARCHIVES__.cas}</td> 
+             </tr> 
+             <tr> 
+              <th colspan="2"><strong>Dimensions</strong></th> 
+             </tr> 
+             <tr> 
+              <th>Specification</th> 
+              <td>{$__ARCHIVES__.specification}</td> 
+             </tr> 
+             <tr> 
+              <th>Production Capacity</th> 
+              <td>{$__ARCHIVES__.productionCapacity}</td> 
+             </tr> 
+             <tr> 
+              <th>Transport Package</th> 
+              <td>{$__ARCHIVES__.transportPackage}</td> 
+             </tr> 
+             <tr> 
+              <th>MOB</th> 
+              <td>{$__ARCHIVES__.mbq}</td> 
+             </tr> 
+             <tr> 
+              <th>Placeof Origin</th> 
+              <td>{$__ARCHIVES__.placeofOrigin}</td> 
+             </tr> 
+            </tbody> 
+           </table> 
+          </div> 
+          <p>{$__ARCHIVES__.description}</p> 
+         </div> 
+        </div> 
+        <div class="tab-panel disabled entry"> 
+         <div class="tab-panel-content">
+           dd 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <!-- inquiry form --> 
+      <!-- <div class="inquiry-form-wrap">  -->
+       <!-- <script type="text/javascript" src="https://www.globalso.site/php/app.php?widget-init-inline.js"></script>--> 
+       <!-- <div class="ad_prompt">
+        Write your message here and send it to us
+       </div> 
+      </div>  -->
+     </section> 
+     <!--main end--> 
+    </div> 
+   </section> 
+   <!-- RELATED PRODUCTS --> 
+   <div class="goods-may-like"> 
+    <div class="layout"> 
+     <div class="index_title_bar"> 
+      <h2 class="good_title">related products</h2> 
+     </div> 
+     <div class="layer-bd"> 
+      <div class="swiper-slider"> 
+       <ul class="swiper-wrapper"> 
+        {cms:channellist id="channel" type="son" typeid="44" orderby="weigh" orderway="asc"}
+        {cms:arclist id="prod" channel="channel['id']"  orderby="weigh" orderway="desc" row="20"}
+          <li class="swiper-slide wow fadeInUpA product_item" data-wow-delay=".1s"> 
+            <figure> 
+             <span class="item_img"><img src="{$prod.image}" alt=""><a href="{$prod.url}" class="img_shadow"></a></span> 
+             <figcaption> 
+              <h3 class="item_title"><a href="{$prod.url}">{$prod.title}</a></h3> 
+             </figcaption> 
+            </figure> </li> 
+          {/cms:arclist}
+        {/cms:channellist}
+       </ul> 
+       <div class="product-pagination swiper-pagination-white"></div> 
+      </div> 
+      <div class="navigate_button_prev swiper-button-prev"></div> 
+      <div class="navigate_button_next swiper-button-next"></div> 
+     </div> 
+    </div> 
+   </div> 
+   <!--// page-layout end --> 
+   <!-- web_footer start --> 
+   {include file="common/foot" /} 
