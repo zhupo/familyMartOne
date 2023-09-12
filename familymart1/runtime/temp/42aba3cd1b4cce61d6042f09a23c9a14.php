@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:100:"/Users/panliu/Documents/privateProject/familyMartOne/familymart1/addons/cms/view/default2/index.html";i:1694535619;}*/ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
  <head> 
@@ -13,11 +14,11 @@
   <meta name="renderer" content="webkit"> 
   <meta name="description" content="全家便利店，让您的生活更加便利，同时让每位来到全家的顾客，都能够与温暖的笑容相遇，给您贴心般的家人般的感受！"> 
   <meta name="keywords" content="全家便利店  Family Mart  新品特快  呀米将  营养蒸包馒头  营养便当  经典风味面  和风寿司手卷  美味饭团 鲜爽沙拉 烤致工房  关东煮本铺 营养粥汤 风味小食 自提服务 鲜食促销  公共事业缴费 刷卡消费 ATM 娱乐通讯 国家快递 阿拉订 付临门  Fami淘宝  Fami天猫  全家简介 全家愿景 全家大事记 全球布局  新闻中心 合作经营优势 说明会  店长 新手解答  申请流程 门店租赁 合作经营条件测试  全家工作优势 全家在职训练 求职小技巧 招聘流程 我要应聘 最新职缺  常见问题  喜士多  7-11 罗森"> 
-  <link rel="stylesheet" href="__CDN__/template/default2/css/swiper.min.css?v={$site.version}"> 
-  <link rel="stylesheet" href="__CDN__/template/default2/css/animate.css?v={$site.version}"> 
-  <link rel="stylesheet" href="__CDN__/template/default2/css/global.css?v={$site.version}"> 
-  <link rel="stylesheet" href="__CDN__/template/default2/css/fane.css?v={$site.version}"> 
-  <script type="text/javascript" src="__CDN__/template/default2/js/jquery-1.9.1.min.js?v={$site.version}"></script> 
+  <link rel="stylesheet" href="/template/default2/css/swiper.min.css?v=<?php echo $site['version']; ?>"> 
+  <link rel="stylesheet" href="/template/default2/css/animate.css?v=<?php echo $site['version']; ?>"> 
+  <link rel="stylesheet" href="/template/default2/css/global.css?v=<?php echo $site['version']; ?>"> 
+  <link rel="stylesheet" href="/template/default2/css/fane.css?v=<?php echo $site['version']; ?>"> 
+  <script type="text/javascript" src="/template/default2/js/jquery-1.9.1.min.js?v=<?php echo $site['version']; ?>"></script> 
   <script type="text/javascript">
         function changecitybypup(){
             $.ajax({
@@ -37,7 +38,7 @@
             });
         }
     </script> 
-  <link rel="icon" type="image/x-icon" href="__CDN__/template/default2/css/favicon.ico?v={$site.version}"> 
+  <link rel="icon" type="image/x-icon" href="/template/default2/css/favicon.ico?v=<?php echo $site['version']; ?>"> 
   <script type="text/javascript">BASEUSER=''</script> 
   <script type="text/javascript">HOSTURL='http://www.familymart.com.cn'</script> 
   <script type="text/javascript">
@@ -72,34 +73,15 @@
   <script>
 
 	var webMCookie = {
-        set:function(cname, cvalue, exdays) {//设置cookie
-            this.clear(cname);
-            var d = new Date();
-            d.setTime(d.getTime() + (exdays*24*60*60*1000));
-            var expires = "expires="+d.toUTCString();
-            document.cookie = cname + "=" + cvalue + "; " + expires +"; path=/; domain="+document.domain;
-        },
-        get:function(cname) {//获取cookie
-            var name = cname + "=";
-            var ca = document.cookie.split(';');
-            for(var i=0; i<ca.length; i++) {
-                var c = ca[i];
-                while (c.charAt(0)==' ') {
-                    c = c.substring(1);
-                }
+        set:function(cname, cvalue, exdays) ,
+        get:function(cname) 
                 if (c.indexOf(name) != -1) {
                     return c.substring(name.length, c.length);
                 }
             }
             return "";
         },
-        clear:function(cname) {//清除cookie
-            var exp = new Date();
-            exp.setTime(exp.getTime() - 1);
-            var cval=this.get(cname);
-            if(cval!==null){
-                document.cookie= cname + "="+cval+";expires="+exp.toGMTString();
-            }
+        clear:function(cname) 
         }
     };
 	function ChangeCity(){
@@ -136,22 +118,21 @@ function contactUs() {
     <div class="topside"> 
      <a href="/" class="logo"></a> 
      <ul class="nav"> 
-      {cms:channellist id="nav" type="top" cache="0" condition="1=isnav" row="20" orderby="weigh" orderway="desc"}
+      <?php $__meLF5izyXR__ = \addons\cms\model\Channel::getChannelList(["id"=>"nav","type"=>"top","cache"=>"0","condition"=>"1=isnav","row"=>"20","orderby"=>"weigh","orderway"=>"desc"]); if(is_array($__meLF5izyXR__) || $__meLF5izyXR__ instanceof \think\Collection || $__meLF5izyXR__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__meLF5izyXR__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?>
         <li class="nav-item guqj" data-name="zhajizhuanjia"> 
           <div class="toptitle">
-           <a href="#">{$nav.name}</a>
+           <a href="#"><?php echo $nav['name']; ?></a>
           </div> 
-          {if $nav.has_child}
+          <?php if($nav['has_child']): ?>
           <div class="drop"> 
            <ul> 
-            {cms:channellist id="son" type="son" condition="1=isnav" typeid="nav['id']" cache="0" row="20"}
-              <li><a href="{$son.url}" class="">{$son.name}</a></li> 
-            {/cms:channellist}
+            <?php $__SzYrVIih18__ = \addons\cms\model\Channel::getChannelList(["id"=>"son","type"=>"son","condition"=>"1=isnav","typeid"=>$nav['id'],"cache"=>"0","row"=>"20"]); if(is_array($__SzYrVIih18__) || $__SzYrVIih18__ instanceof \think\Collection || $__SzYrVIih18__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__SzYrVIih18__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$son): $mod = ($i % 2 );++$i;?>
+              <li><a href="<?php echo $son['url']; ?>" class=""><?php echo $son['name']; ?></a></li> 
+            <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__SzYrVIih18__; ?>
            </ul> 
           </div> 
         </li>
-        {/if}
-        {/cms:channellist}
+        <?php endif; endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__meLF5izyXR__; ?>
      </ul> 
     </div> 
     <div class="box01-side" style="position: static"> 
@@ -294,9 +275,9 @@ function contactUs() {
      </div> 
      <div class="prowrap"> 
       <div class="colC1-detail cf"> 
-       <a href="/franchise/applyOnline"><img src="__CDN__/template/default2/images/sct_01.jpg" alt=""></a> 
-       <a href="/career/list"><img src="__CDN__/template/default2/images/sct_02.jpg" alt=""></a> 
-       <a href="http://www.familymart.com.cn/brand/parcafe" target="_blank"><img src="__CDN__/template/default2/images/sct_03.jpg" alt=""></a> 
+       <a href="/franchise/applyOnline"><img src="/template/default2/images/sct_01.jpg" alt=""></a> 
+       <a href="/career/list"><img src="/template/default2/images/sct_02.jpg" alt=""></a> 
+       <a href="http://www.familymart.com.cn/brand/parcafe" target="_blank"><img src="/template/default2/images/sct_03.jpg" alt=""></a> 
       </div> 
       <div class="colC2-detail cf"> 
        <div class="content-box"> 
@@ -311,7 +292,7 @@ function contactUs() {
          </div> 
         </div> 
         <div class="col col-2"> 
-         <img src="__CDN__/template/default2/images/vip_01.jpg" alt=""> 
+         <img src="/template/default2/images/vip_01.jpg" alt=""> 
         </div> 
        </div> 
       </div> 
@@ -384,18 +365,18 @@ function contactUs() {
   <div class="breakbox cf"> 
    <div class="breakbox-box"> 
     <p class="footer-text1">© 2020 Shanghai FamilyMart Co.,Ltd All Rights Reserved.<a href="//beian.miit.gov.cn/" target="_blank" rel="nofollow">沪ICP备12043844号-1</a></p> 
-    <p><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202013095"><img src="__CDN__/template/default2/images/gongan.png">沪公网安备 31011202013095号</a></p> 
+    <p><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202013095"><img src="/template/default2/images/gongan.png">沪公网安备 31011202013095号</a></p> 
     <p class="footer-text2"><a href="javascript:;" onclick="contactUs()">联系我们</a>|<a href="/faq">常见问题</a></p> 
    </div> 
   </div> 
   <!--页脚结束-->  
   <!--二维码开始--> 
 
-  <script type="text/javascript" src="__CDN__/template/default2/js/swiper.min.js"></script> 
-  <script type="text/javascript" src="__CDN__/template/default2/js/global.js"></script> 
-  <script type="text/javascript" src="__CDN__/template/default2/js/common.js"></script> 
-  <script type="text/javascript" src="__CDN__/template/default2/js/baidu.js"></script> 
-  <script type="text/javascript" src="__CDN__/template/default2/js/product.pop.js"></script> 
-  <script type="text/javascript" src="__CDN__/template/default2/js/lazyload.js"></script>   
+  <script type="text/javascript" src="/template/default2/js/swiper.min.js"></script> 
+  <script type="text/javascript" src="/template/default2/js/global.js"></script> 
+  <script type="text/javascript" src="/template/default2/js/common.js"></script> 
+  <script type="text/javascript" src="/template/default2/js/baidu.js"></script> 
+  <script type="text/javascript" src="/template/default2/js/product.pop.js"></script> 
+  <script type="text/javascript" src="/template/default2/js/lazyload.js"></script>   
  </body>
 </html>
