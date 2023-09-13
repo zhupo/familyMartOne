@@ -1,7 +1,7 @@
 <?php
 
 return array (
-  'name' => 'Hunan Guiwei Biotechnology Co.',
+  'name' => 'quanjia',
   'beian' => 'Copyright ©2009-2023 Shenzhen IWOWN Technology Co. ,Ltd. All Rights Reserved. 粤ICP备15068355号-5',
   'cdnurl' => '',
   'version' => '2022-11-27 19:53:31',
@@ -35,10 +35,10 @@ return array (
   'mail_from' => 'info@zjszjs.com',
   'email' => '913083812@qq.com',
   'autosend' => '0',
-  'title' => 'Hunan Guiwei Biotechnology Co.',
-  'keywords' => 'Hunan Guiwei Biotechnology Co.',
+  'title' => 'Hunan quanjia',
+  'keywords' => 'Hunan quanjia',
   'description' => 'About the Website About the Website About the Website About the Website About the Website About the Website About the Website About the Website About the Website About the Website',
-  'logotxt' => 'Guiwei Selection',
+  'logotxt' => 'quanjia Selection',
   'logo' => '/uploads/20230705/4de3f1b55523ff6b04c061b506369e18.png',
   'logo2' => '',
   'head' => '1',

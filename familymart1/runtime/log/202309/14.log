@@ -1,0 +1,1698 @@
+---------------------------------------------------------------
+[ 2023-09-14T00:08:06+08:00 ] 127.0.0.1 GET familymart123.com/template/default2/js/swiper.min.js.map
+[运行时间：0.154879s] [吞吐率：6.46req/s] [内存消耗：120.88kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002114s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001500s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001594s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000420s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'template',
+    1 => 'default2',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694535623',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:09:32+08:00 ] 127.0.0.1 GET familymart123.com/pinpaijieshao.html
+[运行时间：0.309989s] [吞吐率：3.23req/s] [内存消耗：695.81kb] [文件加载：156]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000098s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001298s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001345s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.001002s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'channel',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694535623',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://familymart123.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'diyname' => 'pinpaijieshao',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.002722s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/addons/cms/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:/Users/panliu/Documents/privateProject/familyMartOne/familymart1/addons/cms/view/default2/list_product.html[/Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/library/think/view/driver/Think.php:82]
+---------------------------------------------------------------
+[ 2023-09-14T00:10:57+08:00 ] 127.0.0.1 GET familymart123.com/cms.php/general/config?addtabs=1
+[运行时间：0.103351s] [吞吐率：9.68req/s] [内存消耗：772.77kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000125s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000778s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000847s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000116s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'general.config',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621376',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000207s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/general/config.php
+[ info ] [ RUN ] app\admin\controller\general\Config->index[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/general/Config.php ]
+[ info ] [ VIEW ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/view/general/config/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'siteList',
+  6 => 'typeList',
+  7 => 'ruleList',
+  8 => 'groupList',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000100s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000104s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:10:57+08:00 ] 127.0.0.1 GET familymart123.com/cms.php/ajax/lang?callback=define&controllername=general.config&lang=zh-cn&v=1694621457&v=1694621457
+[运行时间：0.010760s] [吞吐率：92.94req/s] [内存消耗：262.23kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000037s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000392s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000444s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000060s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621376',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'general.config',
+  'lang' => 'zh-cn',
+  'v' => '1694621457',
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000468s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/general/config.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000065s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:11:41+08:00 ] 127.0.0.1 POST familymart123.com/cms.php/general.config/edit
+[运行时间：0.289792s] [吞吐率：3.45req/s] [内存消耗：582.91kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001242s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001953s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002030s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000114s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'general.config',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621376',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'http://familymart123.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '1773',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+)
+[ info ] [ PARAM ] array (
+  '__token__' => 'be580f98df53063b0db698f88a973d56',
+  'row' => 
+  array (
+    'name' => 'quanjia',
+    'beian' => 'Copyright ©2009-2023 Shenzhen IWOWN Technology Co. ,Ltd. All Rights Reserved. 粤ICP备15068355号-5',
+    'cdnurl' => '',
+    'version' => '2022-11-27 19:53:31',
+    'timezone' => 'Asia/Shanghai',
+    'forbiddenip' => '',
+    'languages' => '{}',
+    'fixedpage' => 'cms/archives',
+    'title' => 'Hunan quanjia',
+    'keywords' => 'Hunan quanjia',
+    'description' => 'About the Website About the Website About the Website About the Website About the Website About the Website About the Website About the Website About the Website About the Website',
+    'logotxt' => 'quanjia Selection',
+    'logo' => '/uploads/20230705/4de3f1b55523ff6b04c061b506369e18.png',
+    'logo2' => '',
+    'head' => '1',
+    'indexfw' => '0',
+    'indexfl' => '0',
+    'indexcp' => '1',
+    'indexfdc' => '0',
+    'indexxm' => '0',
+    'footimg' => '',
+    'map' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60995564.45003508!2d95.36850704754482!3d-21.077701802043496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b2bfd076787c5df%3A0x538267a1955b1352!2z5r6z5aSn5Yip5Lqa!5e0!3m2!1szh-CN!2shk!4v1676797610952!5m2!1szh-CN!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+    'tell' => '400-000-1089',
+    'emaill' => '252317898@qq.com',
+    'abn' => '',
+    'language' => '0',
+    'banner' => '1',
+    'reviews' => '0',
+    'sousuo' => '1',
+    'lspf' => '0',
+    'selectservice' => '{}',
+    'address' => 'West of Yaodu Avenue, Tuojiang Town, Jianghua Yao Autonomous County, Yongzhou City, Hunan Province, P.R,China',
+    'fax' => 'FAX: 400-000-1089',
+  ),
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000145s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/general/config.php
+[ info ] [ RUN ] app\admin\controller\general\Config->edit[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/general/Config.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.019316s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:12:21+08:00 ] 127.0.0.1 GET familymart123.com/cms.php/cms/channel/index?sort=weigh&order=desc&_=1694533703441
+[运行时间：0.098258s] [吞吐率：10.18req/s] [内存消耗：715.12kb] [文件加载：144]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000367s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000421s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000062s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.channel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621376',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh',
+  'order' => 'desc',
+  '_' => '1694533703441',
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000204s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/cms/channel.php
+[ info ] [ RUN ] app\admin\controller\cms\Channel->index[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/cms/Channel.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000053s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:12:23+08:00 ] 127.0.0.1 GET familymart123.com/cms.php/cms/archives/index?sort=weigh+DESC%2Cid+DESC&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1694533536593
+[运行时间：0.154992s] [吞吐率：6.45req/s] [内存消耗：737.96kb] [文件加载：148]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000094s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001397s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001485s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000098s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.archives',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621376',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh DESC,id DESC',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1694533536593',
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000155s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/cms/archives.php
+[ info ] [ RUN ] app\admin\controller\cms\Archives->index[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/cms/Archives.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000057s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:12:25+08:00 ] 127.0.0.1 GET familymart123.com/cms.php/cms/block?addtabs=1
+[运行时间：0.050265s] [吞吐率：19.89req/s] [内存消耗：614.28kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000593s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000658s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000084s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.block',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621376',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000158s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/cms/block.php
+[ info ] [ RUN ] app\admin\controller\cms\Block->index[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/cms/Block.php ]
+[ info ] [ VIEW ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/view/cms/block/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'statusList',
+  6 => 'typeList',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000113s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000057s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:12:25+08:00 ] 127.0.0.1 GET familymart123.com/cms.php/ajax/lang?callback=define&controllername=cms.block&lang=zh-cn&v=1694621545&v=1694621545
+[运行时间：0.008307s] [吞吐率：120.38req/s] [内存消耗：260.01kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000049s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001276s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001356s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000103s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621376',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'cms.block',
+  'lang' => 'zh-cn',
+  'v' => '1694621545',
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000363s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/cms/block.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000067s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:12:25+08:00 ] 127.0.0.1 GET familymart123.com/cms.php/cms/block/index?sort=weigh&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1694621545380
+[运行时间：0.050702s] [吞吐率：19.72req/s] [内存消耗：605.12kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000034s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000406s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000523s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000069s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.block',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621376',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1694621545380',
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000492s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/cms/block.php
+[ info ] [ RUN ] app\admin\controller\cms\Block->index[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/cms/Block.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000089s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:12:27+08:00 ] 127.0.0.1 GET familymart123.com/cms.php/cms/block/index?sort=weigh&order=desc&offset=0&limit=10&filter=%7B%22type%22%3A%22%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC%22%7D&op=%7B%22type%22%3A%22%3D%22%7D&_=1694621545381
+[运行时间：0.032651s] [吞吐率：30.63req/s] [内存消耗：608.22kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000207s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000601s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000675s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000069s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.block',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621376',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{"type":"关于我们"}',
+  'op' => '{"type":"="}',
+  '_' => '1694621545381',
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000158s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/cms/block.php
+[ info ] [ RUN ] app\admin\controller\cms\Block->index[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/cms/Block.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000052s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:12:43+08:00 ] 127.0.0.1 GET familymart123.com/cms.php/cms/block/edit/ids/21?dialog=1
+[运行时间：0.093778s] [吞吐率：10.66req/s] [内存消耗：722.97kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000123s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000863s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000990s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000113s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.block',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621376',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'dialog' => '1',
+  'ids' => '21',
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000188s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/cms/block.php
+[ info ] [ RUN ] app\admin\controller\cms\Block->edit[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/cms/Block.php ]
+[ info ] [ VIEW ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/view/cms/block/edit.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'statusList',
+  6 => 'fields',
+  7 => 'values',
+  8 => 'row',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000108s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000064s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:12:43+08:00 ] 127.0.0.1 GET familymart123.com/cms.php/ajax/lang?callback=define&controllername=cms.block&lang=zh-cn&v=1694621563&v=1694621563
+[运行时间：0.005832s] [吞吐率：171.47req/s] [内存消耗：260.01kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000312s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000363s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000055s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621376',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'cms.block',
+  'lang' => 'zh-cn',
+  'v' => '1694621563',
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000270s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/cms/block.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000107s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:12:43+08:00 ] 127.0.0.1 POST familymart123.com/cms.php/cms/block/selectpage_type
+[运行时间：0.021563s] [吞吐率：46.38req/s] [内存消耗：568.05kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000414s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000494s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000067s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.block',
+    2 => 'selectpage_type',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621376',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'http://familymart123.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '228',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+)
+[ info ] [ PARAM ] array (
+  'searchTable' => 'tbl',
+  'searchKey' => 'type',
+  'searchValue' => '关于我们',
+  'orderBy' => 
+  array (
+    0 => 
+    array (
+      0 => 'type',
+      1 => 'ASC',
+    ),
+  ),
+  'showField' => 'type',
+  'keyField' => 'type',
+  'keyValue' => '关于我们',
+  'searchField' => 
+  array (
+    0 => 'type',
+  ),
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000126s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/cms/block.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\cms\Block->selectpage_type[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/cms/Block.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.015923s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:12:59+08:00 ] 127.0.0.1 GET familymart123.com/template/default2/js/swiper.min.js.map
+[运行时间：0.006465s] [吞吐率：154.68req/s] [内存消耗：120.88kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000355s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000398s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000065s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'template',
+    1 => 'default2',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621376',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:13:52+08:00 ] 127.0.0.1 POST familymart123.com/cms.php/ajax/upload
+[运行时间：0.085227s] [吞吐率：11.73req/s] [内存消耗：589.27kb] [文件加载：146]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000398s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000445s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000066s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621376',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'http://familymart123.com',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryo0EJAjItbB1YoVvv',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json',
+  'content-length' => '53237',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000141s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->upload[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.014507s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:14:08+08:00 ] 127.0.0.1 POST familymart123.com/cms.php/ajax/upload
+[运行时间：0.032734s] [吞吐率：30.55req/s] [内存消耗：588.17kb] [文件加载：146]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000334s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000378s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000064s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621376',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'http://familymart123.com',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryXW8M7biFh4nxsMXp',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json',
+  'content-length' => '56437',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000139s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->upload[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.015889s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:14:08+08:00 ] 127.0.0.1 POST familymart123.com/cms.php/ajax/upload
+[运行时间：0.058331s] [吞吐率：17.14req/s] [内存消耗：588.17kb] [文件加载：146]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000268s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000312s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000048s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621376',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'http://familymart123.com',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryEaqUfha2dbtAHREx',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json',
+  'content-length' => '119159',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000122s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->upload[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.010076s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:16:33+08:00 ] 127.0.0.1 POST familymart123.com/cms.php/cms/block/edit/ids/21?dialog=1
+[运行时间：0.059109s] [吞吐率：16.92req/s] [内存消耗：642.40kb] [文件加载：144]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000140s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000794s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000847s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000172s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.block',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621376',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'http://familymart123.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '1355',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+)
+[ info ] [ PARAM ] array (
+  'dialog' => '1',
+  '__token__' => 'eb4de666543e0a09b1de5adddc66d67d',
+  'row' => 
+  array (
+    'type' => '关于我们',
+    'name' => 'about',
+    'title' => '尊享版集享会员',
+    'image' => '/uploads/20230706/5c729374dc02a0e81d89fc28822f5f8e.jpg',
+    'url' => '',
+    'content' => '<p>你升级尊享卡了吗？尊享卡集享会员独享更多权益</p>',
+    'parsetpl' => '0',
+    'weigh' => '58',
+    'begintime' => '',
+    'endtime' => '',
+    'foottop' => '0',
+    'sf' => '0',
+    'imgs' => '',
+    'lr' => '1',
+    'xg' => '',
+    'ww' => '1',
+    'ys' => '1',
+    'images' => '/uploads/20230914/2eca810d3fc5e2ab59707a41fd131aba.jpg,/uploads/20230914/962cba2b86a8e7a6315659f99ac86d13.jpg,/uploads/20230914/89255f6d0a7bd627c89050c4f2500bc6.jpg',
+    'intro' => '[{"info":"","txt":""},{"info":"","txt":""},{"info":"","txt":""}]',
+    'status' => 'normal',
+  ),
+  'ids' => '21',
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000165s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/cms/block.php
+[ info ] [ RUN ] app\admin\controller\cms\Block->edit[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/cms/Block.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.003484s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:16:33+08:00 ] 127.0.0.1 GET familymart123.com/cms.php/cms/block/index?sort=weigh&order=desc&offset=0&limit=10&filter=%7B%22type%22%3A%22%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC%22%7D&op=%7B%22type%22%3A%22%3D%22%7D&_=1694621545382
+[运行时间：0.029315s] [吞吐率：34.11req/s] [内存消耗：606.80kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000050s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000422s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000473s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000102s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.block',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621376',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{"type":"关于我们"}',
+  'op' => '{"type":"="}',
+  '_' => '1694621545382',
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000136s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/cms/block.php
+[ info ] [ RUN ] app\admin\controller\cms\Block->index[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/cms/Block.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000047s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:17:31+08:00 ] 127.0.0.1 GET familymart123.com/
+[运行时间：0.053600s] [吞吐率：18.66req/s] [内存消耗：524.19kb] [文件加载：146]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000069s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000489s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000537s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000081s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'index',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621376',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000860s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/addons/cms/lang/zh-cn.php
+[ info ] [ VIEW ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/addons/cms/view/default2/index.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000113s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:17:31+08:00 ] 127.0.0.1 GET familymart123.com/template/default2/js/swiper.min.js.map
+[运行时间：0.065843s] [吞吐率：15.19req/s] [内存消耗：120.88kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000082s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001394s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001454s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.001179s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'template',
+    1 => 'default2',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621376',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:17:32+08:00 ] 127.0.0.1 GET familymart123.com/template/default2/css/favicon.ico?v=1694621851
+[运行时间：0.005981s] [吞吐率：167.20req/s] [内存消耗：121.49kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000050s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000732s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000897s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000068s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'template',
+    1 => 'default2',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621852',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://familymart123.com/',
+  'accept' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'v' => '1694621851',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:23:54+08:00 ] 127.0.0.1 GET familymart123.com/cms.php/cms/block/edit/ids/21?dialog=1
+[运行时间：0.085209s] [吞吐率：11.74req/s] [内存消耗：670.16kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000046s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000511s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000576s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000114s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.block',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621852',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'dialog' => '1',
+  'ids' => '21',
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000274s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/cms/block.php
+[ info ] [ RUN ] app\admin\controller\cms\Block->edit[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/cms/Block.php ]
+[ info ] [ VIEW ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/view/cms/block/edit.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'statusList',
+  6 => 'fields',
+  7 => 'values',
+  8 => 'row',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000115s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000130s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:23:54+08:00 ] 127.0.0.1 GET familymart123.com/cms.php/ajax/lang?callback=define&controllername=cms.block&lang=zh-cn&v=1694622234&v=1694622234
+[运行时间：0.006031s] [吞吐率：165.81req/s] [内存消耗：260.01kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000034s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000370s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000417s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000070s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621852',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'cms.block',
+  'lang' => 'zh-cn',
+  'v' => '1694622234',
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000238s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/cms/block.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000059s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:23:55+08:00 ] 127.0.0.1 POST familymart123.com/cms.php/cms/block/selectpage_type
+[运行时间：0.020397s] [吞吐率：49.03req/s] [内存消耗：568.05kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000458s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000503s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000141s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.block',
+    2 => 'selectpage_type',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621852',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'http://familymart123.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '228',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+)
+[ info ] [ PARAM ] array (
+  'searchTable' => 'tbl',
+  'searchKey' => 'type',
+  'searchValue' => '关于我们',
+  'orderBy' => 
+  array (
+    0 => 
+    array (
+      0 => 'type',
+      1 => 'ASC',
+    ),
+  ),
+  'showField' => 'type',
+  'keyField' => 'type',
+  'keyValue' => '关于我们',
+  'searchField' => 
+  array (
+    0 => 'type',
+  ),
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000296s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/cms/block.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\cms\Block->selectpage_type[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/cms/Block.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.013674s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:24:14+08:00 ] 127.0.0.1 POST familymart123.com/cms.php/ajax/upload
+[运行时间：0.021055s] [吞吐率：47.49req/s] [内存消耗：588.17kb] [文件加载：146]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000050s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000330s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000377s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000056s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621852',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'http://familymart123.com',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarySXS2JpooJRRQbL9C',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json',
+  'content-length' => '23815',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000241s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->upload[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.006198s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:24:18+08:00 ] 127.0.0.1 POST familymart123.com/cms.php/cms/block/edit/ids/21?dialog=1
+[运行时间：0.051658s] [吞吐率：19.36req/s] [内存消耗：640.98kb] [文件加载：144]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000371s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000421s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000129s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.block',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621852',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'origin' => 'http://familymart123.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '1355',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+)
+[ info ] [ PARAM ] array (
+  'dialog' => '1',
+  '__token__' => '2f1b09f3a2303e487c0ba89c439fcfbf',
+  'row' => 
+  array (
+    'type' => '关于我们',
+    'name' => 'about',
+    'title' => '尊享版集享会员',
+    'image' => '/uploads/20230914/902b2fe0f223cb436de16009527676f9.jpg',
+    'url' => '',
+    'content' => '<p>你升级尊享卡了吗？尊享卡集享会员独享更多权益</p>',
+    'parsetpl' => '0',
+    'weigh' => '58',
+    'begintime' => '',
+    'endtime' => '',
+    'foottop' => '0',
+    'sf' => '0',
+    'imgs' => '',
+    'lr' => '1',
+    'xg' => '',
+    'ww' => '1',
+    'ys' => '1',
+    'images' => '/uploads/20230914/2eca810d3fc5e2ab59707a41fd131aba.jpg,/uploads/20230914/962cba2b86a8e7a6315659f99ac86d13.jpg,/uploads/20230914/89255f6d0a7bd627c89050c4f2500bc6.jpg',
+    'intro' => '[{"info":"","txt":""},{"info":"","txt":""},{"info":"","txt":""}]',
+    'status' => 'normal',
+  ),
+  'ids' => '21',
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000366s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/cms/block.php
+[ info ] [ RUN ] app\admin\controller\cms\Block->edit[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/cms/Block.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.009227s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:24:18+08:00 ] 127.0.0.1 GET familymart123.com/cms.php/cms/block/index?sort=weigh&order=desc&offset=0&limit=10&filter=%7B%22type%22%3A%22%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC%22%7D&op=%7B%22type%22%3A%22%3D%22%7D&_=1694621545383
+[运行时间：0.022637s] [吞吐率：44.18req/s] [内存消耗：606.80kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000282s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000326s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000057s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.block',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621852',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{"type":"关于我们"}',
+  'op' => '{"type":"="}',
+  '_' => '1694621545383',
+)
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000151s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/admin/lang/zh-cn/cms/block.php
+[ info ] [ RUN ] app\admin\controller\cms\Block->index[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/application/admin/controller/cms/Block.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000056s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:26:04+08:00 ] 127.0.0.1 GET familymart123.com/
+[运行时间：0.089737s] [吞吐率：11.14req/s] [内存消耗：548.04kb] [文件加载：147]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000089s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000474s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000528s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000071s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'index',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694621852',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000480s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/addons/cms/lang/zh-cn.php
+[ info ] [ VIEW ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/addons/cms/view/default2/index.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000133s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:26:06+08:00 ] 127.0.0.1 GET familymart123.com/template/default2/css/favicon.ico?v=1694622364
+[运行时间：0.007341s] [吞吐率：136.22req/s] [内存消耗：121.49kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000037s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000402s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000459s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000066s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'template',
+    1 => 'default2',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694622365',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://familymart123.com/',
+  'accept' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'v' => '1694622364',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:26:46+08:00 ] 127.0.0.1 GET familymart123.com/
+[运行时间：0.127176s] [吞吐率：7.86req/s] [内存消耗：542.78kb] [文件加载：147]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000078s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000673s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000762s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000081s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'index',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694622365',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /Users/panliu/Documents/privateProject/familyMartOne/familymart1/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000267s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/addons/cms/lang/zh-cn.php
+[ info ] [ VIEW ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/addons/cms/view/default2/index.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.001426s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-09-14T00:26:47+08:00 ] 127.0.0.1 GET familymart123.com/template/default2/css/favicon.ico?v=1694622406
+[运行时间：0.011307s] [吞吐率：88.44req/s] [内存消耗：121.49kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000516s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000582s ]
+[ info ] [ LANG ] /Users/panliu/Documents/privateProject/familyMartOne/familymart1/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000073s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'template',
+    1 => 'default2',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_1166d2ba6c66a5addbb755e9d3aa650f=1694533267; PHPSESSID=ilt80hqopce7vh9blbhuvjfvo6; think_var=zh-cn; Hm_lpvt_1166d2ba6c66a5addbb755e9d3aa650f=1694622407',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://familymart123.com/',
+  'accept' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'familymart123.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'v' => '1694622406',
+)
+[ info ] [ LOG ] INIT File

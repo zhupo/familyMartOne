@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:100:"/Users/panliu/Documents/privateProject/familyMartOne/familymart1/addons/cms/view/default2/index.html";i:1694535619;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:100:"/Users/panliu/Documents/privateProject/familyMartOne/familymart1/addons/cms/view/default2/index.html";i:1694622403;}*/ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
  <head> 
@@ -118,7 +118,7 @@ function contactUs() {
     <div class="topside"> 
      <a href="/" class="logo"></a> 
      <ul class="nav"> 
-      <?php $__meLF5izyXR__ = \addons\cms\model\Channel::getChannelList(["id"=>"nav","type"=>"top","cache"=>"0","condition"=>"1=isnav","row"=>"20","orderby"=>"weigh","orderway"=>"desc"]); if(is_array($__meLF5izyXR__) || $__meLF5izyXR__ instanceof \think\Collection || $__meLF5izyXR__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__meLF5izyXR__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?>
+      <?php $__y91wJqE6cD__ = \addons\cms\model\Channel::getChannelList(["id"=>"nav","type"=>"top","cache"=>"0","condition"=>"1=isnav","row"=>"20","orderby"=>"weigh","orderway"=>"desc"]); if(is_array($__y91wJqE6cD__) || $__y91wJqE6cD__ instanceof \think\Collection || $__y91wJqE6cD__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__y91wJqE6cD__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?>
         <li class="nav-item guqj" data-name="zhajizhuanjia"> 
           <div class="toptitle">
            <a href="#"><?php echo $nav['name']; ?></a>
@@ -126,13 +126,13 @@ function contactUs() {
           <?php if($nav['has_child']): ?>
           <div class="drop"> 
            <ul> 
-            <?php $__SzYrVIih18__ = \addons\cms\model\Channel::getChannelList(["id"=>"son","type"=>"son","condition"=>"1=isnav","typeid"=>$nav['id'],"cache"=>"0","row"=>"20"]); if(is_array($__SzYrVIih18__) || $__SzYrVIih18__ instanceof \think\Collection || $__SzYrVIih18__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__SzYrVIih18__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$son): $mod = ($i % 2 );++$i;?>
+            <?php $__0cSJRIxVQA__ = \addons\cms\model\Channel::getChannelList(["id"=>"son","type"=>"son","condition"=>"1=isnav","typeid"=>$nav['id'],"cache"=>"0","row"=>"20"]); if(is_array($__0cSJRIxVQA__) || $__0cSJRIxVQA__ instanceof \think\Collection || $__0cSJRIxVQA__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__0cSJRIxVQA__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$son): $mod = ($i % 2 );++$i;?>
               <li><a href="<?php echo $son['url']; ?>" class=""><?php echo $son['name']; ?></a></li> 
-            <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__SzYrVIih18__; ?>
+            <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__0cSJRIxVQA__; ?>
            </ul> 
           </div> 
         </li>
-        <?php endif; endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__meLF5izyXR__; ?>
+        <?php endif; endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__y91wJqE6cD__; ?>
      </ul> 
     </div> 
     <div class="box01-side" style="position: static"> 
@@ -143,11 +143,11 @@ function contactUs() {
         <input type="text" placeholder="请输入搜索内容" name="keyword" id="searchInput" class="tet"> 
        </div> 
       </div> 
-      <div class="sharelink pr"> 
+      <!-- <div class="sharelink pr"> 
        <div class="item item-1"> 
         <a href="javascript:;" onclick="contactUs()"> <span class="icon icon-type-1"></span> <p>联系我们</p> </a> 
        </div> 
-      </div> 
+      </div>  -->
      </div> 
     </div> 
    </div> 
@@ -273,30 +273,30 @@ function contactUs() {
        </div> 
       </div> 
      </div> 
-     <div class="prowrap"> 
-      <div class="colC1-detail cf"> 
-       <a href="/franchise/applyOnline"><img src="/template/default2/images/sct_01.jpg" alt=""></a> 
-       <a href="/career/list"><img src="/template/default2/images/sct_02.jpg" alt=""></a> 
-       <a href="http://www.familymart.com.cn/brand/parcafe" target="_blank"><img src="/template/default2/images/sct_03.jpg" alt=""></a> 
-      </div> 
-      <div class="colC2-detail cf"> 
-       <div class="content-box"> 
-        <div class="col col-1"> 
-         <h2>尊享版集享会员</h2> 
-         <p>你升级尊享卡了吗？尊享卡集享会员独享更多权益</p> 
-         <div> 
-          <!-- <a class="more-btn" href="">了解更多</a> --> 
-         </div> 
-         <div class="row-2"> 
-          <a class="get-card-btn" href="/members/ZunXiangKa">领取您的尊享卡</a> 
+     <?php $__MTf34aS1pV__ = \addons\cms\model\Block::getBlockList(["id"=>"block","name"=>"about","orderby"=>"weigh","orderway"=>"desc"]); if(is_array($__MTf34aS1pV__) || $__MTf34aS1pV__ instanceof \think\Collection || $__MTf34aS1pV__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__MTf34aS1pV__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$block): $mod = ($i % 2 );++$i;?> 
+      <div class="prowrap"> 
+        <div class="colC1-detail cf"> 
+          <?php if(is_array(explode(',',$block['images'])) || explode(',',$block['images']) instanceof \think\Collection || explode(',',$block['images']) instanceof \think\Paginator): $i = 0; $__LIST__ = explode(',',$block['images']);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$image): $mod = ($i % 2 );++$i;?>
+            <a href="<?php echo $block['intro'][$key]['info']; ?>"><img src="<?php echo $image; ?>" alt=""></a> 
+        <?php endforeach; endif; else: echo "" ;endif; ?>
+        </div> 
+        <div class="colC2-detail cf"> 
+         <div class="content-box"> 
+          <div class="col col-1"> 
+           <h2><?php echo $block['title']; ?></h2> 
+           <p><?php echo $block['content']; ?></p> 
+           <div> 
+            <!-- <a class="more-btn" href="">了解更多</a> --> 
+           </div> 
+          </div> 
+          <div class="col col-2"> 
+           <img src="<?php echo $block['image']; ?>" alt=""> 
+          </div> 
          </div> 
         </div> 
-        <div class="col col-2"> 
-         <img src="/template/default2/images/vip_01.jpg" alt=""> 
-        </div> 
-       </div> 
-      </div> 
-     </div> 
+       </div>
+ 	    	<?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__MTf34aS1pV__; ?>
+
     </div> 
    </div> 
    <script>
@@ -366,7 +366,7 @@ function contactUs() {
    <div class="breakbox-box"> 
     <p class="footer-text1">© 2020 Shanghai FamilyMart Co.,Ltd All Rights Reserved.<a href="//beian.miit.gov.cn/" target="_blank" rel="nofollow">沪ICP备12043844号-1</a></p> 
     <p><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202013095"><img src="/template/default2/images/gongan.png">沪公网安备 31011202013095号</a></p> 
-    <p class="footer-text2"><a href="javascript:;" onclick="contactUs()">联系我们</a>|<a href="/faq">常见问题</a></p> 
+    <!-- <p class="footer-text2"><a href="javascript:;" onclick="contactUs()">联系我们</a>|<a href="/faq">常见问题</a></p>  -->
    </div> 
   </div> 
   <!--页脚结束-->  

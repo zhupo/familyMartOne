@@ -162,11 +162,11 @@ function contactUs() {
         <input type="text" placeholder="请输入搜索内容" name="keyword" id="searchInput" class="tet"> 
        </div> 
       </div> 
-      <div class="sharelink pr"> 
+      <!-- <div class="sharelink pr"> 
        <div class="item item-1"> 
         <a href="javascript:;" onclick="contactUs()"> <span class="icon icon-type-1"></span> <p>联系我们</p> </a> 
        </div> 
-      </div> 
+      </div>  -->
      </div> 
     </div> 
    </div> 
@@ -292,30 +292,30 @@ function contactUs() {
        </div> 
       </div> 
      </div> 
-     <div class="prowrap"> 
-      <div class="colC1-detail cf"> 
-       <a href="/franchise/applyOnline"><img src="__CDN__/template/default2/images/sct_01.jpg" alt=""></a> 
-       <a href="/career/list"><img src="__CDN__/template/default2/images/sct_02.jpg" alt=""></a> 
-       <a href="http://www.familymart.com.cn/brand/parcafe" target="_blank"><img src="__CDN__/template/default2/images/sct_03.jpg" alt=""></a> 
-      </div> 
-      <div class="colC2-detail cf"> 
-       <div class="content-box"> 
-        <div class="col col-1"> 
-         <h2>尊享版集享会员</h2> 
-         <p>你升级尊享卡了吗？尊享卡集享会员独享更多权益</p> 
-         <div> 
-          <!-- <a class="more-btn" href="">了解更多</a> --> 
-         </div> 
-         <div class="row-2"> 
-          <a class="get-card-btn" href="/members/ZunXiangKa">领取您的尊享卡</a> 
+     {cms:blocklist id="block" name="about" orderby="weigh" orderway="desc" } 
+      <div class="prowrap"> 
+        <div class="colC1-detail cf"> 
+          {volist name="$block.images|explode=',',###" id="image"}
+            <a href="{$block.intro[$key]['info']}"><img src="{$image}" alt=""></a> 
+        {/volist}
+        </div> 
+        <div class="colC2-detail cf"> 
+         <div class="content-box"> 
+          <div class="col col-1"> 
+           <h2>{$block.title}</h2> 
+           <p>{$block.content}</p> 
+           <div> 
+            <!-- <a class="more-btn" href="">了解更多</a> --> 
+           </div> 
+          </div> 
+          <div class="col col-2"> 
+           <img src="{$block.image}" alt=""> 
+          </div> 
          </div> 
         </div> 
-        <div class="col col-2"> 
-         <img src="__CDN__/template/default2/images/vip_01.jpg" alt=""> 
-        </div> 
-       </div> 
-      </div> 
-     </div> 
+       </div>
+ 	    	{/cms:blocklist}
+
     </div> 
    </div> 
    <script>
@@ -385,7 +385,7 @@ function contactUs() {
    <div class="breakbox-box"> 
     <p class="footer-text1">© 2020 Shanghai FamilyMart Co.,Ltd All Rights Reserved.<a href="//beian.miit.gov.cn/" target="_blank" rel="nofollow">沪ICP备12043844号-1</a></p> 
     <p><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202013095"><img src="__CDN__/template/default2/images/gongan.png">沪公网安备 31011202013095号</a></p> 
-    <p class="footer-text2"><a href="javascript:;" onclick="contactUs()">联系我们</a>|<a href="/faq">常见问题</a></p> 
+    <!-- <p class="footer-text2"><a href="javascript:;" onclick="contactUs()">联系我们</a>|<a href="/faq">常见问题</a></p>  -->
    </div> 
   </div> 
   <!--页脚结束-->  
