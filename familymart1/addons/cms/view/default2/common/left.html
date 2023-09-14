@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  <meta name="language" content="en"> 
+  <title>首页</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=0.68, maximum-scale=1, minimum-scale=0.68, user-scalable=yes"> 
+  <meta name="apple-mobile-web-app-capable" content="yes"> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+  <meta property="wb:webmaster" content="286b33bafd8a81b5"> 
+  <!-- 让360双核浏览器用webkit内核渲染页面
+    ================================================== --> 
+  <meta name="renderer" content="webkit"> 
+  <meta name="description" content="{$site.description}"> 
+  <meta name="keywords" content="{$site.keywords}"> 
+  <link rel="stylesheet" href="__CDN__/template/default2/css/swiper.min.css?v={$site.version}"> 
+  <link rel="stylesheet" href="__CDN__/template/default2/css/animate.css?v={$site.version}"> 
+  <link rel="stylesheet" href="__CDN__/template/default2/css/global.css?v={$site.version}"> 
+  <link rel="stylesheet" href="__CDN__/template/default2/css/fane.css?v={$site.version}"> 
+  <script type="text/javascript" src="__CDN__/template/default2/js/jquery-1.9.1.min.js?v={$site.version}"></script> 
+  <script type="text/javascript">
+        function changecitybypup(){
+            $.ajax({
+                type:"POST",
+                global:false,
+                url:"/store/setCity",
+                data:{"cid": $('#citySeltetPup').val()},
+                dataType:"JSON",
+                success:function(data){
+                },
+                complete:function(data){
+                    showCommonPop('正在切换城市...');
+                    webMCookie.set('cid',$('#citySeltetPup').val(), 7);
+                    webMCookie.set('city',$('#citySeltetPup option:selected').text(), 7);
+                    location.reload();
+                },
+            });
+        }
+    </script> 
+  <link rel="icon" type="image/x-icon" href="__CDN__/template/default2/images/favicon.ico?v={$site.version}"> 
+  <script type="text/javascript">BASEUSER=''</script> 
+  <script type="text/javascript">HOSTURL=''</script> 
+  <script type="text/javascript">
+    // if(window.navigator.userAgent.indexOf("Mobile")>=0){
+    //     if(window.navigator.userAgent.indexOf("iPad")>=0){
+
+
+    //     }else{
+    //         window.location.href="http://www.familymart.com.cn/mobile/";
+    //         //$('meta[name="viewport"]').attr({'content':'width=device-width, initial-scale=0.28, maximum-scale=1.0, minimum-scale=0.28, user-scalable=yes'})
+    //     }
+    // }
+    </script> 
+  <script type="text/javascript">
+    function wmx_set_account(account) {
+        return false;
+    }
+    function wmx_flash_counter(title,url) {
+        return false;
+    }
+    function wmx_trackBtn(buttonname, driveritem) {
+        return false;
+    }
+    function familymart_tracker(a,b){
+        return false;
+    }
+
+    function familymart_flash_tracker(a,b){
+        return false;
+    }
+    </script> 
+  <script>
+
+	var webMCookie = {
+        set:function(cname, cvalue, exdays) {//设置cookie
+            this.clear(cname);
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            var expires = "expires="+d.toUTCString();
+            document.cookie = cname + "=" + cvalue + "; " + expires +"; path=/; domain="+document.domain;
+        },
+        get:function(cname) {//获取cookie
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0; i<ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0)==' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) != -1) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        },
+        clear:function(cname) {//清除cookie
+            var exp = new Date();
+            exp.setTime(exp.getTime() - 1);
+            var cval=this.get(cname);
+            if(cval!==null){
+                document.cookie= cname + "="+cval+";expires="+exp.toGMTString();
+            }
+        }
+    };
+	function ChangeCity(){
+		showCommonPop('正在切换城市...');
+		webMCookie.set('cid',$('#citySeltet').val(), 7);
+		webMCookie.set('city',$('#citySeltet option:selected').text(), 7);
+		location.reload();
+	}
+
+
+</script> 
+  <script>
+// 客服系统
+(function(a,h,c,b,f,g){a["UdeskApiObject"]=f;a[f]=a[f]||function(){(a[f].d=a[f].d||[]).push(arguments)};g=h.createElement(c);g.async=1;g.charset="utf-8";g.src=b;c=h.getElementsByTagName(c)[0];c.parentNode.insertBefore(g,c)})(window,document,"script","https://assets-cli.s4.udesk.cn/im_client/js/udeskApi.js","ud");
+ud({
+    "code": "1i0h723c",
+    "link": "https://familymart.s4.udesk.cn/im_client/?web_plugin_id=46808"
+});
+
+function contactUs() {
+    $('.udesk-client-btn').click()
+}
+</script> 
+  <style type="text/css">
+#udesk_btn {
+    display: none;
+}
+</style> 
+ </head> 
+ <body> 
+  <div class="wrap"> 
+   <!-- menu --> 
+   <div class="side"> 
+    <div class="topside"> 
+     <a href="/" class="logo"></a> 
+     <ul class="nav"> 
+      {cms:channellist id="nav" type="top" cache="0" condition="1=isnav" row="20" orderby="weigh" orderway="desc"}
+        <li class="nav-item guqj {if $nav.is_active} active {/if}" data-name="zhajizhuanjia"> 
+          <div class="toptitle">
+           <a href="{if $nav.id = 66} # {/if}  {if $nav.id != 66}{$nav.url}{/if}">{$nav.name}</a>
+          </div> 
+          {if $nav.has_child}
+          <div class="drop"> 
+           <ul> 
+            {cms:channellist id="son" type="son" condition="1=isnav" typeid="nav['id']" cache="0" row="20"}
+              <li><a href="{$son.url}" class="">{$son.name}</a></li> 
+            {/cms:channellist}
+           </ul> 
+          </div> 
+        </li>
+        {/if}
+        {/cms:channellist}
+     </ul> 
+    </div> 
+    <div class="box01-side" style="position: static"> 
+     <div class="box01-content"> 
+      <div class="searchbox-fl"> 
+       <div class="searchbox"> 
+        <div class="searchbtn pa searchbtnleft" onclick="searchSubmit('');"></div> 
+        <input type="text" placeholder="请输入搜索内容" name="keyword" id="searchInput" class="tet"> 
+       </div> 
+      </div> 
+      <!-- <div class="sharelink pr"> 
+       <div class="item item-1"> 
+        <a href="javascript:;" onclick="contactUs()"> <span class="icon icon-type-1"></span> <p>联系我们</p> </a> 
+       </div> 
+      </div>  -->
+     </div> 
+    </div> 
+   </div>

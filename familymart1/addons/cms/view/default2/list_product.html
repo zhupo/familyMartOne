@@ -1,0 +1,60 @@
+{include file="common/left" /}}
+   <div id="content"> 
+    <div class="main mainpro"> 
+     <div class="banpro"> 
+      <img width="100%" src="{cms:channel name="image" /}"> 
+      <div class="banpro-box"> 
+       <h2>{$__CHANNEL__.name}</h2> 
+       <!-- <p>诚信务实、价值创新、顾客满意、共同成长</p>  -->
+      </div> 
+     </div> 
+     <div class="prowrap"> 
+      <div class="colB1-detail"> 
+       <div class="colB1-detail-cos"> 
+        <p>{$__CHANNEL__.description}</p> 
+       </div> 
+      </div> 
+      <div class="colB2-detail"> 
+       <div class="The-content-area-2"> 
+        <img src="{$__CHANNEL__.lmimg}"> 
+       </div> 
+      </div> 
+      <div class="colB3-detail"> 
+       <div class="template-content"> 
+        <img src="{$__CHANNEL__.lmbj}"> 
+        {$__CHANNEL__.lanmujj}
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <!-- /右侧 --> 
+   </div> 
+   <script>
+    $('.popwx').click(function() {
+        $('#popewm').popOn();
+    })
+    $('.popwxside').click(function() {
+        $('#popewm_side').show();
+        $('#popewm_jxlm').hide();
+    })
+    $('#popewm_side .close').click(function() {
+        $('#popewm_side').hide();
+    })
+    $('.jxlm').click(function() {
+        $('#popewm_jxlm').show();
+        $('#popewm_side').hide();
+    })
+    $('#popewm_jxlm .close').click(function() {
+        $('#popewm_jxlm').hide();
+    })
+
+    //标注
+    getSubCurrentMenu('about');
+
+    //左侧判断,如果子类空,直接显示主菜单
+    if ($("#subnavone>li").length == 0) {
+        $('.subnav').hide();
+        $('.nav').show();
+    }
+    </script>
+    {include file="common/foot" /}

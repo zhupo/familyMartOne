@@ -1,10 +1,10 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:100:"/Users/panliu/Documents/privateProject/familyMartOne/familymart1/addons/cms/view/default2/index.html";i:1694622403;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:100:"/Users/panliu/Documents/privateProject/familyMartOne/familymart1/addons/cms/view/default2/index.html";i:1694696474;s:106:"/Users/panliu/Documents/privateProject/familyMartOne/familymart1/addons/cms/view/default2/common/left.html";i:1694707652;s:106:"/Users/panliu/Documents/privateProject/familyMartOne/familymart1/addons/cms/view/default2/common/foot.html";i:1694694887;}*/ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
  <head> 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
   <meta name="language" content="en"> 
-  <title>全家Family Mart—开心尝鲜在全家 - 首页</title> 
+  <title>首页</title> 
   <meta name="viewport" content="width=device-width, initial-scale=0.68, maximum-scale=1, minimum-scale=0.68, user-scalable=yes"> 
   <meta name="apple-mobile-web-app-capable" content="yes"> 
   <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
@@ -12,8 +12,8 @@
   <!-- 让360双核浏览器用webkit内核渲染页面
     ================================================== --> 
   <meta name="renderer" content="webkit"> 
-  <meta name="description" content="全家便利店，让您的生活更加便利，同时让每位来到全家的顾客，都能够与温暖的笑容相遇，给您贴心般的家人般的感受！"> 
-  <meta name="keywords" content="全家便利店  Family Mart  新品特快  呀米将  营养蒸包馒头  营养便当  经典风味面  和风寿司手卷  美味饭团 鲜爽沙拉 烤致工房  关东煮本铺 营养粥汤 风味小食 自提服务 鲜食促销  公共事业缴费 刷卡消费 ATM 娱乐通讯 国家快递 阿拉订 付临门  Fami淘宝  Fami天猫  全家简介 全家愿景 全家大事记 全球布局  新闻中心 合作经营优势 说明会  店长 新手解答  申请流程 门店租赁 合作经营条件测试  全家工作优势 全家在职训练 求职小技巧 招聘流程 我要应聘 最新职缺  常见问题  喜士多  7-11 罗森"> 
+  <meta name="description" content="<?php echo $site['description']; ?>"> 
+  <meta name="keywords" content="<?php echo $site['keywords']; ?>"> 
   <link rel="stylesheet" href="/template/default2/css/swiper.min.css?v=<?php echo $site['version']; ?>"> 
   <link rel="stylesheet" href="/template/default2/css/animate.css?v=<?php echo $site['version']; ?>"> 
   <link rel="stylesheet" href="/template/default2/css/global.css?v=<?php echo $site['version']; ?>"> 
@@ -38,19 +38,19 @@
             });
         }
     </script> 
-  <link rel="icon" type="image/x-icon" href="/template/default2/css/favicon.ico?v=<?php echo $site['version']; ?>"> 
+  <link rel="icon" type="image/x-icon" href="/template/default2/images/favicon.ico?v=<?php echo $site['version']; ?>"> 
   <script type="text/javascript">BASEUSER=''</script> 
-  <script type="text/javascript">HOSTURL='http://www.familymart.com.cn'</script> 
+  <script type="text/javascript">HOSTURL=''</script> 
   <script type="text/javascript">
-    if(window.navigator.userAgent.indexOf("Mobile")>=0){
-        if(window.navigator.userAgent.indexOf("iPad")>=0){
+    // if(window.navigator.userAgent.indexOf("Mobile")>=0){
+    //     if(window.navigator.userAgent.indexOf("iPad")>=0){
 
 
-        }else{
-            window.location.href="http://www.familymart.com.cn/mobile/";
-            //$('meta[name="viewport"]').attr({'content':'width=device-width, initial-scale=0.28, maximum-scale=1.0, minimum-scale=0.28, user-scalable=yes'})
-        }
-    }
+    //     }else{
+    //         window.location.href="http://www.familymart.com.cn/mobile/";
+    //         //$('meta[name="viewport"]').attr({'content':'width=device-width, initial-scale=0.28, maximum-scale=1.0, minimum-scale=0.28, user-scalable=yes'})
+    //     }
+    // }
     </script> 
   <script type="text/javascript">
     function wmx_set_account(account) {
@@ -118,21 +118,21 @@ function contactUs() {
     <div class="topside"> 
      <a href="/" class="logo"></a> 
      <ul class="nav"> 
-      <?php $__y91wJqE6cD__ = \addons\cms\model\Channel::getChannelList(["id"=>"nav","type"=>"top","cache"=>"0","condition"=>"1=isnav","row"=>"20","orderby"=>"weigh","orderway"=>"desc"]); if(is_array($__y91wJqE6cD__) || $__y91wJqE6cD__ instanceof \think\Collection || $__y91wJqE6cD__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__y91wJqE6cD__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?>
-        <li class="nav-item guqj" data-name="zhajizhuanjia"> 
+      <?php $__OoX1ulJDWe__ = \addons\cms\model\Channel::getChannelList(["id"=>"nav","type"=>"top","cache"=>"0","condition"=>"1=isnav","row"=>"20","orderby"=>"weigh","orderway"=>"desc"]); if(is_array($__OoX1ulJDWe__) || $__OoX1ulJDWe__ instanceof \think\Collection || $__OoX1ulJDWe__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__OoX1ulJDWe__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?>
+        <li class="nav-item guqj <?php if($nav['is_active']): ?> active <?php endif; ?>" data-name="zhajizhuanjia"> 
           <div class="toptitle">
-           <a href="#"><?php echo $nav['name']; ?></a>
+           <a href="<?php if($nav['id'] = 66): ?> # <?php endif; if($nav['id'] != 66): ?><?php echo $nav['url']; endif; ?>"><?php echo $nav['name']; ?></a>
           </div> 
           <?php if($nav['has_child']): ?>
           <div class="drop"> 
            <ul> 
-            <?php $__0cSJRIxVQA__ = \addons\cms\model\Channel::getChannelList(["id"=>"son","type"=>"son","condition"=>"1=isnav","typeid"=>$nav['id'],"cache"=>"0","row"=>"20"]); if(is_array($__0cSJRIxVQA__) || $__0cSJRIxVQA__ instanceof \think\Collection || $__0cSJRIxVQA__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__0cSJRIxVQA__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$son): $mod = ($i % 2 );++$i;?>
+            <?php $__17Hy6sQf9Z__ = \addons\cms\model\Channel::getChannelList(["id"=>"son","type"=>"son","condition"=>"1=isnav","typeid"=>$nav['id'],"cache"=>"0","row"=>"20"]); if(is_array($__17Hy6sQf9Z__) || $__17Hy6sQf9Z__ instanceof \think\Collection || $__17Hy6sQf9Z__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__17Hy6sQf9Z__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$son): $mod = ($i % 2 );++$i;?>
               <li><a href="<?php echo $son['url']; ?>" class=""><?php echo $son['name']; ?></a></li> 
-            <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__0cSJRIxVQA__; ?>
+            <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__17Hy6sQf9Z__; ?>
            </ul> 
           </div> 
         </li>
-        <?php endif; endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__y91wJqE6cD__; ?>
+        <?php endif; endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__OoX1ulJDWe__; ?>
      </ul> 
     </div> 
     <div class="box01-side" style="position: static"> 
@@ -273,7 +273,7 @@ function contactUs() {
        </div> 
       </div> 
      </div> 
-     <?php $__MTf34aS1pV__ = \addons\cms\model\Block::getBlockList(["id"=>"block","name"=>"about","orderby"=>"weigh","orderway"=>"desc"]); if(is_array($__MTf34aS1pV__) || $__MTf34aS1pV__ instanceof \think\Collection || $__MTf34aS1pV__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__MTf34aS1pV__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$block): $mod = ($i % 2 );++$i;?> 
+     <?php $__PNp5MuIdkZ__ = \addons\cms\model\Block::getBlockList(["id"=>"block","name"=>"index","orderby"=>"weigh","orderway"=>"desc"]); if(is_array($__PNp5MuIdkZ__) || $__PNp5MuIdkZ__ instanceof \think\Collection || $__PNp5MuIdkZ__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__PNp5MuIdkZ__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$block): $mod = ($i % 2 );++$i;?> 
       <div class="prowrap"> 
         <div class="colC1-detail cf"> 
           <?php if(is_array(explode(',',$block['images'])) || explode(',',$block['images']) instanceof \think\Collection || explode(',',$block['images']) instanceof \think\Paginator): $i = 0; $__LIST__ = explode(',',$block['images']);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$image): $mod = ($i % 2 );++$i;?>
@@ -295,7 +295,7 @@ function contactUs() {
          </div> 
         </div> 
        </div>
- 	    	<?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__MTf34aS1pV__; ?>
+ 	    	<?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__PNp5MuIdkZ__; ?>
 
     </div> 
    </div> 
@@ -359,24 +359,24 @@ function contactUs() {
     }   
 
 </script>
-  </div>
-  <!-- content --> 
-  <!--页脚开始--> 
-  <div class="breakbox cf"> 
-   <div class="breakbox-box"> 
-    <p class="footer-text1">© 2020 Shanghai FamilyMart Co.,Ltd All Rights Reserved.<a href="//beian.miit.gov.cn/" target="_blank" rel="nofollow">沪ICP备12043844号-1</a></p> 
-    <p><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202013095"><img src="/template/default2/images/gongan.png">沪公网安备 31011202013095号</a></p> 
-    <!-- <p class="footer-text2"><a href="javascript:;" onclick="contactUs()">联系我们</a>|<a href="/faq">常见问题</a></p>  -->
-   </div> 
-  </div> 
-  <!--页脚结束-->  
-  <!--二维码开始--> 
+</div>
+<!-- content --> 
+<!--页脚开始--> 
+<div class="breakbox cf"> 
+ <div class="breakbox-box"> 
+  <p class="footer-text1"><?php echo $site['beian']; ?></p> 
+  <!-- <p><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011202013095"><img src="/template/default2/images/gongan.png">沪公网安备 31011202013095号</a></p>  -->
+  <!-- <p class="footer-text2"><a href="javascript:;" onclick="contactUs()">联系我们</a>|<a href="/faq">常见问题</a></p>  -->
+ </div> 
+</div> 
+<!--页脚结束-->  
+<!--二维码开始--> 
 
-  <script type="text/javascript" src="/template/default2/js/swiper.min.js"></script> 
-  <script type="text/javascript" src="/template/default2/js/global.js"></script> 
-  <script type="text/javascript" src="/template/default2/js/common.js"></script> 
-  <script type="text/javascript" src="/template/default2/js/baidu.js"></script> 
-  <script type="text/javascript" src="/template/default2/js/product.pop.js"></script> 
-  <script type="text/javascript" src="/template/default2/js/lazyload.js"></script>   
- </body>
+<script type="text/javascript" src="/template/default2/js/swiper.min.js"></script> 
+<script type="text/javascript" src="/template/default2/js/global.js"></script> 
+<script type="text/javascript" src="/template/default2/js/common.js"></script> 
+<script type="text/javascript" src="/template/default2/js/baidu.js"></script> 
+<script type="text/javascript" src="/template/default2/js/product.pop.js"></script> 
+<script type="text/javascript" src="/template/default2/js/lazyload.js"></script>   
+</body>
 </html>
