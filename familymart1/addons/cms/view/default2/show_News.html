@@ -1,4 +1,59 @@
 {include file="common/sub_left" /}
+{switch name="__CHANNEL__.id"}
+    {case value="67"}
+    <div id="content"> 
+        <div class="main mainpro"> 
+         <div class="banpro banpro_plan"> 
+          <img width="100%" src="{$__CHANNEL__.image}"> 
+          <div class="banpro-box-md"> 
+           <h2>{$__CHANNEL__.name}</h2> 
+           <p>{$__CHANNEL__.description}</p> 
+          </div> 
+         </div> 
+         <div class="prowrap"> 
+          <div class="planWrap"> 
+           <div class="plan_title"> 
+            {cms:arclist id="item" channel="__CHANNEL__.id"  orderby="createtime" orderway="asc"}
+                <a class="{if $item.id == $__ARCHIVES__.id}cur{/if}" href="{$item.url}">{$item.title}</a>
+            {/cms:arclist}
+           </div> 
+           {cms:paramelist name="$title"  id="param"}
+            {notempty name="$param.images"}
+            {volist name="$param.images|explode=',',###" id="image"}
+            
+            <div class="plan_list">
+                {if $key % 2 == 0}
+                <div class="plan_img"> 
+                    <img src="{$image|cdnurl}" alt="加盟伙伴负担费用"> 
+                   </div> 
+                   <div class="plan_text"> 
+                    <ul> 
+                     <li><img src="__CDN__/template/default2/images/{$param.intro[$key]['info']}" alt="加盟伙伴负担费用"></li> 
+                     <li>{$param.intro[$key]['txt']}</li> 
+                    </ul> 
+                   </div> 
+                {else}
+                <div class="plan_text"> 
+                    <ul> 
+                     <li><img src="__CDN__/template/default2/images/{$param.intro[$key]['info']}" alt="加盟伙伴负担费用"></li> 
+                     <li>{$param.intro[$key]['txt']}</li> 
+                    </ul> 
+                   </div> 
+                   <div class="plan_img"> 
+                    <img src="{$image|cdnurl}" alt="加盟伙伴负担费用"> 
+                   </div> 
+                {/if}
+                
+               </div> 
+            {/volist}
+            {/notempty}
+            {/cms:paramelist}
+          </div> 
+         </div> 
+        </div> 
+       </div>
+    {/case}
+    {default /}
 <div id="content"> 
     <div class="main mainpro"> 
      <div class="banpro"> 
@@ -16,7 +71,7 @@
          <h2>顾客满意</h2> 
          <p>保持认真、负责、诚恳的态度，提供消费者亲切的购物环境、优质的商品、多元便利的服务。怀着无比的信心开创“全家就是你家”的新世纪。</p> 
         </div>  -->
-        {cms:paramelist name="$title"  id="param" addon="content"}
+        {cms:paramelist name="$title"  id="param"}
         {notempty name="$param.images"}
             {volist name="$param.images|explode=',',###" id="image"}
             <div class="item-{$image|cdnurl}"> 
@@ -30,6 +85,7 @@
       </div> 
      </div> 
     </div> 
-   </div>      
+   </div> 
+   {/switch}     
    
    {include file="common/foot" /}

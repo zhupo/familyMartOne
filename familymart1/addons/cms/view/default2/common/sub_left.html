@@ -144,8 +144,8 @@ function contactUs() {
       </div> 
       <ul> 
         
-        {cms:arclist id="item" channel="__CHANNEL__.id"  orderby="weigh" orderway="desc"}
-        <li > <a href="{$item.url}">{$item.title}</a> </li> 
+        {cms:arclist id="item" channel="__CHANNEL__.id"  orderby="createtime" orderway="asc"}
+        <li class="{if $item.id == $__ARCHIVES__.id}on{/if}"> <a href="{$item.url}">{$item.title}</a> </li> 
         {/cms:arclist}
        
       </ul> 
