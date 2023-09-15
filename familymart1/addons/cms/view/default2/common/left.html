@@ -37,7 +37,7 @@
             });
         }
     </script> 
-  <link rel="icon" type="image/x-icon" href="__CDN__/template/default2/images/favicon.ico?v={$site.version}"> 
+  <link rel="icon" type="image/x-icon" href="__CDN__/template/default2/css/favicon.ico?v={$site.version}"> 
   <script type="text/javascript">BASEUSER=''</script> 
   <script type="text/javascript">HOSTURL=''</script> 
   <script type="text/javascript">
@@ -139,7 +139,11 @@ function contactUs() {
       {cms:channellist id="nav" type="top" cache="0" condition="1=isnav" row="20" orderby="weigh" orderway="desc"}
         <li class="nav-item guqj {if $nav.is_active} active {/if}" data-name="zhajizhuanjia"> 
           <div class="toptitle">
-           <a href="{if $nav.id = 66} # {/if}  {if $nav.id != 66}{$nav.url}{/if}">{$nav.name}</a>
+            {if $nav.id != 66}
+            <a href="{$nav.url}">{$nav.name}</a>
+            {else}
+           <a href="#">{$nav.name}</a>
+            {/if}
           </div> 
           {if $nav.has_child}
           <div class="drop"> 

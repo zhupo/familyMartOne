@@ -3,7 +3,7 @@
  <head> 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
   <meta name="language" content="en"> 
-  <title>全家Family Mart—开心尝鲜在全家 - Brand</title> 
+  <title></title> 
   <meta name="viewport" content="width=device-width, initial-scale=0.68, maximum-scale=1, minimum-scale=0.68, user-scalable=yes"> 
   <meta name="apple-mobile-web-app-capable" content="yes"> 
   <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
@@ -37,7 +37,7 @@
             });
         }
     </script> 
-  <link rel="icon" type="image/x-icon" href="css/favicon.ico"> 
+  <link rel="icon" type="image/x-icon" href="__CDN__/template/default2/css/favicon.ico"> 
   <script type="text/javascript">BASEUSER=''</script> 
   <script type="text/javascript">HOSTURL='http://www.familymart.com.cn'</script> 
   <script type="text/javascript">
@@ -136,16 +136,17 @@ function contactUs() {
     <div class="topside"> 
      <a href="/" class="logo"></a> 
      <div class="subnav"> 
-      <!-- <div class="back">
+      <div class="back">
        返回
-      </div>  -->
+      </div> 
       <div class="topsubtitle">
        {$__CHANNEL__.name}
       </div> 
       <ul> 
-        <!-- {cms:channellist id="nav" type="son" cache="0" row="20" typeid="__CHANNEL__.id"}
-        <li > <a href="{$nav.url}">{$nav.name}</a> </li> 
-        {/cms:channellist} -->
+        
+        {cms:arclist id="item" channel="__CHANNEL__.id"  orderby="weigh" orderway="desc"}
+        <li > <a href="{$item.url}">{$item.title}</a> </li> 
+        {/cms:arclist}
        
       </ul> 
      </div>
@@ -153,7 +154,11 @@ function contactUs() {
       {cms:channellist id="nav" type="top" cache="0" condition="1=isnav" row="20" orderby="weigh" orderway="desc"}
         <li class="nav-item guqj" data-name="zhajizhuanjia"> 
           <div class="toptitle">
-           <a href="#">{$nav.name}</a>
+           {if $nav.id != 66}
+            <a href="{$nav.url}">{$nav.name}</a>
+            {else}
+            <a href="#">{$nav.name}</a>
+            {/if}
           </div> 
           {if $nav.has_child}
           <div class="drop"> 
