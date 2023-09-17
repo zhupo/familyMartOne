@@ -145,7 +145,7 @@ function contactUs() {
       <ul> 
         
         {cms:arclist id="item" channel="__CHANNEL__.id"  orderby="createtime" orderway="asc"}
-        <li class="{if $item.id == $__ARCHIVES__.id}on{/if}"> <a href="{$item.url}">{$item.title}</a> </li> 
+        <li > <a href="{$item.url}">{$item.title}</a> </li> 
         {/cms:arclist}
        
       </ul> 
@@ -175,18 +175,18 @@ function contactUs() {
      </div>
     <div class="box01-side" style="position: static"> 
      <div class="box01-content"> 
-      <!--   <div class="city-selector">
+        <!-- <div class="city-selector">
                    <div class="searchbox-lp">
                             <select class="searchbox-sc" id="citySeltet" onChange="ChangeCity()">
                                 <option value="1" selected>上海</option><option value="2">苏州</option><option value="3">深圳</option><option value="4">广州</option><option value="5">杭州</option><option value="6">成都</option><option value="10">无锡</option><option value="11">北京</option><option value="12">东莞</option><option value="13">嘉兴</option>                            </select>
                        </div>
-                </div> --> 
-      <div class="searchbox-fl"> 
+                </div>  -->
+      <!-- <div class="searchbox-fl"> 
        <div class="searchbox"> 
         <div class="searchbtn pa searchbtnleft" onclick="searchSubmit('');"></div> 
         <input type="text" placeholder="请输入搜索内容" name="keyword" id="searchInput" class="tet"> 
        </div> 
-      </div> 
+      </div>  -->
      </div> 
     </div> 
    </div> 

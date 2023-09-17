@@ -1,0 +1,280 @@
+{include file="common/left" /}
+<div id="content"> 
+  <script type="text/javascript" src="__CDN__/template/default2/js/jobAppSelectDate.js"></script> 
+  <div class="main mainpro"> 
+   <div class="banpro"> 
+    <img width="100%" src="{$__CHANNEL__.image}"> 
+    <div class="banpro-box-md"> 
+     <p>{$__CHANNEL__.name}</p> 
+    </div> 
+   </div> 
+   <div class="jobForm"> 
+    <form id="jobForm"  onsubmit="return $('.formPoint').show();" method="POST" action="/d/customer/post.html">
+      <input type="hidden" name="__diyname__" value="customer">
+        {:token()} 
+     <div class="formTop"> 
+      <ul class="menu_L">
+       <a href="javascript:void(0)" class="current">{$__CHANNEL__.name}</a>
+      </ul> 
+      <!-- <ul class="menu_R nomargin">
+       <a href="javascript:void(0)" onclick="gotoEmploy()">直接上传简历</a>
+      </ul>  -->
+     </div> 
+     <div class="personal"> 
+      <div class="personalMain"> 
+       <h2>个人信息</h2> 
+       <!-- <ul>
+         求职类型 
+        <select class="selectStyle01 borderStyle" name="Jobapplication[type]" id="type" onchange="selectFun(this.value,'type','city')"> <option value="">请选择</option> <option value="t1">全职</option> <option value="t2">兼职</option> <option value="t3">实习</option> </select> 
+       </ul> 
+       <ul> 
+        <li class="floatStyle"> 应聘区域 <select class="selectStyle01 borderStyle" id="city" name="Jobapplication[city]" onchange="selectFun(this.value,'city','area')"> <option value="">请选择</option> </select> <select class="selectStyle01 borderStyle" id="area" name="Jobapplication[area]" onchange="selectFun(this.value,'area','position')"> <option value="">请选择</option> </select> </li> 
+        <li class="floatStyle" style="padding-left:110px;"> 应聘职位 <select class="selectStyle01 borderStyle" id="position" name="Jobapplication[position]"> <option value="">请选择</option> </select> </li> 
+        <br class="clearfix"> 
+       </ul>  -->
+       <ul> 
+        <li class="floatStyle"> 姓　　名<input type="text" oninvalid="setCustomValidity('请填写姓名')" oninput="setCustomValidity('')" class="inputStyle01 borderStyle" id="name" required="required" name="row[name]"> </li> 
+        <li class="floatStyle" style="padding-left:8px;"> 性　　别 <select class="selectStyle01 borderStyle" oninvalid="setCustomValidity('请选择性别')" oninput="setCustomValidity('')" id="sex" required="required" name="row[sex]"> <option value="">请选择</option> <option value="男">男</option> <option value="女">女</option> </select> </li> 
+        <li class="floatStyle" style="padding-left:8px;"> 年　　龄<input type="text" class="inputStyle01 borderStyle" oninvalid="setCustomValidity('请填写年龄')" oninput="setCustomValidity('')" id="age" required="required" name="row[age]"> </li> 
+        <br class="clearfix"> 
+       </ul> 
+       <!-- <ul> 
+        <li class="floatStyle"> 文化程度 <select class="selectStyle01 borderStyle" id="educational" name="Jobapplication[educational]"> <option value="">请选择</option> <option value="初中">初中</option> <option value="高中">高中</option> <option value="中专">中专</option> <option value="大专">大专</option> <option value="本科">本科</option> <option value="硕士">硕士</option> <option value="博士">博士</option> <option value="博士后">博士后</option> </select> </li> 
+        <br class="clearfix"> 
+       </ul>  -->
+       <ul> 
+        <li class="floatStyle"> 手机号码<input type="text" oninvalid="setCustomValidity('请填写手机号')" oninput="setCustomValidity('')" class="inputStyle05 borderStyle" style="width:225px;" id="phone" placeholder="手机号码" onkeyup="value=value.replace(/[^\d]/g,'')" onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d.]/g,''))" maxlength="11" required="required" name="row[telephone]"> </li> 
+        <br class="clearfix"> 
+       </ul> 
+       <ul>
+         个人邮箱
+        <input type="email" class="inputStyle03 borderStyle" id="email" oninvalid="setCustomValidity('请填写邮箱')" oninput="setCustomValidity('')" required="required" name="row[email]"> 
+       </ul> 
+      </div> 
+      <div class="submitBtn">
+       <button type="submit" style="color: #fff;
+       background: #1bb630;
+       border-radius: 100px;
+       display: inline-block;
+       box-sizing: border-box;
+       padding: 0 40px;
+       height: 30px;
+       line-height: 30px;
+       transition: all .2s ease;
+       border: 1px solid transparent;">提交</button>
+      </div> 
+     </div> 
+    </form> 
+   </div> 
+  </div> 
+  <script type="text/javascript">
+
+jQuery.extend(String.prototype, {
+isInteger:function(){
+      return (new RegExp(/^\d+$/).test(this));
+  },
+//数字
+  isNumber: function(value, element) {
+      return (new RegExp(/^-?(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d+)?$/).test(this));
+  },
+  //验证Mail
+  isValidMail:function(){
+      //return(new RegExp(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/).test(this.trim()));
+  return (new RegExp(/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/).test(this));
+  },
+//是否Name
+isName:function(){
+  return (new RegExp(/^((\w{3,32})|([\u4e00-\u9fa5]{2,12}))$/).test(this));
+},
+//是否中文名
+isNameCN:function(){
+  return (new RegExp(/^[\u4e00-\u9fa5]{2,12}$/).test(this));
+},
+//是否电话
+  isPhone:function() {
+      return (new RegExp(/(^([0-9]{3,4}[-])?\d{3,8}(-\d{1,6})?$)|(^\([0-9]{3,4}\)\d{3,8}(\(\d{1,6}\))?$)|(^\d{3,8}$)/).test(this));
+  },
+//是否手机号
+isMobile:function(){
+  return (new RegExp(/^0?1[34578]\d{9}$/).test(this));
+  //return (new RegExp(/^0{0,1}(13[4-9]|15[7-9]|15[0-2]|18[7-8])[0-9]{8}$/).test(this));
+},
+//是否电话
+isTel:function(){
+  return (new RegExp(/^(0\d{2,3}[\s-])?\d{7,8}([\s-]\d{4,5})?$/).test(this));
+},
+//是否闰年
+isLeapYear: function(){
+  //console.log(this);
+  //return false;
+  if(this.isInteger()){
+    var curYear=parseInt(this, 10);
+    if(curYear % 400 == 0 || (curYear % 100 !=0 && curYear % 4 == 0)) return true;
+    else return false;
+  }
+  else return false;
+},
+isIDcard:function(){
+  return (new RegExp(/^((1[1-5])|(2[1-3])|(3[1-7])|(4[1-6])|(5[0-4])|(6[1-5])|71|(8[12])|91)\d{4}((19\d{2}(0[13-9]|1[012])(0[1-9]|[12]\d|30))|(19\d{2}(0[13578]|1[02])31)|(19\d{2}02(0[1-9]|1\d|2[0-8]))|(19([13579][26]|[2468][048]|0[48])0229))\d{3}(\d|X|x)?$/).test(this));
+},
+isEmail:function() {
+  return(new RegExp(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/).test(this.trim()));
+}
+});
+
+
+function getiswork(){
+if($("input[name='iswork']:checked").val()=='有'){
+  $("#workArea").css("display","block");
+  $("#addwork").css("display","block");
+}else{
+  $("#workArea").css("display","none");
+  $("#addwork").css("display","none");
+}
+
+}
+
+function subjobapplication(){
+// if(!$("#type").val()){
+//   showCommonPop('请选择求职类型')
+//   return false
+// }
+// if(!$("#city").val()){
+//   showCommonPop('请选择应聘城市')
+//   return false
+// }
+// if(!$("#area").val()){
+//   showCommonPop('请选择应聘区域')
+//   return false
+// }
+// if(!$("#position").val()){
+//   showCommonPop('请选择应聘职位')
+//   return false
+// }
+if(!$("#name").val()){
+  showCommonPop('请填写姓名')
+  return false
+}
+if(!$("#sex").val()){
+  showCommonPop('请选择性别')
+  return false
+}
+if(!$("#age").val().isInteger()){
+  showCommonPop('请填写合法年龄')
+  return false
+}
+
+// if(!$("#educational").val()){
+//   showCommonPop('请选择文化程度')
+//   return false
+// }
+
+if(!$("#phone").val()||$("#phone").val()=='手机号码'){
+  showCommonPop('请填写手机号')
+  return false
+}
+
+if(!$("#phone").val().isMobile()){
+  showCommonPop('请填写正确的手机号')
+  return false
+}
+if(!$("#email").val().isEmail()){
+  showCommonPop('请填写正确的个人邮箱')
+  return false
+}
+
+// $.ajax({
+//   type:"POST",
+//   url:BASEUSER+"/career/submitApplication",
+//   data:$('#jobForm').serialize(),
+//   dataType:'json',
+//   success:function(data){
+//     if(data.code==1){
+//       showCommonPop('提交成功')
+//       //location.href='';
+//       setTimeout(function(){
+//         location.href='';
+//       },1000);
+//     }
+//   }
+// })
+}
+
+function gotoEmploy(){
+var linkurl=window.location.href;
+if(linkurl.indexOf('type=t1')>0){
+  window.location.href='./employ?type=t1';
+  return false
+}
+if(linkurl.indexOf('type=t2')>0){
+  window.location.href='./employ?type=t2';
+  return false
+}
+if(linkurl.indexOf('type=t3')>0){
+  window.location.href='./employ?type=t3';
+  return false
+}
+if(linkurl.indexOf('id=')>0){
+  window.location.href='./employ?id='+linkurl.substr(linkurl.indexOf('id=')+3);
+  return false
+}
+window.location.href='./employ';
+return false
+
+}
+
+// var selectFun = function (val,type,innerId){
+//   var selectIndex='';
+//   if(arguments[3]){
+//     selectIndex=arguments[3]
+//   }
+//   $.ajax({
+//       type:"POST",
+//       global:false,
+//       url:BASEUSER+"/career/select"+type,
+//       data:{"t":val},
+//       dataType:"JSON",
+//       success:function(data){
+//         var selectStr = '<option value="">请选择</option>';
+//         for(var i=0;i<data.length;i++){
+//           selectStr += "<option value='"+data[i].id+"'>"+data[i].name+"</option>";
+//         }
+//         $("#"+innerId).html(selectStr);
+
+//         if(selectIndex){
+
+//           $("#"+innerId).val(selectIndex)
+//         }
+//       }
+//     });
+// }
+
+
+//-->
+
+// $(document).ready(function(){
+
+// var linkurl=window.location.href;
+// if(linkurl.indexOf('type=t1')>0){
+//   $('#type').val('t1')
+//   selectFun('t1','type','city')
+// }else if(linkurl.indexOf('type=t2')>0){
+//   $('#type').val('t2')
+//   selectFun('t2','type','city')
+// }else if(linkurl.indexOf('type=t3')>0){
+//   $('#type').val('t3')
+//   selectFun('t3','type','city')
+// }else{
+// }
+
+// })
+
+//时间插件
+
+// var infoDate = new DateSelector(window.document.getElementById("birthdayY"), window.document.getElementById("birthdayM") ,window.document.getElementById("birthdayD"));
+// var eduDate = new DateSelector(window.document.getElementById("edustarty"), window.document.getElementById("edustartm") ,window.document.getElementById("edustartd"));
+// var eduendDate = new DateSelector(window.document.getElementById("eduendy"), window.document.getElementById("eduendm") ,window.document.getElementById("eduendd"));
+// var workDate = new DateSelector(window.document.getElementById("worky"), window.document.getElementById("workm") ,window.document.getElementById("workd"));
+</script> 
+ </div>
+{include file="common/foot" /}

@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="__CDN__/template/default2/css/animate.css?v={$site.version}"> 
   <link rel="stylesheet" href="__CDN__/template/default2/css/global.css?v={$site.version}"> 
   <link rel="stylesheet" href="__CDN__/template/default2/css/fane.css?v={$site.version}"> 
+  <link rel="stylesheet" href="__CDN__/template/default2/css/jobapplication.css?v={$site.version}"> 
   <script type="text/javascript" src="__CDN__/template/default2/js/jquery-1.9.1.min.js?v={$site.version}"></script> 
   <script type="text/javascript">
         function changecitybypup(){
@@ -160,12 +161,17 @@ function contactUs() {
     </div> 
     <div class="box01-side" style="position: static"> 
      <div class="box01-content"> 
-      <div class="searchbox-fl"> 
+      <!-- <div class="searchbox-fl"> 
        <div class="searchbox"> 
         <div class="searchbtn pa searchbtnleft" onclick="searchSubmit('');"></div> 
         <input type="text" placeholder="请输入搜索内容" name="keyword" id="searchInput" class="tet"> 
+
+        <form class="" action="/jiamenghezuo.html" method="GET"> 
+          <button class="searchbtn pa searchbtnleft"></button>
+          <input type="text" placeholder="请输入搜索内容" name="title" {if !empty($v)}value="{$v}"{/if} id="searchInput" class="tet"> 
+         </form>
        </div> 
-      </div> 
+      </div>  -->
       <!-- <div class="sharelink pr"> 
        <div class="item item-1"> 
         <a href="javascript:;" onclick="contactUs()"> <span class="icon icon-type-1"></span> <p>联系我们</p> </a> 
